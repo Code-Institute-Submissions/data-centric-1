@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogic Recipes</title>
+</head>
+<body>
+
+    {% for recipe in recipes %}
+        {{ recipe.recipe_name }}<br>
+        {{ recipe.category }}<br>
+        {{ recipe.time }}<br>
+        {{ recipe.portions }}<br>
+        {% for ingredient in recipe.ingredients %}
+            <ul>
+                <li>{{ ingredient }}</li>
+            </ul>
+        {% endfor %}
+    {% for instruction in recipe.instructions %}
+        <ul>
+            <li>{{ instruction }}</li>
+        </ul>
+        {% endfor %}
+    {% endfor %}
+  
+    
+</body>
+</html>
