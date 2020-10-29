@@ -1,5 +1,5 @@
 .bg-color {
-    background: linear-gradient(rgb(250, 112, 243), rgb(126, 231, 243)) no-repeat; 
+    background: linear-gradient(rgb(255, 139, 249), rgb(126, 231, 243)) no-repeat; 
     min-height: 100vh;
 }
 
@@ -7,6 +7,7 @@
     color: #333333;
     font-weight: bold;
     font-size: 25px;
+    padding: 10px;
 }
 
 nav ul a, 
@@ -23,5 +24,14 @@ nav ul a,
 .sidenav-trigger {
     float: right !important;
 }
+
+ .logo > img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-bottom: -7px;
+}
+
+
 
 
