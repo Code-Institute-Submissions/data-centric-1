@@ -1,6 +1,6 @@
 import os
 from flask import (
-    Flask, render_template, redirect, flash, url_for, request, session)
+    Flask, render_template, redirect, flash, url_for, request)
 from bson.objectid import ObjectId
 from flask_pymongo import PyMongo
 if os.path.exists("env.py"):
@@ -15,7 +15,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-""" I copied the code to set up flask from line 1 to 15
+""" I copied most of the code above to set up flask from line 1 to 15
 & the last line from the 2020 task manager mini project videos """
 
 
