@@ -15,7 +15,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-""" I copied most of the code above to set up flask from line 1 to 15
+""" I copied most of the code above to set up flask from line 1 to 16
 & the last line from the 2020 task manager mini project videos """
 
 
