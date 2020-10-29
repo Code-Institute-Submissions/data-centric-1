@@ -1,4 +1,27 @@
 .bg-color {
-    background: linear-gradient(#FFB3FA, #A0E3EB) no-repeat; 
+    background: linear-gradient(rgb(250, 112, 243), rgb(126, 231, 243)) no-repeat; 
     min-height: 100vh;
 }
+
+.logo {
+    color: #333333;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav ul a, 
+.sidenav, 
+.fas.fa-bars {
+    color: #333333;
+    font-weight: bold;
+}
+
+.nav-wrapper {
+    border-bottom: 2px solid black;
+}
+
+.sidenav-trigger {
+    float: right !important;
+}
+
+
