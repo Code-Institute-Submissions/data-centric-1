@@ -11,13 +11,23 @@
 </head>
 <body class="bg-color">
 
-    <nav class="transparent">
+    <nav class="transparent" id="nav">
         <div class="nav-wrapper">
+            <form>
+                <div class="row">
+                    <div class="col s12 l3 input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="fas fa-search"></i></label>
+                    </div>
+                </div>
+            </form>
+
             <a href="#!" class="logo">
                 <img src="../static/images/apple.png" alt="apple">
                 YOGIC RECIPES
-                </a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i>
+            </a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">START</a></li>
                 <li><a href="#">RECIPES</a></li>
