@@ -110,6 +110,21 @@ nav form {
     justify-content: center;
 }
 
+.copy > p {
+    color: white;
+    font-weight: 500;
+    position: relative;
+    top: 9px;
+}
+
+.contact > a {
+    background: #FF3399;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    top: 15px;
+}
+
 footer {
     background: #5C4F80;
 }
@@ -123,7 +138,7 @@ footer {
 }
 
 .fa-inverse:hover {
-	color: rgb(17, 168, 80);
+	color: #26a69a;
 }
 
 /*-------------------------------------media queries*/
