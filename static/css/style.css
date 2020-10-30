@@ -34,6 +34,20 @@ nav ul a,
     margin-bottom: -7px;
 }
 
+.fruit-img {
+    width: 44px;
+    height: 44px;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+#fruits {
+    float: right;
+}
+
+
+
 .fas.fa-search {
     color: black;
     font-size: 20px;
@@ -43,8 +57,13 @@ nav ul a,
     height: 117px;
 }
 
-.input-field {
+.input-field,
+.fruits {
     height: 50px !important;
+}
+
+#search {
+    width: 250px;
 }
 
 .nav-wrapper .input-field input[type=search] {
@@ -60,7 +79,7 @@ nav ul a,
 }
 
 nav form {
-    height: 47%;
+    height: 44%;
 }
 
 .dropdown-trigger {
