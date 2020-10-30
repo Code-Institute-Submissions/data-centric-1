@@ -100,6 +100,7 @@ nav form {
 
 #footer-icons > li {
     display: inline;
+    font-size: 20px;
 }
 
 #footer-icons, 
@@ -111,6 +112,18 @@ nav form {
 
 footer {
     background: #5C4F80;
+}
+
+.fa-inverse {
+	color: #FF3399;
+}
+
+.fa-stack-2x {
+    color: white;
+}
+
+.fa-inverse:hover {
+	color: rgb(17, 168, 80);
 }
 
 /*-------------------------------------media queries*/
