@@ -118,9 +118,9 @@ nav form {
 }
 
 .contact > a {
-    background: #FF3399;
-    color: white;
-    font-weight: 500;
+    background: white;
+    color: #FF3399;
+    font-weight: bold;
     position: relative;
     top: 15px;
 }
