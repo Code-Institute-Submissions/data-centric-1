@@ -46,8 +46,6 @@ nav ul a,
     float: right;
 }
 
-
-
 .fas.fa-search {
     color: black;
     font-size: 20px;
@@ -60,10 +58,6 @@ nav ul a,
 .input-field,
 .fruits {
     height: 50px !important;
-}
-
-#search {
-    width: 250px;
 }
 
 .nav-wrapper .input-field input[type=search] {
@@ -108,5 +102,17 @@ nav form {
         float: right;
         right: 120px;
         top: -2px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #search {
+    width: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .fruits {
+        display: none;
     }
 }
