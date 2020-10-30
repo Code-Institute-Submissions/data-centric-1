@@ -11,6 +11,22 @@
 </head>
 <body class="bg-color">
 
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">BREAKFAST</a></li>
+        <li><a href="#!">MEALS</a></li>
+        <li><a href="#!">DESSERTS</a></li>
+        <li><a href="#!">SMOOTHIES</a></li>
+    </ul>
+
+    <!-- Dropdown Structure -->
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#!">BREAKFAST</a></li>
+            <li><a href="#!">MEALS</a></li>
+            <li><a href="#!">DESSERT</a></li>
+            <li><a href="#!">SMOOTHIES</a></li>
+        </ul>
+
     <nav class="transparent" id="nav">
         <div class="nav-wrapper">
             <form>
@@ -30,7 +46,7 @@
             </a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">START</a></li>
-                <li><a href="#">RECIPES</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">RECIPES <i class="fas fa-caret-down"></i></a></li>
                 <li><a href="#">ADD RECIPE</a></li>
                 <li><a href="#">MY RECIPES</a></li>
             </ul>
@@ -39,7 +55,7 @@
 
     <ul class="sidenav" id="mobile-demo">
         <li><a href="#">START</a></li>
-        <li><a href="#">RECIPES</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES <i class="fas fa-caret-down"></i></a></li>
         <li><a href="#">ADD RECIPE</a></li>
         <li><a href="#">MY RECIPES</a></li>
     </ul>
