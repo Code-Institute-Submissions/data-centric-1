@@ -27,30 +27,11 @@
         <li><a href="#!">SMOOTHIES</a></li>
     </ul>
 
-    <!--search input-->
-    <nav>
-        <div class="nav-wrapper nav-search">
-            <form>
-                <div class="row">
-                    <div class="col s12 m6 l6 input-field">
-                        <input id="search" type="search" required>
-                        <label class="label-icon" for="search"><i class="fas fa-search"></i></label>
-                    </div>
-                    <div class="col s12 m6 l6 fruits">
-                        <ul id="fruits">
-                            <li><img class="fruit-img" src="../static/images/berry.png" alt="berry"></li>
-                            <li><img class="fruit-img" src="../static/images/orange.png" alt="orange"></li>
-                            <li><img class="fruit-img" src="../static/images/banana.png" alt="banana"></li>
-                        </ul>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </nav>
+    <div class="start-img">
     
     <!--logo & menu-->
-    <nav>
-        <div class="nav-wrapper">
+    <nav class="nav-color nav-border">
+        <div class="nav-wrapper nav-border">
             <a href="#!" class="logo">
                 <img src="../static/images/apple.png" alt="apple">
                 YOGIC RECIPES
@@ -71,7 +52,36 @@
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES <i class="fas fa-caret-down"></i></a></li>
         <li><a href="#">ADD RECIPE</a></li>
         <li><a href="#">MY RECIPES</a></li>
-    </ul>
+    </ul> 
+
+     <div class="space"></div>
+
+       <!--search input-->
+    <nav class="nav-color nav-search">
+        <div class="nav-wrapper nav-search">
+            <form>
+                <div class="row">
+                    <div class="col s12 m6 l6 input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="fas fa-search"></i></label>
+                    </div>
+                     <div class="col s12 m6 l6 fruits">
+                        <ul id="fruits">
+                            <li><img class="fruit-img" src="../static/images/berry.png" alt="berry"></li>
+                            <li><img class="fruit-img" src="../static/images/orange.png" alt="orange"></li>
+                            <li><img class="fruit-img" src="../static/images/banana.png" alt="banana"></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    </div><!--start-img-->
+
+   
+
+    <div class="space"></div>
 
     <footer>
         <div class="row">
@@ -128,5 +138,3 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
-
- 
