@@ -141,7 +141,14 @@ footer {
 	color: #26a69a;
 }
 
+/*-------------------------------------footer*/
+
+.start-bg {
+    background: purple;
+}
+
 /*-------------------------------------media queries*/
+
 
 @media screen and (max-width: 993px) {
     .fas.fa-caret-down {
