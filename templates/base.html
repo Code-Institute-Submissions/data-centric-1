@@ -9,7 +9,9 @@
         integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
 </head>
-<body class="bg-color">
+<body>
+
+    <div class="bg-color">
 
     <!-- Dropdown 1 -->
     <ul id="dropdown1" class="dropdown-content">
@@ -37,9 +39,9 @@
                     </div>
                     <div class="col s12 m6 l6 fruits">
                         <ul id="fruits">
-                            <li><img class="fruit-img" src="../static/images/berry.png" alt=""></li>
-                            <li><img class="fruit-img" src="../static/images/orange.png" alt=""></li>
-                            <li><img class="fruit-img" src="../static/images/banana.png" alt=""></li>
+                            <li><img class="fruit-img" src="../static/images/berry.png" alt="berry"></li>
+                            <li><img class="fruit-img" src="../static/images/orange.png" alt="orange"></li>
+                            <li><img class="fruit-img" src="../static/images/banana.png" alt="banana"></li>
                         </ul>
                     </div>
                 </div>
@@ -69,6 +71,26 @@
 
     {% block code %}
     {% endblock %}
+
+    </div> <!--bg-color-->
+
+    <footer>
+        <div class="row">
+            <div class="col s12 m4 contact">
+                <a class="waves-effect waves-light btn">button</a>
+            </div>
+            <div class="col s12 m4">
+                <ul id="footer-icons">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-facebook"></i></li>
+                </ul>
+            </div>
+            <div class="col s12 m4 copy">
+                <p>&copy; Daniela Krstevska</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

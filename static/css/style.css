@@ -1,3 +1,5 @@
+/*-------------------------------------navbar from base*/
+
 .bg-color {
     background: linear-gradient(rgb(255, 139, 249), rgb(126, 231, 243)) no-repeat; 
     min-height: 100vh;
@@ -92,6 +94,23 @@ nav form {
 .dropdown-content li> a {
     color: #333333;
     font-weight: 500;
+}
+
+/*-------------------------------------footer*/
+
+#footer-icons > li {
+    display: inline;
+}
+
+#footer-icons, 
+.copy,
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background: #5C4F80;
 }
 
 /*-------------------------------------media queries*/
