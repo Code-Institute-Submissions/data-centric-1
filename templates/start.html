@@ -9,7 +9,7 @@
         integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
 </head>
-<body class="start-bg">
+<body>
 
     <!-- Dropdown 1 -->
     <ul id="dropdown1" class="dropdown-content">
@@ -45,6 +45,7 @@
         </div>
     </nav>
 
+    <!--for mobile menu-->
     <ul class="sidenav" id="mobile-demo">
         <li><a href="#">START</a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES <i class="fas fa-caret-down"></i></a></li>
@@ -52,7 +53,10 @@
         <li><a href="#">MY RECIPES</a></li>
     </ul> 
 
+    <div class="hero-container">
+    <!--hero img-->
     <div class="hero-img"></div>
+    </div>
 
     <!--search input-->
     <nav class="nav-search transparent">

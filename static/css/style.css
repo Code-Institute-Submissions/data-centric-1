@@ -127,6 +127,7 @@ nav form {
 
 footer {
     background: #5C4F80;
+    width: 100%;
 }
 
 .fa-inverse {
@@ -145,7 +146,7 @@ footer {
 
 .nav-search,
 .nav-border {
-    height: 87px;
+    height: 65px;
 }
 
 .nav-border {
@@ -161,17 +162,27 @@ footer {
 .nav-search {
     position: relative;
     top: -30px;
+    height: 50px;
 }
 
 /*-------------------------------------hero-img & info-box from start.html */
 
+/* I copied this code for the hero-imge from the Love Running project in the CI course*/
+.hero-container {
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
 .hero-img {
-  height: 500px;
+  height: 550px;
   background: url( https://www.chocolateandcheeseplease.com/wp-content/uploads/2017/10/IMG_3857.jpg) center center no-repeat;
   background-size: cover;
-  animation-name: hero-zoom;  /* I copied the code for zooming in the hero image from the Love Running project from the CI course*/
+  animation-name: hero-zoom;  /* I copied the code for zooming in the hero image in the Love Running project in the CI course*/
   animation-duration: 5s;
   animation-fill-mode: forwards;
+  overflow: hidden;
 }
 
 @keyframes hero-zoom {
@@ -182,9 +193,6 @@ footer {
         transform: scale(1.1);
     }
 }
-
-
-
 
 /*-------------------------------------media queries*/
 
@@ -207,5 +215,17 @@ footer {
 @media screen and (max-width: 600px) {
     .fruits {
         display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero-img,
+    .hero-container {
+        height: 250px;
+    }
+
+    .nav-wrapper .input-field input[type=search] {
+        background: #ffffff9e;
+        width: 200px;
     }
 }
