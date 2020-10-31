@@ -162,21 +162,22 @@ footer {
 .nav-search {
     position: relative;
     top: -30px;
-    height: 50px;
+    height: 1px;
 }
 
 /*-------------------------------------hero-img & info-box from start.html */
 
-/* I copied this code for the hero-imge from the Love Running project in the CI course*/
+/* I copied some code for the hero-imge from the Love Running project in the CI course*/
 .hero-container {
-    height: 550px;
+    height: 590px;
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin-bottom: -45px;
 }
 
 .hero-img {
-  height: 550px;
+  height: 590px;
   background: url( https://www.chocolateandcheeseplease.com/wp-content/uploads/2017/10/IMG_3857.jpg) center center no-repeat;
   background-size: cover;
   animation-name: hero-zoom;  /* I copied the code for zooming in the hero image in the Love Running project in the CI course*/
@@ -201,12 +202,20 @@ footer {
     padding-left: 15px;
     position: relative;
     z-index: 20;
-    top: -220px;
-    width: 300px;
+    top: -260px;
+    width: 306px;
     color: white;
     left: 15px;
     padding-top: 1px;
     padding-bottom: 1px;
+}
+
+/*-------------------------------------About section from start.html*/
+
+hr {
+    width: 70px;
+    height: 3px;
+    background: #333333;
 }
 
 /*-------------------------------------media queries*/
