@@ -1,4 +1,4 @@
-/*-------------------------------------navbar from base*/
+/*-------------------------------------navbar from base.html*/
 
 .bg-color {
     background: linear-gradient(rgb(255, 139, 249), rgb(126, 231, 243)) no-repeat; 
@@ -141,36 +141,50 @@ footer {
 	color: #26a69a;
 }
 
-/*-------------------------------------start.html navbar*/
-
-.start-bg {
-    background: purple;
-}
-
-.nav-color {
-    background: rgb(152, 208, 119);
-}
-
-.start-img {
-  height: 500px;
-  background: url( https://www.chocolateandcheeseplease.com/wp-content/uploads/2017/10/IMG_3857.jpg) center center no-repeat;
-  background-size: cover;
-  color: black
-}
-
-.space {
-    height: 400px;
-}
+/*-------------------------------------navbars from start.html*/
 
 .nav-search,
 .nav-border {
-    height: 58px;
+    height: 87px;
 }
 
 .nav-border {
+    background: white;
+}
+
+.nav-border,
+.nav-search { 
      box-shadow: none;
      border: none;
 }
+
+.nav-search {
+    position: relative;
+    top: -30px;
+}
+
+/*-------------------------------------hero-img & info-box from start.html */
+
+.hero-img {
+  height: 500px;
+  background: url( https://www.chocolateandcheeseplease.com/wp-content/uploads/2017/10/IMG_3857.jpg) center center no-repeat;
+  background-size: cover;
+  animation-name: hero-zoom;  /* I copied the code for zooming in the hero image from the Love Running project from the CI course*/
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+
 
 /*-------------------------------------media queries*/
 
