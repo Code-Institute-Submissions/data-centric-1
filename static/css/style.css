@@ -173,7 +173,7 @@ footer {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-bottom: -45px;
+    margin-bottom: -30px;
 }
 
 .hero-img {
@@ -202,7 +202,7 @@ footer {
     padding-left: 15px;
     position: relative;
     z-index: 20;
-    top: -260px;
+    top: -245px;
     width: 306px;
     color: white;
     left: 15px;
@@ -213,9 +213,20 @@ footer {
 /*-------------------------------------About section from start.html*/
 
 hr {
-    width: 70px;
-    height: 3px;
+    width: 50px;
+    height: 2px;
     background: #333333;
+    margin-bottom: 20px;
+}
+
+section > p {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 16px;
+}
+
+h6, h5 {
+    font-weight: 500;
 }
 
 /*-------------------------------------media queries*/
@@ -233,6 +244,23 @@ hr {
 @media screen and (min-width: 540px) {
     #search {
     width: 250px;
+    }
+
+    .logo > img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    h6 {
+        font-size: 1.55rem;
+    }
+
+    section > p {
+        font-size: 18px;
     }
 }
 
@@ -255,5 +283,22 @@ hr {
     .nav-wrapper .input-field input[type=search] {
         background: #ffffff9e;
         width: 200px;
+        margin-top: 35px;
+    }
+
+    .fas.fa-search {
+        margin-top: 44px;
+    }
+
+    h5 {
+        font-size: 1.40rem;
     }
 }
+
+@media screen and (max-width: 1280px) {
+    section > p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
