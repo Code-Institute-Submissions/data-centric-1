@@ -78,13 +78,10 @@ nav form {
     height: 44%;
 }
 
-.dropdown-trigger {
-    position: relative;
-    top: -1px;
-}
-
 .fas.fa-caret-down {
-    font-size: 20px;
+    font-size: 16px;
+    position: relative;
+    top: -1.5px;
 }
 
 #dropdown2 {
@@ -294,7 +291,7 @@ h6, h5 {
     }
 
     .logo {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     h6 {
