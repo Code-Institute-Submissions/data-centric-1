@@ -241,8 +241,8 @@ h6, h5 {
     color: #213672;
 }
 
-table {
-    font-size: 19px;
+.food-list {
+    font-size: 18px;
 }
 
 /*-------------------------------------media queries*/
