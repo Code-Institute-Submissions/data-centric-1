@@ -229,8 +229,23 @@ h6, h5 {
     font-weight: 500;
 }
 
-/*-------------------------------------media queries*/
+#positive {
+    color: #c006a1;
+}
 
+#zero {
+    color: #ae8705;
+}
+
+#negative {
+    color: #213672;
+}
+
+table {
+    font-size: 19px;
+}
+
+/*-------------------------------------media queries*/
 
 @media screen and (max-width: 993px) {
     .fas.fa-caret-down {
@@ -256,11 +271,18 @@ h6, h5 {
     }
 
     h6 {
-        font-size: 1.55rem;
+        font-size: 1.40rem;
     }
 
     section > p {
         font-size: 18px;
+    }
+}
+
+/*for keeping same size on search*/
+@media screen and (min-width: 500px) {
+     #search {
+    width: 250px;
     }
 }
 
