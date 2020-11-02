@@ -230,19 +230,41 @@ h6, h5 {
 }
 
 #positive {
-    color: #c006a1;
+    color: #750462;
+    background: pink;
+    padding: 10px;
 }
 
 #zero {
-    color: #ae8705;
+    color: #5a4705;
+    background: #d5ec6b;
+    padding: 10px;
 }
 
 #negative {
-    color: #213672;
+    color: #0f1b3e;
+    background: #b7c6d1;
+    padding: 10px;
 }
 
 .food-list {
     font-size: 18px;
+    font-weight: 500;
+}
+
+.video {
+    background: pink;
+    padding: 3%;
+}
+
+.video, 
+.footer {
+    margin-bottom: 0;
+}
+
+.video > .col {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 /*-------------------------------------media queries*/
