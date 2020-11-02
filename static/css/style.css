@@ -114,7 +114,8 @@ nav form {
     color: white;
     font-weight: 500;
     position: relative;
-    top: 9px;
+    top: 4px;
+    font-size: 18px;
 }
 
 .contact > a {
@@ -124,6 +125,8 @@ nav form {
     position: relative;
     top: 15px;
 }
+
+
 
 footer {
     background: #5C4F80;
@@ -231,19 +234,19 @@ h6, h5 {
 
 #positive {
     color: #750462;
-    background: pink;
+    background: rgba(255, 192, 203, 0.753);
     padding: 10px;
 }
 
 #zero {
-    color: #5a4705;
-    background: #d5ec6b;
+    color: #3f3204;
+    background: #d4ec6bc2;
     padding: 10px;
 }
 
 #negative {
     color: #0f1b3e;
-    background: #b7c6d1;
+    background: #b7c6d1a4;
     padding: 10px;
 }
 
@@ -254,7 +257,9 @@ h6, h5 {
 
 .video {
     background: pink;
-    padding: 3%;
+    padding-top: 2%;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .video, 
@@ -311,6 +316,19 @@ h6, h5 {
 @media screen and (max-width: 600px) {
     .fruits {
         display: none;
+    }
+
+    .contact {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    .video > .recipe-video {
+        padding-top: 0;
+    }
+
+    .nav-border { 
+        margin-top: 15px;
     }
 }
 
