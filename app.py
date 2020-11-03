@@ -19,12 +19,12 @@ mongo = PyMongo(app)
 & the last line from the 2020 task manager mini project videos """
 
 
-@app.route("/")
 @app.route("/start")
 def start():
     return render_template("start.html")
 
 
+@app.route("/")
 @app.route("/recipes")
 def recipes():
     recipes = mongo.db.recipes.find()
