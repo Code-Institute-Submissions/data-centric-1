@@ -1,43 +1,53 @@
 {% extends "base.html" %}
 
-
-
-
-
 {% block code %}
 
 <div class="row">
+    <div class="col s12 center-align">
+        <h4> 
+            {% for recipe in recipes %} 
+                {{ recipe.category.capitalize() }}
+        </h4>
+    </div>
+</div>
+
+<div class="row recipe-row">
     <div class="col s12 center-recipe">
         <div class="recipe-bg">
             <div class="img-container"><img src="../static/images/beetroot.jpg" alt="recipe-image">
-                <p class="recipe-header">Beetroot Overnight Oats</p>
+                    <p class="recipe-header">
+                    {{ recipe.recipe_name.capitalize() }}
+                    </p>
             </div>
             <table>
                 <tr>
-                    <td>Portions: <em>2</em></td>
-                    <td>Time: <em>15 min</em></td>
+                    <td>Portions: <em>  
+                        {{ recipe.portions }}
+                    </em></td>
+                    <td>Time: <em>
+                        {{ recipe.time }}
+                    </em></td>
                 </tr>
             </table>
-        </div>
+            <section>
+                <h5>Ingredients</h5>
+                    {% for ingredient in recipe.ingredients %}
+                        <ul class="bullet">
+                            <li>{{ ingredient.capitalize() }} </li>
+                        </ul>
+                    {% endfor %}
+            </section>
+            <section class="instructions">
+                <h5>Instructions</h5>
+                    {% for instruction in recipe.instructions %}
+                        <ul class="circle">
+                            <li>{{ instruction.capitalize() }} </li>
+                        </ul>
+                    {% endfor %}
+                {% endfor %}
+            </section> 
+        </div><!--recipe-bg-->
    </div>
 </div>
-
-    {% for recipe in recipes %}
-        {{ recipe.recipe_name }}<br>
-        {{ recipe.category }}<br>
-        {{ recipe.time }}<br>
-        {{ recipe.portions }}<br>
-        {% for ingredient in recipe.ingredients %}
-            <ul>
-                <li>{{ ingredient }}</li>
-            </ul>
-        {% endfor %}
-    {% for instruction in recipe.instructions %}
-        <ul>
-            <li>{{ instruction }}</li>
-        </ul>
-
-        {% endfor %}
-    {% endfor %}
 
 {% endblock %}
