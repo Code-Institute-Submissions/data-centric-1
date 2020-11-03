@@ -269,6 +269,31 @@ h6, h5 {
     padding-bottom: 40px;
 }
 
+/*-------------------------------------recipes.html */
+
+.center-recipe {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-bg {
+    margin-top: 70px;
+    height: 800px;
+    width: 600px;
+    background:white;
+}
+
+.img-container {
+    height: 50%;
+    width: 100%;
+}
+
+.img-container > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 /*-------------------------------------media queries*/
 
 @media screen and (max-width: 993px) {
