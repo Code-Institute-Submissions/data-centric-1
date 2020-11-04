@@ -350,8 +350,9 @@ td {
     border-radius: 10px;
 }
 
-.fab.fa-raspberry-pi.prefix {
+.fas.fa-lemon.prefix {
     font-size: 20px;
+    color: rgba(114, 6, 114, 0.849);
 }
 
 .row-ingredients,
@@ -364,6 +365,21 @@ td {
 .input-field > label {
     color: black;
     font-size: 20px;
+}
+
+.form-hr {
+    width: auto;
+    background: rgba(114, 6, 114, 0.568);
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: .7px;
+}
+
+.form-heading {
+    margin-top: 50px;
+    text-shadow: 1px 1px rgba(114, 6, 114, 0.568);
 }
 
 /*-------------------------------------media queries*/
