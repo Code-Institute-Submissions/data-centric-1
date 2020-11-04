@@ -350,16 +350,21 @@ td {
     border-radius: 10px;
 }
 
-.fas.fa-apple-alt.prefix {
+.fab.fa-raspberry-pi.prefix {
     font-size: 20px;
 }
 
-.row-padding {
+.row-ingredients,
+.row-instructions {
     padding: 10px;
     height: 30vh;
     overflow-y: scroll;
 }
 
+.input-field > label {
+    color: black;
+    font-size: 20px;
+}
 
 /*-------------------------------------media queries*/
 
