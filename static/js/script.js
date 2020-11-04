@@ -2,4 +2,11 @@
     $('.sidenav').sidenav();
     $(".dropdown-trigger").dropdown({ hover: false });
     $('.modal').modal();
+    $('select').formSelect();
   });
+
+
+
+
+
+

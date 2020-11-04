@@ -348,6 +348,8 @@ td {
 .form-bg {
     background: white;
     border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 7px black;
 }
 
 .fas.fa-lemon.prefix {
@@ -368,7 +370,7 @@ td {
 }
 
 .form-hr {
-    width: auto;
+    width: 100px;
     background: rgba(114, 6, 114, 0.568);
     margin-top: 0;
     padding-top: 0;
@@ -380,6 +382,10 @@ td {
 .form-heading {
     margin-top: 50px;
     text-shadow: 1px 1px rgba(114, 6, 114, 0.568);
+}
+
+.row-form {
+    margin-bottom: 0;
 }
 
 /*-------------------------------------media queries*/

@@ -9,8 +9,22 @@
 </div>
 
 
-<div class="row">
-    <form class="col s12 m10 offset-m1 l6 offset-l3 form-bg">
+<div class="row row-form">
+    <form class="col s12 m10 offset-m1 l6 offset-l3 form-bg" method="POST">
+        <div class="row">
+        <!--category-->
+            <div class="input-field col s12">
+               <select id="category" name="category" class="validate" required>
+                    <option value="" disabled selected>Choose Category</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <label for="category">Recipe Category</label>
+            </div>
+        </div>
+
+        <!--heading ingredients-->
         <div class="row">
             <div class="col s12 center-align">
                 <h6 class="form-heading">INGREDIENTS</h6>
@@ -70,6 +84,7 @@
                 <label for="ingredient10">Ingredient 10</label>
             </div>
         </div><!--/row-ingredients-->
+        <!--heading instructions-->
          <div class="row">
             <div class="col s12 center-align">
                 <h6 class="form-heading">INSTRUCTIONS</h6>
