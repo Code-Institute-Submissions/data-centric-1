@@ -24,11 +24,16 @@ def start():
     return render_template("start.html")
 
 
-@app.route("/")
 @app.route("/recipes")
 def recipes():
     recipes = mongo.db.recipes.find()
     return render_template("recipes.html", recipes=recipes)
+
+
+@app.route("/")
+@app.route("/add_recipe")
+def add_recipe():
+    return render_template("add_recipe.html")
 
 
 if __name__ == "__main__":

@@ -342,6 +342,25 @@ td {
 .recipe-row {
     margin-bottom: 0;
 }
+
+/*-------------------------------------add_recipe.html */
+
+.form-bg {
+    background: white;
+    border-radius: 10px;
+}
+
+.fas.fa-apple-alt.prefix {
+    font-size: 20px;
+}
+
+.row-padding {
+    padding: 10px;
+    height: 30vh;
+    overflow-y: scroll;
+}
+
+
 /*-------------------------------------media queries*/
 
 @media screen and (max-width: 993px) {
@@ -414,12 +433,20 @@ td {
 
     .nav-wrapper .input-field input[type=search] {
         background: #ffffff9e;
-        width: 200px;
+    }
+
+     .nav-search .input-field input[type=search] {
         margin-top: 35px;
+        width: 200px;
+        background: #ffffff9e;
     }
 
     .fas.fa-search {
         margin-top: 44px;
+    }
+
+    #icon-search {
+        margin-top: 19px;
     }
 
     h5 {
