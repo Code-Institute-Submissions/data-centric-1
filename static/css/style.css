@@ -350,6 +350,7 @@ td {
     border-radius: 10px;
     margin-bottom: 50px;
     box-shadow: 0px 0px 7px black;
+    padding: 30px !important;
 }
 
 .input-field .prefix {
@@ -365,7 +366,6 @@ color: black;
 
 .row-ingredients,
 .row-instructions {
-    padding: 10px;
     height: 30vh;
     overflow-y: scroll;
 }
@@ -377,21 +377,6 @@ color: black;
 
 .input-field > label > strong {
     color: black;
-}
-
-.form-hr {
-    width: 100px;
-    background: rgba(114, 6, 114, 0.568);
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    height: .7px;
-}
-
-.form-heading {
-    margin-top: 50px;
-    text-shadow: 1px 1px rgba(114, 6, 114, 0.568);
 }
 
 .row-form {
