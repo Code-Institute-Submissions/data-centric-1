@@ -2,6 +2,19 @@ body  {
     font-size: 18px;
 }
 
+.page-heading {
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.page-hr {
+    width: 80px;
+    height: 1.5px;
+    background: #333333;
+    margin-bottom: 20px;
+    border: 1px solid #333333;
+}
+
 /*-------------------------------------navbar from base.html*/
 
 .bg-color {
