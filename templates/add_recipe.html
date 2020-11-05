@@ -12,23 +12,49 @@
 <div class="row row-form">
     <form class="col s12 m10 offset-m1 l6 offset-l3 form-bg" method="POST">
         <div class="row">
-        <!--category-->
-            <div class="input-field col s12">
+          <div class="col s12 input-field">
+                <i class="fas fa-image prefix"></i>
+                <!--I used the code for regex checking URL from this site: https://www.regextester.com/93652-->
+                <input id="image" type="text" class="validate" pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$">
+                <label for="image">URL link for image</label>
+            </div>
+            <div class="col s12 m6 input-field">
+                <i class="fas fa-user prefix"></i>
+                <input id="name" type="text" class="validate" pattern="^[a-zA-Z]+$">
+                <label for="name">Your Name</label>
+            </div>
+            <div class="col s12 m6 input-field">
+                <i class="fas fa-clock prefix"> </i>
+                <input id="time" type="text" class="validate" minlength="1" maxlength="3" pattern="^[0-9]+$">
+            <label for="time">Time in minutes</label>
+        </div>
+            <!--category-->
+            <div class="input-field col s12 m6">
+            <i class="fas fa-folder-open prefix"></i>
                <select id="category" name="category" class="validate" required>
                     <option value="" disabled selected>Choose Category</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Meals">Meals</option>
+                    <option value="Desserts">Desserts</option>
+                    <option value="Smoothies">Smoothies</option>
                 </select>
-                <label for="category">Recipe Category</label>
             </div>
-        </div>
-
-        <!--heading ingredients-->
-        <div class="row">
-            <div class="col s12 center-align">
-                <h6 class="form-heading">INGREDIENTS</h6>
-                 <hr class="form-hr">
+            <!--portions-->
+            <div class="input-field col s12 m6">
+            <i class="fas fa-mortar-pestle prefix"></i>
+               <select id="portions" name="portions" class="validate" required>
+                    <option value="" disabled selected>Choose Portions</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
             </div>
         </div>
         <!---row ingredients-->
@@ -36,103 +62,103 @@
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
                 <input id="ingredient1" type="text" class="validate">
-                <label for="ingredient1">Ingredient 1</label>
+                <label for="ingredient1">Ingredient</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
                 <input id="ingredient2" type="tel" class="validate">
-                <label for="ingredient2">Ingredient 2</label>
+                <label for="ingredient2">Ingredient</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
                 <input id="ingredient3" type="text" class="validate">
-                <label for="ingredient3">Ingredient 3</label>
+                <label for="ingredient3">Ingredient</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
                 <input id="ingredient4" type="tel" class="validate">
-                <label for="ingredient4">Ingredient 4</label>
+                <label for="ingredient4">Ingredient</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
                 <input id="ingredient5" type="text" class="validate">
-                <label for="ingredient5">Ingredient 4</label>
+                <label for="ingredient5">Ingredient</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
                 <input id="ingredient6" type="tel" class="validate">
-                <label for="ingredient6">Ingredient 6</label>
+                <label for="ingredient6">Ingredient</label>
             </div>
                 <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
                 <input id="ingredient7" type="text" class="validate">
-                <label for="ingredient7">Ingredient 7</label>
+                <label for="ingredient7">Ingredient</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
                 <input id="ingredient8" type="tel" class="validate">
-                <label for="ingredient8">Ingredient 8</label>
+                <label for="ingredient8">Ingredient</label>
             </div>
                 <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
                 <input id="ingredient9" type="text" class="validate">
-                <label for="ingredient9">Ingredient 9</label>
+                <label for="ingredient9">Ingredient</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
                 <input id="ingredient10" type="tel" class="validate">
-                <label for="ingredient10">Ingredient 10</label>
+                <label for="ingredient10">Ingredient</label>
             </div>
         </div><!--/row-ingredients-->
-        <!--heading instructions-->
-         <div class="row">
-            <div class="col s12 center-align">
-                <h6 class="form-heading">INSTRUCTIONS</h6>
-                 <hr class="form-hr">
-            </div>
-        </div>
         <!--Instructions-->
         <div class="row row-instructions">
             <div class="col s12">
                 <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix"></i>
                     <textarea id="1" class="materialize-textarea"></textarea>
-                    <label for="1"><strong>1.</strong></label>
+                    <label for="1"><strong>1.</strong> instruction...</label>
                 </div>
             </div>
              <div class="col s12">
                 <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix"></i>
                     <textarea id="2" class="materialize-textarea"></textarea>
-                    <label for="2"><strong>2.</strong></label>
+                    <label for="2"><strong>2.</strong> instruction...</label>
                 </div>
             </div>
              <div class="col s12">
                 <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix"></i>
                     <textarea id="3" class="materialize-textarea"></textarea>
-                    <label for="3"><strong>3.</strong></label>
+                    <label for="3"><strong>3.</strong>  instruction...</label>
                 </div>
             </div>
              <div class="col s12">
                 <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix"></i>
                     <textarea id="4" class="materialize-textarea"></textarea>
-                    <label for="4"><strong>4.</strong></label>
+                    <label for="4"><strong>4.</strong> instruction...</label>
                 </div>
             </div>
              <div class="col s12">
                 <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix"></i>
                     <textarea id="5" class="materialize-textarea"></textarea>
-                    <label for="5"><strong>5.</strong></label>
+                    <label for="5"><strong>5.</strong> instruction...</label>
                 </div>
             </div>
              <div class="col s12">
                 <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix"></i>
                     <textarea id="6" class="materialize-textarea"></textarea>
-                    <label for="6"><strong>6.</strong></label>
+                    <label for="6"><strong>6.</strong> instruction...</label>
                 </div>
             </div>
              <div class="col s12">
                 <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix"></i>
                     <textarea id="7" class="materialize-textarea"></textarea>
-                    <label for="7"><strong>7.</strong></label>
+                    <label for="7"><strong>7.</strong> instruction...</label>
                 </div>
             </div>
         </div><!--/instructions-->

@@ -352,9 +352,15 @@ td {
     box-shadow: 0px 0px 7px black;
 }
 
-.fas.fa-lemon.prefix {
+.input-field .prefix {
     font-size: 20px;
-    color: rgba(114, 6, 114, 0.849);
+    color: #9040aa;
+}
+
+.select-wrapper input.select-dropdown,
+.time {
+font-size: 18px;
+color: black;
 }
 
 .row-ingredients,
@@ -365,8 +371,12 @@ td {
 }
 
 .input-field > label {
+    color: #877878;
+    font-size: 18px; 
+}
+
+.input-field > label > strong {
     color: black;
-    font-size: 20px;
 }
 
 .form-hr {
