@@ -425,6 +425,14 @@ color: black;
   background: #a01489; 
 }
 
+/*-------------------------------------add_recipe.html */
+
+.card {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+
 /*-------------------------------------media queries*/
 
 @media screen and (max-width: 993px) {

@@ -30,10 +30,14 @@ def recipes():
     return render_template("recipes.html", recipes=recipes)
 
 
-@app.route("/")
 @app.route("/add_recipe")
 def add_recipe():
     return render_template("add_recipe.html")
+
+
+@app.route("/")
+def category():
+    return render_template("category.html")
 
 
 if __name__ == "__main__":
