@@ -47,25 +47,25 @@
                 </div>
             </form>
 
-            <a href="#!" class="logo">
+            <a href="{{ url_for('start') }}" class="logo">
                 <img src="../static/images/apple.png" alt="apple">
                 YOGIC RECIPES
             </a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i>
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">START</a></li>
+                <li><a href="{{ url_for('start') }}">START</a></li>
                 <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">RECIPES <i class="fas fa-caret-down"></i></a></li>
-                <li><a href="#">ADD RECIPE</a></li>
+                <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
                 <li><a href="#">MY RECIPES</a></li>
             </ul>
         </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">START</a></li>
+        <li><a href="{{ url_for('start') }}"">START</a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES <i class="fas fa-caret-down"></i></a></li>
-        <li><a href="#">ADD RECIPE</a></li>
+        <li><a href="{{ url_for('start') }}"">ADD RECIPE</a></li>
         <li><a href="#">MY RECIPES</a></li>
     </ul>
 
