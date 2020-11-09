@@ -433,6 +433,28 @@ color: black;
     margin-bottom: 50px;
 }
 
+.row-category {
+    margin-bottom: 0;
+}
+
+.card-action {
+    background: #99004D !important;
+}
+
+.p-minutes {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.card-content > h5 {
+    font-weight: 500;
+    text-shadow: 1px 1px darkgreen;
+}
+
+
 /*-------------------------------------media queries*/
 
 @media screen and (max-width: 993px) {
