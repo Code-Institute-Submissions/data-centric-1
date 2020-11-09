@@ -24,6 +24,7 @@ def start():
     return render_template("start.html")
 
 
+@app.route("/")
 @app.route("/recipes")
 def recipes():
     recipes = mongo.db.recipes.find()
@@ -35,7 +36,6 @@ def add_recipe():
     return render_template("add_recipe.html")
 
 
-@app.route("/")
 def category():
     return render_template("category.html")
 
@@ -44,4 +44,3 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
-
