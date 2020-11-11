@@ -39,7 +39,9 @@ def add_recipe():
 @app.route("/category")
 def breakfast():
     categories = mongo.db.categories.find()
-    return render_template("category.html", categories=categories)
+    category_name = mongo.db.categories.find_one({}, {"category": "BREAKFAST"})
+    return render_template(
+        "category.html", categories=categories, category_name=category_name)
 
 
 @app.route("/category")
