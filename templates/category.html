@@ -1,54 +1,35 @@
 {% extends "base.html" %}
 {% block code %}
 
-<div class="row">
-    <div class="col s12 center-align">
-        <h5 class="page-heading">BREAKFAST</h5>
-        <hr class="page-hr">
+    <div class="row">
+        <div class="col s12 center-align"> 
+            <h5 class="page-heading">
+                BREAKFAST
+            </h5>
+            <hr class="page-hr">
+        </div>
     </div>
-</div>
 
- <div class="row row-category">
-    <div class="col s12 m6 l4">
-        <div class="card">
-            <div class="card-image">
-                <img src="../static/images/beetroot.jpg">
-            </div>
-            <div class="card-content center-align">
-                <h5>Beetroot Overnight Oats</h5>
-            </div>
-            <div class="card-action center-align">
-                <p class="p-minutes"><i class="fas fa-clock"></i> 20 minutes </p>
-            </div>
-        </div>
-    </div><!--col-->
-    <div class="col s12 m6 l4">
-        <div class="card">
-            <div class="card-image">
-                <img src="../static/images/beetroot.jpg">
-            </div>
-            <div class="card-content center-align">
-                <h5>Beetroot Overnight Oats</h5>
-            </div>
-            <div class="card-action center-align">
-                <p class="p-minutes"><i class="fas fa-clock"></i> 20 minutes </p>
-            </div>
-        </div>
-    </div><!--col-->
+{% for info in categories %}
+    <div class="row row-category">
         <div class="col s12 m6 l4">
-        <div class="card">
-            <div class="card-image">
-                <img src="../static/images/beetroot.jpg">
+            <div class="card">
+                <div class="card-image">
+                    <img src="
+                    {{ info.image }}">
+                </div>
+                <div class="card-content center-align">
+                    <h5>
+                    {{ info.recipe_name }}
+                    </h5>
+                </div>
+                <div class="card-action center-align">
+                    <p class="p-minutes"><i class="fas fa-clock"></i> 
+                    {{ info.time }}
+                    </p>
+                </div>
             </div>
-            <div class="card-content center-align">
-                <h5>Beetroot Overnight Oats</h5>
-            </div>
-            <div class="card-action center-align">
-                <p class="p-minutes"><i class="fas fa-clock"></i> 20 minutes </p>
-            </div>
-        </div>
-    </div><!--col-->
-</div><!--row-->
-           
+        </div><!--col-->
+{% endfor %}
         
 {% endblock %}

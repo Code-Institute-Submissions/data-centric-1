@@ -24,7 +24,6 @@ def start():
     return render_template("start.html")
 
 
-@app.route("/")
 @app.route("/recipes")
 def recipes():
     recipes = mongo.db.recipes.find()
@@ -36,7 +35,25 @@ def add_recipe():
     return render_template("add_recipe.html")
 
 
-def category():
+@app.route("/")
+@app.route("/category")
+def breakfast():
+    categories = mongo.db.categories.find()
+    return render_template("category.html", categories=categories)
+
+
+@app.route("/category")
+def meals():
+    return render_template("category.html")
+
+
+@app.route("/category")
+def desserts():
+    return render_template("category.html")
+
+
+@app.route("/category")
+def smoothies():
     return render_template("category.html")
 
 
