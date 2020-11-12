@@ -19,6 +19,7 @@ mongo = PyMongo(app)
 & the last line from the 2020 task manager mini project videos """
 
 
+@app.route("/")
 @app.route("/start")
 def start():
     return render_template("start.html")
@@ -35,28 +36,36 @@ def add_recipe():
     return render_template("add_recipe.html")
 
 
-@app.route("/")
-@app.route("/category")
+@app.route("/breakfast")
 def breakfast():
-    categories = mongo.db.categories.find()
-    category_name = mongo.db.categories.find_one({}, {"category": "BREAKFAST"})
+    categories = mongo.db.categories.find({"category": "BREAKFAST"})
+    category_name = "BREAKFAST"
+    return render_template(
+        "category.html", categories=categories, category_name=category_name)
+
+
+@app.route("/meals")
+def meals():
+    categories = mongo.db.categories.find({"category": "MEALS"})
+    category_name = "MEALS"
     return render_template(
         "category.html", categories=categories, category_name=category_name)
 
 
 @app.route("/category")
-def meals():
-    return render_template("category.html")
-
-
-@app.route("/category")
 def desserts():
-    return render_template("category.html")
+    categories = mongo.db.categories.find({"category": "DESSERTS"})
+    category_name = mongo.db.categories.find_one({}, {"category": "DESSERTS"})
+    return render_template(
+        "category.html", categories=categories, category_name=category_name)
 
 
 @app.route("/category")
 def smoothies():
-    return render_template("category.html")
+    categories = mongo.db.categories.find({"category": "SMOOTHIES"})
+    category_name = mongo.db.categories.find_one({}, {"category": "SMOOTHIES"})
+    return render_template(
+        "category.html", categories=categories, category_name=category_name)
 
 
 if __name__ == "__main__":
