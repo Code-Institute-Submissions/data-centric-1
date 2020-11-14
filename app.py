@@ -52,18 +52,18 @@ def meals():
         "category.html", categories=categories, category_name=category_name)
 
 
-@app.route("/category")
+@app.route("/desserts")
 def desserts():
     categories = mongo.db.categories.find({"category": "DESSERTS"})
-    category_name = mongo.db.categories.find_one({}, {"category": "DESSERTS"})
+    category_name = "DESSERTS"
     return render_template(
         "category.html", categories=categories, category_name=category_name)
 
 
-@app.route("/category")
+@app.route("/smoothies")
 def smoothies():
     categories = mongo.db.categories.find({"category": "SMOOTHIES"})
-    category_name = mongo.db.categories.find_one({}, {"category": "SMOOTHIES"})
+    category_name = "SMOOTHIES"
     return render_template(
         "category.html", categories=categories, category_name=category_name)
 
