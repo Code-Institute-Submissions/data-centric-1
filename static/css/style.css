@@ -1,32 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Frijole&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 body  {
     font-size: 18px;
 }
 
 .page-heading {
-    font-weight: 700;
+    font-weight: 400;
     padding-top: 30px;
+    font-family: 'Luckiest Guy', cursive;
+    color: #20350ef2;
+    letter-spacing: 1px;
+    font-size: 30px;
 }
 
 .page-hr {
     width: 80px;
     height: 1.5px;
-    background: #333333;
+    background: #20350ef2;
     margin-bottom: 20px;
-    border: 1px solid #333333;
+    border: 1px solid #20350ef2;
 }
 
 /*-------------------------------------navbar from base.html*/
 
 .bg-color {
-    background: linear-gradient(rgb(255, 139, 249), rgb(126, 231, 243)) no-repeat; 
+    background: linear-gradient(rgb(137 255 154), rgb(255 136 136)) no-repeat;
     min-height: 100vh;
 }
 
 .logo {
     color: #333333;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 25px;
     padding: 10px;
     margin-top: 100px;
@@ -136,19 +140,19 @@ nav form {
 
 .contact > a {
     background: white;
-    color: #FF3399;
+    color: #b11700f2;
     font-weight: bold;
     position: relative;
     top: 15px;
 }
 
 footer {
-    background: #5C4F80;
+    background: #1b574d;
     width: 100%;
 }
 
 .fa-inverse {
-	color: #FF3399;
+	color: #b11700f2;
 }
 
 .fa-stack-2x {
@@ -215,7 +219,7 @@ footer {
 .info-box {
     background: rgb(37 26 94 / 61%);
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
     padding-left: 15px;
     position: relative;
     z-index: 20;
@@ -427,7 +431,7 @@ color: black;
   background: #a01489; 
 }
 
-/*-------------------------------------add_recipe.html */
+/*-------------------------------------categories.html */
 
 .card {
     margin-left: 40px;
@@ -440,7 +444,7 @@ color: black;
 }
 
 .card-action {
-    background: #99004D !important;
+    background: #f44336 !important;
 }
 
 .p-minutes {
@@ -449,6 +453,14 @@ color: black;
     color: white;
     font-size: 25px;
     font-weight: 500;
+}
+
+.fas.fa-leaf {
+    color: #3ea73e;
+}
+
+.fas.fa-clock {
+    color:#69ff69;
 }
 
 .card-content > h5 {
