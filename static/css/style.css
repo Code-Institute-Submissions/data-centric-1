@@ -8,7 +8,7 @@ body  {
     font-weight: 400;
     padding-top: 30px;
     font-family: 'Luckiest Guy', cursive;
-    color: #20350ef2;
+    color: #3f691cf2;
     letter-spacing: 1px;
     font-size: 30px;
 }
@@ -16,9 +16,9 @@ body  {
 .page-hr {
     width: 80px;
     height: 1.5px;
-    background: #20350ef2;
+    background: #20350eb0;
     margin-bottom: 20px;
-    border: 1px solid #20350ef2;
+    border: 1px solid #20350eb0;
 }
 
 /*-------------------------------------navbar from base.html*/
@@ -40,7 +40,8 @@ nav ul a,
 .sidenav, 
 .fas.fa-bars {
     color: #333333;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 17px;
 }
 
 .nav-wrapper {
@@ -87,7 +88,7 @@ nav ul a,
 
 .nav-wrapper .input-field input[type=search] {
     height: 37px;
-    background: #ffffff9e;
+    background: #ffffffd4;
     border-radius: 4px;
     margin-top: 10px;
 }
@@ -141,7 +142,7 @@ nav form {
 .contact > a {
     background: white;
     color: #b11700f2;
-    font-weight: bold;
+    font-weight: 900;
     position: relative;
     top: 15px;
 }
@@ -219,7 +220,7 @@ footer {
 .info-box {
     background: rgb(37 26 94 / 61%);
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     padding-left: 15px;
     position: relative;
     z-index: 20;
@@ -229,6 +230,7 @@ footer {
     left: 15px;
     padding-top: 1px;
     padding-bottom: 1px;
+    text-shadow: 2px 2px black;
 }
 
 /*-------------------------------------About section from start.html*/
@@ -246,8 +248,17 @@ section > p {
     font-size: 16px;
 }
 
+.fab.fa-whmcs, 
+.fas.fa-question-circle {
+    font-weight: 600;
+    font-size: 27px;
+    padding-right: 10px;
+    color: #a74c4c;
+}
+
+
 h6, h5 {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 #positive {
@@ -258,13 +269,13 @@ h6, h5 {
 
 #zero {
     color: #3f3204;
-    background: #d4ec6bc2;
+    background: #ceeea9;
     padding: 10px;
 }
 
 #negative {
     color: #0f1b3e;
-    background: #b7c6d1a4;
+    background: #d3d8ff;
     padding: 10px;
 }
 
@@ -274,10 +285,10 @@ h6, h5 {
 }
 
 .video {
-    background: pink;
+    background: #ceeea9;
     padding-top: 2%;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .video, 
