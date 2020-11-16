@@ -15,19 +15,20 @@
         <div class="col s12 m6 l4">
             <div class="card">
                 <div class="card-image">
-                    <img src="
-                    {{ info.image }}">
+                 <a href="{{ url_for('recipes', name_for_recipe=info._id) }}">
+                    <img src="{{ info.image }}">
+                  </a>
                 </div>
                 <div class="card-content center-align">
-                    <h5><i class="fas fa-leaf"></i>
-                    {{ info.recipe_name }}
+                    <h5> <i class="fas fa-leaf"></i>
+                        {{ info.recipe_name }} 
                     </h5>
                 </div>
                 <div class="card-action center-align">
                     <p class="p-minutes"><i class="fas fa-clock"></i> 
-                    {{ info.time }}
+                        {{ info.time }}
                     </p>
-                </div>
+                </div>  
             </div>
         </div><!--col-->
 {% endfor %}
