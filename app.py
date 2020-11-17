@@ -33,11 +33,6 @@ def recipes(id_for_recipe):
     return render_template("recipe._detail.html", recipe=recipe)
 
 
-@app.route("/add_recipe")
-def add_recipe():
-    return render_template("add_recipe.html")
-
-
 @app.route("/breakfast")
 def breakfast():
     categories = mongo.db.recipes.find({"category": "BREAKFAST"})
@@ -68,6 +63,16 @@ def smoothies():
     category_name = "SMOOTHIES"
     return render_template(
         "category.html", categories=categories, category_name=category_name)
+
+
+@app.route("/add_recipe")
+def add_recipe():
+    return render_template("add_recipe.html")
+
+
+@app.route("/my_recipes")
+def my_recipes():
+    return render_template("my_recipes.html")
 
 
 if __name__ == "__main__":
