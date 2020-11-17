@@ -13,14 +13,6 @@ body  {
     font-size: 30px;
 }
 
-.page-hr {
-    width: 80px;
-    height: 1.5px;
-    background: #20350eb0;
-    margin-bottom: 20px;
-    border: 1px solid #20350eb0;
-}
-
 /*-------------------------------------navbar from base.html*/
 
 .bg-color {
@@ -150,6 +142,7 @@ nav form {
 footer {
     background: #1b574d;
     width: 100%;
+    position: absolute;
 }
 
 .fa-inverse {
@@ -234,13 +227,6 @@ footer {
 }
 
 /*-------------------------------------About section from start.html*/
-
-hr {
-    width: 50px;
-    height: 2px;
-    background: #333333;
-    margin-bottom: 20px;
-}
 
 section > p {
     padding-left: 80px;
