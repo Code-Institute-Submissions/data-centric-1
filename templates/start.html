@@ -40,7 +40,7 @@
                 <li><a href="{{ url_for('start') }}">START</a></li>
                 <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">RECIPES <i class="fas fa-caret-down"></i></a></li>
                 <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
-                <li><a href="#">MY RECIPES</a></li>
+                <li><a href="{{ url_for('my_recipes') }}">MY RECIPES</a></li>
             </ul>
         </div>
     </nav>
@@ -50,7 +50,7 @@
         <li><a href="{{ url_for('start') }}">START</a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES <i class="fas fa-caret-down"></i></a></li>
         <li><a href="{{ url_for('start') }}">ADD RECIPE</a></li>
-        <li><a href="#">MY RECIPES</a></li>
+        <li><a href="{{ url_for('my_recipes') }}">MY RECIPES</a></li>
     </ul> 
 
     <div class="hero-container">
