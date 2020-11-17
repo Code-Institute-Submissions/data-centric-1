@@ -4,8 +4,7 @@
 <div class="row">
     <div class="col s12 center-align">
         <h4> 
-            {% for recipe in recipes %} 
-                {{ recipe.category.capitalize() }}
+            {{ recipe.category.capitalize() }}
         </h4>
     </div>
 </div>
@@ -31,11 +30,11 @@
             </table>
             <section>
                 <h5>Ingredients</h5>
-                    {% for ingredient in recipe.ingredients %}
                         <ul class="bullet">
+                        {% for ingredient in recipe.ingredients %}
                             <li>{{ ingredient.capitalize() }} </li>
                         </ul>
-                    {% endfor %}
+                        {% endfor %}
             </section>
             <section class="instructions">
                 <h5>Instructions</h5>
@@ -44,7 +43,6 @@
                             <li>{{ instruction.capitalize() }} </li>
                         </ul>
                     {% endfor %}
-                {% endfor %}
             </section> 
         </div><!--recipe-bg-->
    </div>

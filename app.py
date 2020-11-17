@@ -25,12 +25,12 @@ def start():
     return render_template("start.html")
 
 
-@app.route("/recipes/<name_for_recipe>")
-def recipes(name_for_recipe):
-    recipe = mongo.db.recipe.find_one({"_id": ObjectId(name_for_recipe)})
+@app.route("/recipes/<id_for_recipe>")
+def recipes(id_for_recipe):
+    recipe = mongo.db.recipes.find_one({"_id":  ObjectId(id_for_recipe)})
     print(recipe)
-    print(name_for_recipe)
-    return render_template("recipes.html", recipe=recipe)
+    print(id_for_recipe)
+    return render_template("recipe._detail.html", recipe=recipe)
 
 
 @app.route("/add_recipe")
