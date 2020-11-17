@@ -65,8 +65,22 @@ def smoothies():
         "category.html", categories=categories, category_name=category_name)
 
 
-@app.route("/add_recipe")
+@app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
+    if request.method == "POST":
+        added_recipe = {
+            "category": request.form.get("category"),
+            "image": request.form.get("image"),
+            "time": request.form.get("time"),
+            "portions": request.form.get("portions"),
+            "recipe_name": request.form.get("recipe_name"),
+            "ingredients": request.form.getlist("ingredients"),
+            "instructions": request.form.getlist("ingredients"),
+            "added_by": request.form.getlist("added_by")
+        }
+        mongo.db.recipes.insert_one(added_recipe)
+        flash("Recipe Successfully Added")
+
     return render_template("add_recipe.html")
 
 
