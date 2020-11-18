@@ -30,17 +30,17 @@
             </table>
             <section>
                 <h5>Ingredients</h5>
-                        <ul class="bullet">
-                        {% for ingredient in recipe.ingredients %}
-                            <li>{{ ingredient.capitalize() }} </li>
-                        </ul>
-                        {% endfor %}
+                    <ul class="bullet">
+                    {% for ingredient in recipe.ingredients %}
+                        <li>{{ ingredient.capitalize() }} </li>
+                    </ul>
+                    {% endfor %}
             </section>
             <section class="instructions">
                 <h5>Instructions</h5>
                     {% for instruction in recipe.instructions %}
                         <ul class="circle">
-                            <li>{{ instruction.capitalize() }} </li>
+                            <li> {{ instruction.capitalize() }} </li>
                         </ul>
                     {% endfor %}
             <p class="center-align"> 
