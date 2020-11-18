@@ -22,7 +22,7 @@ body  {
 }
 
 .logo {
-    color: #333333;
+    color: #3f602d;
     font-weight: 800;
     font-size: 25px;
     padding: 10px;
@@ -32,13 +32,17 @@ body  {
 nav ul a, 
 .sidenav, 
 .fas.fa-bars {
-    color: #333333;
+    color: #3f602d;
     font-weight: 700;
     font-size: 17px;
 }
 
+.fas.fa-bars {
+    font-size: 27px;
+}
+
 .nav-wrapper {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.664);
+    border-bottom: #3f602d;
     border-top: none;
 }
 
@@ -46,32 +50,31 @@ nav ul a,
     float: right !important;
 }
 
- .logo > img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-bottom: -4.5px;
-}
-
-.fruit-img {
-    width: 44px;
-    height: 44px;
-    margin-top: 5px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-}
-
 #fruits {
-    float: right;
+    float: right
+}
+
+#fruits > li > i,
+.logo > i {
+    color: #53aa41;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#fruits > li > i {
+    padding-right: 25px;
 }
 
 .fas.fa-search {
-    color: black;
+    color: #3f602d;
     font-size: 20px;
 }
 
 #nav {
     height: 117px;
+    background-color: transparent !important;
+    background: url(../images/tree.png) no-repeat center;
+    background-size: contain;
 }
 
 .input-field,
@@ -106,7 +109,7 @@ nav form {
 }
 
 .dropdown-content li> a {
-    color: #333333;
+    color: #3f602d;
     font-weight: 500;
 }
 
