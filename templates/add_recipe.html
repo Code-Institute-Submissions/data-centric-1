@@ -14,12 +14,17 @@
                 <i class="fas fa-image prefix"></i>
                 <!--I used the regex code for checking URL from this site: https://www.regextester.com/93652-->
                 <input id="image" name="image" type="text" class="validate" required pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$">
-                <label for="image">URL link for image</label>
+                <label for="image">URL link address for image</label>
+            </div>
+             <div class="col s12 input-field">
+                <i class="fas fa-user prefix"></i>
+                <input id="recipe_name" name="recipe_name" type="text" class="validate" required>
+                <label for="recipe_name">Recipe Name</label>
             </div>
             <div class="col s12 m6 input-field">
                 <i class="fas fa-user prefix"></i>
-                <input id="name" name="added_by" type="text" class="validate" required pattern="^[a-zA-Z]+$">
-                <label for="name">Your Name</label>
+                <input id="added_by" name="added_by" type="text" class="validate" required pattern="^[a-zA-Z]+$">
+                <label for="added_by">Your Name</label>
             </div>
             <div class="col s12 m6 input-field">
                 <i class="far fa-clock prefix"></i>
@@ -31,10 +36,10 @@
             <i class="fas fa-folder-open prefix"></i>
                <select id="category" name="category" class="validate" required>
                     <option value="" disabled selected>Choose Category</option>
-                    <option value="Breakfast">Breakfast</option>
-                    <option value="Meals">Meals</option>
-                    <option value="Desserts">Desserts</option>
-                    <option value="Smoothies">Smoothies</option>
+                    <option value="BREAKFAST">BREAKFAST</option>
+                    <option value="MEALS">MEALS</option>
+                    <option value="DESSERTS">DESSERTS</option>
+                    <option value="SMOOTHIES">SMOOTHIES</option>
                 </select>
             </div>
             <!--portions-->
