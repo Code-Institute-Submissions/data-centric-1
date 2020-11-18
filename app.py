@@ -28,14 +28,12 @@ def start():
 @app.route("/recipes/<id_for_recipe>")
 def recipes(id_for_recipe):
     recipe = mongo.db.recipes.find_one({"_id":  ObjectId(id_for_recipe)})
-    print(recipe)
-    print(id_for_recipe)
     return render_template("recipe._detail.html", recipe=recipe)
 
 
 @app.route("/breakfast")
 def breakfast():
-    categories = mongo.db.recipes.find({"category": "BREAKFAST"})
+    categories = list(mongo.db.recipes.find({"category": "BREAKFAST"}))
     category_name = "BREAKFAST"
     return render_template(
         "category.html", categories=categories, category_name=category_name)
@@ -43,7 +41,7 @@ def breakfast():
 
 @app.route("/meals")
 def meals():
-    categories = mongo.db.recipes.find({"category": "MEALS"})
+    categories = list(mongo.db.recipes.find({"category": "MEALS"}))
     category_name = "MEALS"
     return render_template(
         "category.html", categories=categories, category_name=category_name)
@@ -51,7 +49,7 @@ def meals():
 
 @app.route("/desserts")
 def desserts():
-    categories = mongo.db.recipes.find({"category": "DESSERTS"})
+    categories = list(mongo.db.recipes.find({"category": "DESSERTS"}))
     category_name = "DESSERTS"
     return render_template(
         "category.html", categories=categories, category_name=category_name)
@@ -59,7 +57,7 @@ def desserts():
 
 @app.route("/smoothies")
 def smoothies():
-    categories = mongo.db.recipes.find({"category": "SMOOTHIES"})
+    categories = list(mongo.db.recipes.find({"category": "SMOOTHIES"}))
     category_name = "SMOOTHIES"
     return render_template(
         "category.html", categories=categories, category_name=category_name)
@@ -68,17 +66,22 @@ def smoothies():
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
-        added_recipe = {
+        recipe = {
             "category": request.form.get("category"),
             "image": request.form.get("image"),
-            "time": request.form.get("time"),
+            "time": request.form.get("time") + " minutes",
             "portions": request.form.get("portions"),
             "recipe_name": request.form.get("recipe_name"),
-            "ingredients": request.form.getlist("ingredients"),
-            "instructions": request.form.getlist("ingredients"),
-            "added_by": request.form.getlist("added_by")
+            "ingredients": list(filter(None, request.form.getlist(
+                "ingredients"))),
+            "instructions": list(filter(None, request.form.getlist(
+                "instructions"))),
+            "added_by": request.form.get("added_by")
         }
-        mongo.db.recipes.insert_one(added_recipe)
+
+        print(recipe)
+
+        mongo.db.recipes.insert_one(recipe)
         flash("Recipe Successfully Added")
 
     return render_template("add_recipe.html")
