@@ -221,18 +221,19 @@ footer {
 
 .info-box {
     background: rgb(37 26 94 / 61%);
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 27px;
     padding-left: 15px;
     position: relative;
     z-index: 20;
-    top: -245px;
+    top: -227px;
     width: 306px;
     color: white;
     left: 15px;
     padding-top: 1px;
     padding-bottom: 1px;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px 2px #a52a59;
+    border-radius: 10px;
+    font-weight: 700;
 }
 
 /*-------------------------------------About section from start.html*/
@@ -459,6 +460,7 @@ color: black;
     color: white;
     font-size: 25px;
     font-weight: 500;
+    text-shadow: 1px 1px #356035
 }
 
 .fas.fa-leaf {
@@ -467,11 +469,12 @@ color: black;
 
 .fas.fa-clock {
     color:#69ff69;
+    text-shadow: 1px 1px #356035
 }
 
 .card-content > h5 {
     font-weight: 500;
-    text-shadow: 1px 1px darkgreen;
+    text-shadow: 1px 1px #356035
 }
 
 
