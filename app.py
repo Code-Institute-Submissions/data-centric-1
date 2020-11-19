@@ -92,6 +92,11 @@ def my_recipes():
     return render_template("my_recipes.html")
 
 
+@app.route("/edit_recipe")
+def edit_recipe():
+    return render_template("edit_recipe.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
