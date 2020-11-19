@@ -2,6 +2,7 @@
 
 body  {
     font-size: 18px;
+    color: #3f602d !important;
 }
 
 .page-heading {
@@ -407,7 +408,7 @@ color: black;
     margin-top: 20px;
     font-weight: 700;
     font-size: 20px;
-    background: #ff5f5f;
+    background: #d73d77;
 }
 
 ::-webkit-scrollbar {
