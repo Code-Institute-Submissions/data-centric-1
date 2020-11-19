@@ -138,7 +138,7 @@ nav form {
 
 .contact > a {
     background: white;
-    color: #649c3e;
+    color: #4f7b31;
     font-weight: 900;
     position: relative;
     top: 15px;
@@ -151,7 +151,7 @@ footer {
 }
 
 .fa-inverse {
-	color: #649c3e;
+	color: #4f7b31;
 }
 
 .fa-stack-2x {
@@ -159,11 +159,11 @@ footer {
 }
 
 .fa-inverse:hover {
-    color: #95e65f;
+    color: #80c552;
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover {
-    background-color: #ddfac9;
+    background-color: #cef7b2;
 }
 
 /*-------------------------------------navbars from start.html*/
