@@ -13,22 +13,22 @@
           <div class="col s12 input-field">
                 <i class="fas fa-image prefix"></i>
                 <!--I used the regex code for checking URL from this site: https://www.regextester.com/93652-->
-                <input id="image" name="image" type="text" class="validate" required pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$">
+                <input id="image" value="{{ recipe.image }}" name="image" type="text" class="validate" required pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$">
                 <label for="image">URL link address for image</label>
             </div>
              <div class="col s12 input-field">
                <i class="fas fa-utensils prefix"></i>
-                <input id="recipe_name" name="recipe_name" type="text" class="validate" required>
+                <input id="recipe_name" value="{{ recipe.recipe_name }}" name="recipe_name" type="text" class="validate" required>
                 <label for="recipe_name">Recipe Name</label>
             </div>
             <div class="col s12 m6 input-field">
                 <i class="fas fa-user prefix"></i>
-                <input id="added_by" name="added_by" type="text" class="validate" required pattern="^[a-zA-Z]+$">
+                <input id="added_by" value="{{ recipe.added_by }}" name="added_by" type="text" class="validate" required pattern="^[a-zA-Z]+$">
                 <label for="added_by">Your Name</label>
             </div>
             <div class="col s12 m6 input-field">
                 <i class="far fa-clock prefix"></i>
-                <input id="time" name="time" type="text" class="validate" required minlength="1" maxlength="3" pattern="^[0-9]+$">
+                <input id="time" value="{{ recipe.time }}" name="time" type="text" class="validate" required minlength="1" maxlength="3" pattern="^[0-9]+$">
             <label for="time">Time in minutes</label>
         </div>
             <!--category-->
@@ -64,102 +64,102 @@
         <div class="row row-ingredients">
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient1" name="ingredients" type="text" class="validate" minlength="1" required>
+                <input id="ingredient1" value="{{ recipe.ingredients[0] }}" name="ingredients" type="text" class="validate" minlength="1" required>
                 <label for="ingredient1" >Ingredient 1</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient2" name="ingredients" type="tel" class="validate" minlength="1" required>
+                <input id="ingredient2" value="{{ recipe.ingredients[1] }}" name="ingredients" type="tel" class="validate" minlength="1" required>
                 <label for="ingredient2">Ingredient 2</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient3" name="ingredients" type="text" class="validate">
+                <input id="ingredient3" value="{{ recipe.ingredients[2] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient3">Ingredient 3</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient4" name="ingredients" type="tel" class="validate">
+                <input id="ingredient4" value="{{ recipe.ingredients[3] }}" name="ingredients" type="tel" class="validate">
                 <label for="ingredient4">Ingredient 4</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient5" name="ingredients" type="text" class="validate">
+                <input id="ingredient5" value="{{ recipe.ingredients[4] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient5">Ingredient 5</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient6" name="ingredients" type="tel" class="validate">
+                <input id="ingredient6" value="{{ recipe.ingredients[5] }}" name="ingredients" type="tel" class="validate">
                 <label for="ingredient6">Ingredient 6</label>
             </div>
                 <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient7" name="ingredients" type="text" class="validate">
+                <input id="ingredient7" value="{{ recipe.ingredients[6] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient7">Ingredient 7</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient8" name="ingredients" type="tel" class="validate">
+                <input id="ingredient8" value="{{ recipe.ingredients[7] }}" name="ingredients" type="tel" class="validate">
                 <label for="ingredient8">Ingredient 8</label>
             </div>
                 <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient9" name="ingredients" type="text" class="validate">
+                <input id="ingredient9" value="{{ recipe.ingredients[8] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient9">Ingredient 9</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient10" name="ingredients" type="text" class="validate">
+                <input id="ingredient10" value="{{ recipe.ingredients[9] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient10">Ingredient 10</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient11" name="ingredients" type="text" class="validate">
+                <input id="ingredient11" value="{{ recipe.ingredients[10] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient11">Ingredient 11</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient12" name="ingredients" type="text" class="validate">
+                <input id="ingredient12" value="{{ recipe.ingredients[11] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient10">Ingredient 12</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient13" name="ingredients" type="text" class="validate">
+                <input id="ingredient13" value="{{ recipe.ingredients[12] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient13">Ingredient 13</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient14" name="ingredients" type="text" class="validate">
+                <input id="ingredient14" value="{{ recipe.ingredients[13] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient14">Ingredient 14</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient15" name="ingredients" type="text" class="validate">
+                <input id="ingredient15" value="{{ recipe.ingredients[14] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient15">Ingredient 15</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient16" name="ingredients" type="text" class="validate">
+                <input id="ingredient16" value="{{ recipe.ingredients[15] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient16">Ingredient 16</label>
             </div>
             <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient17" name="ingredients" type="text" class="validate">
+                <input id="ingredient17" value="{{ recipe.ingredients[16] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient17">Ingredient 17</label>
             </div>
              <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient18" name="ingredients" type="text" class="validate">
+                <input id="ingredient18" value="{{ recipe.ingredients[17] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient18">Ingredient 18</label>
             </div>
                <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient19" name="ingredients" type="text" class="validate">
+                <input id="ingredient19" value="{{ recipe.ingredients[18] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient19">Ingredient 19</label>
             </div>
                <div class="input-field col s6">
                 <i class="fas fa-lemon prefix"></i>
-                <input id="ingredient20" name="ingredients" type="text" class="validate">
+                <input id="ingredient20" value="{{ recipe.ingredients[19] }}" name="ingredients" type="text" class="validate">
                 <label for="ingredient20">Ingredient 20</label>
             </div>
         </div><!--/row-ingredients-->
