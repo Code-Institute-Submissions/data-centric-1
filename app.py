@@ -85,14 +85,10 @@ def add_recipe():
     return render_template("add_recipe.html")
 
 
-@app.route("/my_recipes")
-def my_recipes():
-    return render_template("my_recipes.html")
-
-
-@app.route("/edit_recipe")
-def edit_recipe():
-    return render_template("edit_recipe.html")
+@app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
+def edit_recipe(recipe_id):
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("edit_recipe.html", recipe=recipe)
 
 
 if __name__ == "__main__":
