@@ -1,33 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yogic Recipes - Start</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-</head>
-<body>
-
-    <!-- Dropdown 1 -->
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="{{ url_for('breakfast') }}">BREAKFAST</a></li>
-        <li><a href="{{ url_for('meals') }}">MEALS</a></li>
-        <li><a href="{{ url_for('desserts') }}">DESSERTS</a></li>
-        <li><a href="{{ url_for('smoothies') }}">SMOOTHIES</a></li>
-    </ul>
-
-    <!-- Dropdown 2 -->
-    <ul id="dropdown2" class="dropdown-content">
-        <li><a href="{{ url_for('breakfast') }}">BREAKFAST</a></li>
-        <li><a href="{{ url_for('meals') }}">MEALS</a></li>
-        <li><a href="{{ url_for('desserts') }}">DESSERT</a></li>
-        <li><a href="{{ url_for('smoothies') }}">SMOOTHIES</a></li>
-    </ul>
-    
-    <!--logo & menu-->
+{% extends "base.html" %}
+{% block start %}
     <nav class="nav-color nav-border">
         <div class="nav-wrapper nav-border">
             <a href="{{ url_for('start') }}" class="logo">
@@ -146,59 +118,4 @@
         </div>
     </div>
 
-    <!--footer-->
-    <footer>
-        <div class="row footer">
-            <div class="col s12 m4 contact">
-                <!-- Modal Trigger -->
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Contact</a>
-                <!-- Modal Structure -->
-                <div id="modal1" class="modal">
-                    <div class="modal-content">
-                        <h4>Modal Header</h4>
-                        <p>A bunch of text</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4">
-                <ul id="footer-icons">
-                    <li>
-                        <span class="fa-stack fa-1x">
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                            </a>
-                        </span>
-                    </li>
-                    <li> 
-                        <span class="fa-stack fa-1x">
-                            <a href="https://www.youtube.com/" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-                            </a>
-                        </span>
-                    </li>
-                     <li> 
-                        <span class="fa-stack fa-1x">
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram-square fa-stack-1x fa-inverse"></i>
-                            </a>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <div class="col s12 m4 copy">
-                <p>&copy; Daniela Krstevska</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-</body>
-</html>
+    {% endblock %}
