@@ -433,6 +433,10 @@ color: black;
     background: #d73d77;
 }
 
+.flash {
+    font-size: 25px; 
+}
+
 ::-webkit-scrollbar {
   width: 17px;
 }

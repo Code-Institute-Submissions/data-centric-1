@@ -79,10 +79,8 @@ def add_recipe():
             "added_by": request.form.get("added_by")
         }
 
-        print(recipe)
-
         mongo.db.recipes.insert_one(recipe)
-        flash("Recipe Successfully Added")
+        flash("Your Recipe was Successfully Added!")
 
     return render_template("add_recipe.html")
 
