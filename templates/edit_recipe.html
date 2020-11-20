@@ -28,7 +28,7 @@
             </div>
             <div class="col s12 m6 input-field">
                 <i class="far fa-clock prefix"></i>
-                <input id="time" value="{{ recipe.time }}" name="time" type="text" class="validate" required minlength="1" maxlength="3" pattern="^[0-9]+$">
+                <input id="time" value="{{ recipe.time[:2] }}" name="time" type="text" class="validate" required minlength="1" maxlength="3" pattern="^[0-9]+$">
             <label for="time">Time in minutes</label>
         </div>
             <!--category-->
@@ -168,64 +168,84 @@
             <div class="col s12">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
-                    <textarea id="1" name="instructions" class="materialize-textarea validate" minlength="1" required></textarea>
+                    <textarea id="1" name="instructions" class="materialize-textarea validate" minlength="1" required>
+                    {{- recipe.instructions[0] -}}
+                    </textarea>
                     <label for="1">Instruction 1</label>
                 </div>
             </div>
              <div class="col s12">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
-                    <textarea id="2" name="instructions" class="materialize-textarea validate" minlength="1"></textarea>
+                    <textarea id="2" name="instructions" class="materialize-textarea validate" minlength="1">
+                     {{- recipe.instructions[1] -}}
+                    </textarea>
                     <label for="2">Instruction 2</label>
                 </div>
             </div>
              <div class="col s12">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
-                    <textarea id="3" name="instructions" class="materialize-textarea validate"></textarea>
+                    <textarea id="3" name="instructions" class="materialize-textarea validate">
+                     {{- recipe.instructions[2] -}}
+                    </textarea>
                     <label for="3">Instruction 3</label>
                 </div>
             </div>
              <div class="col s12">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
-                    <textarea id="4" name="instructions" class="materialize-textarea validate"></textarea>
+                    <textarea id="4" name="instructions" class="materialize-textarea validate">
+                    {{- recipe.instructions[3] -}} 
+                    </textarea>
                     <label for="4">Instruction 4</label>
                 </div>
             </div>
              <div class="col s12">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
-                    <textarea id="5" name="instructions" class="materialize-textarea validate"></textarea>
+                    <textarea id="5" name="instructions" class="materialize-textarea validate">
+                    {{- recipe.instructions[4] -}}
+                    </textarea>
                     <label for="5">Instruction 5</label>
                 </div>
             </div>
              <div class="col s12">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
-                    <textarea id="6" name="instructions" class="materialize-textarea validate"></textarea>
+                    <textarea id="6" name="instructions" class="materialize-textarea validate">
+                    {{- recipe.instructions[5] -}}
+                    </textarea>
                     <label for="6">Instruction 6</label>
                 </div>
             </div>
              <div class="col s12">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
-                    <textarea id="7" name="instructions" class="materialize-textarea validate"></textarea>
+                    <textarea id="7" name="instructions" class="materialize-textarea validate">
+                    {{- recipe.instructions[6] -}}
+                    </textarea>
                     <label for="7">Instruction 7</label>
                 </div>
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
-                    <textarea id="8" name="instructions" class="materialize-textarea validate"></textarea>
+                    <textarea id="8" name="instructions" class="materialize-textarea validate">
+                    {{- recipe.instructions[7] -}}
+                    </textarea>
                     <label for="8">Instruction 8</label>
                 </div>
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
-                    <textarea id="9" name="instructions" class="materialize-textarea validate"></textarea>
+                    <textarea id="9" name="instructions" class="materialize-textarea validate">
+                    {{- recipe.instructions[8] -}}
+                    </textarea>
                     <label for="9">Instruction 9</label>
                 </div>
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
-                    <textarea id="10" name="instructions" class="materialize-textarea validate"></textarea>
+                    <textarea id="10" name="instructions" class="materialize-textarea validate">
+                    {{- recipe.instructions[9] -}}
+                    </textarea>
                     <label for="10">Instruction 10</label>
                 </div>
             </div>
