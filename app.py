@@ -16,7 +16,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 """I copied most of the code above to set up flask from line 1 to 16
-& the last line from the 2020 task manager mini project videos """
+& the last "if__name__" code from Tims 2020 Task Manager videos """
 
 
 @app.route("/")
@@ -85,8 +85,27 @@ def add_recipe():
     return render_template("add_recipe.html")
 
 
+# I used Tims Task Manager videos as reference for setting up
+# the code to update a recipe and customized it for my own needs
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+    if request.method == "POST":
+        update_recipe = {
+            "category": request.form.get("category"),
+            "image": request.form.get("image"),
+            "time": request.form.get("time") + " minutes",
+            "portions": request.form.get("portions"),
+            "recipe_name": request.form.get("recipe_name"),
+            "ingredients": list(filter(None, request.form.getlist(
+                "ingredients"))),
+            "instructions": list(filter(None, request.form.getlist(
+                "instructions"))),
+            "added_by": request.form.get("added_by")
+        }
+
+        mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, update_recipe)
+        flash("Your Recipe was Successfully Updated!")
+
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("edit_recipe.html", recipe=recipe)
 
