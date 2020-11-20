@@ -135,8 +135,8 @@ nav form {
 
 .contact > a {
     background: white;
-    color: #4f7b31;
-    font-weight: 900;
+    color: #8b4444;
+    font-weight: 800;
     position: relative;
     top: 15px;
 }
@@ -147,8 +147,12 @@ footer {
     position: absolute;
 }
 
+.row.row-form {
+    margin-bottom: 0;
+}
+
 .fa-inverse {
-	color: #4f7b31;
+	color: #8b4444;
 }
 
 .fa-stack-2x {
@@ -156,11 +160,12 @@ footer {
 }
 
 .fa-inverse:hover {
-    color: #80c552;
+	color: #c46363;
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover {
-    background-color: #cef7b2;
+	color: white;
+    background-color: #c46363;
 }
 
 /*-------------------------------------navbars from start.html*/
@@ -398,13 +403,13 @@ td {
 
 .input-field .prefix {
     font-size: 20px;
-    color: #9040aa;
+    color: #ea4fb5;
 }
 
 .select-wrapper input.select-dropdown,
 .time {
 font-size: 18px;
-color: black;
+/*color: black;*/
 }
 
 .row-ingredients,
@@ -414,12 +419,12 @@ color: black;
 }
 
 .input-field > label {
-    color: #877878;
+    color:#3f602d;
     font-size: 18px; 
 }
 
 .input-field > label > strong {
-    color: black;
+    color: #3f602d;
 }
 
 .row-form {
