@@ -15,8 +15,7 @@
         <div class="row">
           <div class="col s12 input-field">
                 <i class="fas fa-image prefix"></i>
-                <!--I used the regex code for checking URL from this site: https://www.regextester.com/93652-->
-                <input id="image" name="image" type="text" class="validate" required pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$">
+                <input id="image" name="image" type="text" class="validate" required minlength="8">
                 <label for="image">URL link address for image</label>
             </div>
              <div class="col s12 input-field">
