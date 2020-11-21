@@ -7,14 +7,19 @@
     </div>
 </div>
 
+<div class="row">
+    <div class="col s12 m10 offset-m1 l6 offset-l3">
+        <a href="{{ url_for(recipe.category.lower()) }}" 
+        class="waves-effect waves-light btn-large back-button teal"><i class="fas fa-times-circle"></i> Cancel</a>
+    </div>
+</div>
+
 <div class="row row-form">
     <form class="col s12 m10 offset-m1 l6 offset-l3 form-bg" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
         <div class="row">
           <div class="col s12 input-field">
                 <i class="fas fa-image prefix"></i>
-                <!--I used the regex code for checking URL from this site: https://www.regextester.com/93652-->
-                <input id="image" value="{{ recipe.image }}" name="image" type="text" class="validate" required pattern=
-                "^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$">
+                <input id="image" value="{{ recipe.image }}" name="image" type="text" class="validate" minlength="8">
                 <label for="image">URL link address for image</label>
             </div>
              <div class="col s12 input-field">
@@ -46,6 +51,7 @@
                     <option value="DESSERTS">DESSERTS</option>
                     <option value="SMOOTHIES">SMOOTHIES</option>
                 </select>
+            </div>
             <!--portions-->
             <div class="input-field col s12 m6">
             <i class="fas fa-mortar-pestle prefix"></i>
