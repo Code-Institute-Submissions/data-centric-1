@@ -38,27 +38,32 @@
             <i class="fas fa-folder-open prefix"></i>
                <select id="category" name="category" class="validate" required>
                     <option value="" disabled selected>Choose Category</option>
+                    {% if recipe.category %}
+                            <option value="{{ recipe.category }}" selected>{{ recipe.category }}</option>
+                        {% endif %}
                     <option value="BREAKFAST">BREAKFAST</option>
                     <option value="MEALS">MEALS</option>
                     <option value="DESSERTS">DESSERTS</option>
                     <option value="SMOOTHIES">SMOOTHIES</option>
                 </select>
-            </div>
             <!--portions-->
             <div class="input-field col s12 m6">
             <i class="fas fa-mortar-pestle prefix"></i>
                <select id="portions" name="portions" class="validate" required>
                     <option value="" disabled selected>Choose Portions</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
+                        {% if recipe.portions %}
+                            <option value="{{ recipe.portions }}" selected>{{ recipe.portions }}</option>
+                        {% endif %}
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                 </select>
             </div>
         </div>
