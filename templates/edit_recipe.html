@@ -4,6 +4,9 @@
 <div class="row">
     <div class="col s12 center-align">
         <h5 class="page-heading">EDIT RECIPE</h5>
+        {% for flash in get_flashed_messages() %}
+            <p class="flash">{{ flash }} </p>
+        {% endfor %}
     </div>
 </div>
 
