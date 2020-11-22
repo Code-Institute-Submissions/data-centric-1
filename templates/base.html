@@ -33,11 +33,11 @@
 
     <nav class="transparent" id="nav">
         <div class="nav-wrapper">
-            <form>
+            <form action="{{ url_for('search') }}" method="POST">
                 <div class="row">
                     <div class="col s12 m6 l6 input-field">
-                        <input id="search" type="search" required>
-                        <label class="label-icon" for="search"><i class="fas fa-search" id="icon-search"></i></label>
+                        <input id="index_search" type="search" name="index_search" minlength="2" required>
+                        <label class="label-icon" for="index_search"><a href="{{ url_for('breakfast') }}"><i class="fas fa-search" id="icon-search"></i></a></label>
                     </div>
                     <div class="col s12 m6 l6 fruits">
                         <ul id="fruits">
@@ -47,7 +47,8 @@
                         </ul>
                     </div>
                 </div>
-            </form>
+             </form>
+           
 
             <a href="{{ url_for('start') }}" class="logo">
                 <i class="fas fa-seedling"></i>
