@@ -275,7 +275,7 @@
                     <div class="modal-content">
                         <h5>Are you sure you want to Delete this Recipe?</h5>
                         <div>
-                            <button class="waves-effect waves-light btn red lighten-1" type="submit" name="action">Yes Delete</button>
+                           <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn red lighten-1">Yes Delete</a>
                             <a href="#!" class="modal-close waves-effect waves-green light-green darken-1 btn">No cancel</a>
                         </div>
                     </div>
