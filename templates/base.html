@@ -17,6 +17,7 @@
         <li><a href="{{ url_for('meals') }}">MEALS</a></li>
         <li><a href="{{ url_for('desserts') }}">DESSERTS</a></li>
         <li><a href="{{ url_for('smoothies') }}">SMOOTHIES</a></li>
+        <li><a href="{{ url_for('all_recipes') }}">ALL RECIPES</a></li>
     </ul>
 
     <!-- Dropdown 2 -->
@@ -25,6 +26,7 @@
         <li><a href="{{ url_for('meals') }}">MEALS</a></li>
         <li><a href="{{ url_for('desserts') }}">DESSERT</a></li>
         <li><a href="{{ url_for('smoothies') }}">SMOOTHIES</a></li>
+        <li><a href="{{ url_for('all_recipes') }}">ALL RECIPES</a></li>
     </ul>
 
     {% block start %}
@@ -35,7 +37,7 @@
         <div class="nav-wrapper">
             <form action="{{ url_for('search') }}" method="POST">
                 <div class="row">
-                    <div class="col s12 m6 l6 input-field">
+                    <div class="col s12 m6 l3 input-field">
                         <input id="index_search" type="search" name="index_search" minlength="2" required>
                         <label class="label-icon" for="index_search"><a href="{{ url_for('breakfast') }}"><i class="fas fa-search" id="icon-search"></i></a></label>
                     </div>
