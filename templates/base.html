@@ -33,7 +33,7 @@
 
     <div class="bg-color">
         <nav class="nav-wrapper transparent" id="nav">
-            <div class="row">
+            <div class="row nav-row">
                 <form class="col s12 m6 l3 input-field" action="{{ url_for('search') }}" method="POST">
                     <input id="index_search" type="search" name="index_search" minlength="2" required>
                     <label class="label-icon" for="index_search">
@@ -71,7 +71,7 @@
         </ul>
        {% block code %}
     {% endblock %}
-    
+
     </div> <!--bg-color-->
  
     {% endblock %}
