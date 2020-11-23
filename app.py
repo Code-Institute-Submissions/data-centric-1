@@ -71,6 +71,12 @@ def smoothies():
         "category.html", categories=categories, category_name=category_name)
 
 
+@app.route("/all_recipes")
+def all_recipes():
+    all_recipes = mongo.db.recipes.find()
+    return render_template("all_recipes.html", all_recipes=all_recipes)
+
+
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
