@@ -32,50 +32,48 @@
     {% block start %}
 
     <div class="bg-color">
-
-    <nav class="transparent" id="nav">
-        <div class="nav-wrapper">
-            <form action="{{ url_for('search') }}" method="POST">
-                <div class="row">
-                    <div class="col s12 m6 l3 input-field">
-                        <input id="index_search" type="search" name="index_search" minlength="2" required>
-                        <label class="label-icon" for="index_search"><a href="{{ url_for('breakfast') }}"><i class="fas fa-search" id="icon-search"></i></a></label>
-                    </div>
-                    <div class="col s12 m6 l6 fruits">
-                        <ul id="fruits">
-                            <li><i class="fab fa-raspberry-pi"></i></li>
-                            <li><i class="far fa-lemon"></i></li>
-                            <li><i class="fas fa-apple-alt"></i></li>
-                        </ul>
-                    </div>
+        <nav class="nav-wrapper transparent" id="nav">
+            <div class="row">
+                <form class="col s12 m6 l3 input-field" action="{{ url_for('search') }}" method="POST">
+                    <input id="index_search" type="search" name="index_search" minlength="2" required>
+                    <label class="label-icon" for="index_search">
+                        <a href="{{ url_for('all_recipes') }}">
+                            <i class="fas fa-search" id="icon-search"></i>
+                        </a>
+                    </label>
+                </form>
+                <div class="col s12 m4 l9 fruits">
+                    <ul id="fruits">
+                        <li><i class="fab fa-raspberry-pi"></i></li>
+                        <li><i class="far fa-lemon"></i></li>
+                        <li><i class="fas fa-apple-alt"></i></li>
+                    </ul>
                 </div>
-             </form>
+            </div><!--/row-->
            
-
             <a href="{{ url_for('start') }}" class="logo">
-                <i class="fas fa-seedling"></i>
-                YOGIC RECIPES
+                <i class="fas fa-seedling"></i> YOGIC RECIPES
             </a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="fas fa-bars"></i>
             </a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="{{ url_for('start') }}">START</a></li>
                 <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">RECIPES <i class="fas fa-caret-down"></i></a></li>
                 <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="{{ url_for('start') }}">START</a></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES <i class="fas fa-caret-down"></i></a></li>
-        <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
-    </ul>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="{{ url_for('start') }}">START</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES <i class="fas fa-caret-down"></i></a></li>
+            <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
+        </ul>
        {% block code %}
     {% endblock %}
+    
     </div> <!--bg-color-->
  
-
     {% endblock %}
 
     <footer>
