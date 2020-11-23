@@ -25,18 +25,24 @@ def start():
     return render_template("start.html")
 
 
+@app.route("/all_recipes")
+def all_recipes():
+    all_recipes = mongo.db.recipes.find()
+    return render_template("all_recipes.html", all_recipes=all_recipes)
+
+
 @app.route("/search", methods=["GET", "POST"])
 def search():
-    index_search = request.form.get("search")
-    search_recipes = list(mongo.db.recipes.find({
-        "$text": {"$search": index_search}}))
-    return render_template("recipe_detail.html", search_recipes=search_recipes)
+    index_search = request.form.get("index_search")
+    all_recipes = mongo.db.recipes.find({
+        "$text": {"$search": index_search}})
+    return render_template("all_recipes.html", all_recipes=all_recipes)
 
 
 @app.route("/recipes/<id_for_recipe>")
 def recipes(id_for_recipe):
     recipe = mongo.db.recipes.find_one({"_id":  ObjectId(id_for_recipe)})
-    return render_template("recipe._detail.html", recipe=recipe)
+    return render_template("recipe_detail.html", recipe=recipe)
 
 
 @app.route("/breakfast")
@@ -69,12 +75,6 @@ def smoothies():
     category_name = "SMOOTHIES"
     return render_template(
         "category.html", categories=categories, category_name=category_name)
-
-
-@app.route("/all_recipes")
-def all_recipes():
-    all_recipes = mongo.db.recipes.find()
-    return render_template("all_recipes.html", all_recipes=all_recipes)
 
 
 @app.route("/add_recipe", methods=["GET", "POST"])
