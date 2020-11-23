@@ -34,15 +34,12 @@
     <div class="bg-color">
         <nav class="nav-wrapper transparent" id="nav">
             <div class="row nav-row">
-                <form class="col s12 m6 l3 input-field" action="{{ url_for('search') }}" method="POST">
-                    <input id="index_search" type="search" name="index_search" minlength="2" required>
-                    <label class="label-icon" for="index_search">
-                        <a href="{{ url_for('all_recipes') }}">
-                            <i class="fas fa-search" id="icon-search"></i>
-                        </a>
-                    </label>
+                <form class="col s12 m6 l4 input-field" action="{{ url_for('search') }}" method="POST">
+                    <button type="submit" class="btn green"><i class="fas fa-search"></i></button>
+                    <input id="index_search" type="text" name="index_search" minlength="1" required>
+                    <a href="{{ url_for('all_recipes') }}" class="btn green"><i class="fas fa-undo-alt"></i></a>
                 </form>
-                <div class="col s12 m4 l9 fruits">
+                <div class="col s12 m6 l8 fruits">
                     <ul id="fruits">
                         <li><i class="fab fa-raspberry-pi"></i></li>
                         <li><i class="far fa-lemon"></i></li>
@@ -69,11 +66,11 @@
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES <i class="fas fa-caret-down"></i></a></li>
             <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
         </ul>
-       {% block code %}
+    {% block code %}
     {% endblock %}
 
     </div> <!--bg-color-->
- 
+
     {% endblock %}
 
     <footer>
