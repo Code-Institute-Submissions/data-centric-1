@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col s12 recipe-buttons offset-s2.5">
         <a href="{{ url_for(recipe.category.lower()) }}" 
-        class="waves-effect waves-light btn-large back-button"><i class="fas fa-reply left"></i>Go Back</a>
+        class="waves-effect waves-light btn-large back-button"><i class="fas fa-reply left"></i>To {{ recipe.category.upper() }}</a>
         <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" 
         class="waves-effect waves-light btn-large edit-button"><i class="far fa-edit"></i> Edit Recipe</a>
     </div>
