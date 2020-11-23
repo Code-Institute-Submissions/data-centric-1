@@ -1,19 +1,17 @@
 {% extends "base.html" %}
 {% block start %}
-    <nav class="nav-color nav-border">
-        <div class="nav-wrapper nav-border">
-            <a href="{{ url_for('start') }}" class="logo">
-                 <i class="fas fa-seedling"></i>
-                YOGIC RECIPES
-            </a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="{{ url_for('start') }}">START</a></li>
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">RECIPES <i class="fas fa-caret-down"></i></a></li>
-                <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
-            </ul>
-        </div>
+    <nav class="nav-color nav-border nav-wrapper">
+        <a href="{{ url_for('start') }}" class="logo">
+            <i class="fas fa-seedling"></i> YOGIC RECIPES
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="fas fa-bars"></i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="{{ url_for('start') }}">START</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">RECIPES <i class="fas fa-caret-down"></i></a></li>
+            <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
+        </ul>
     </nav>
 
     <!--for mobile menu-->
@@ -26,35 +24,31 @@
     <div class="hero-container">
         <!--hero img-->
         <div class="hero-img"></div>
-        <div class="info-box">
+        <div class="info-box col s12 m6 l4">
             <p>EXPLORE POSITIVE PRANIC RECIPES</p>
         </div>
     </div>
 
     <!--search input-->
-    <nav class="nav-search transparent">
-        <div class="nav-wrapper nav-search">
-            <form>
-                <div class="row">
-                    <div class="col s12 m6 l6 input-field">
-                        <input id="search" type="search" required>
-                        <label class="label-icon" for="search"><i class="fas fa-search"></i></label>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </nav>
+    <div class="row nav-row nav-search nav-wrapper">
+        <form class="col s12 input-field form-start" action="{{ url_for('search') }}" method="POST">
+            <button type="submit" class="btn search-start"><i class="fas fa-search"></i></button>
+            <input id="index_search" type="text" name="index_search" minlength="1" required>
+            <a href="{{ url_for('all_recipes') }}" class="btn search-start"><i class="fas fa-undo-alt"></i></a>
+        </form>
+    </div>
+    
 
     <!--About section-->
     <div class="row">
         <div class="col s12 center-align">
             <section>
-                <h5 class="page-heading">ABOUT</h5>
+                <h5 class="about-heading">ABOUT</h5>
             </section>
         </div>
         <div class="col s12 m6 l6">
             <section>
-                <h6 class="center-align"><i class="fas fa-question-circle"></i> WELCOME TO YOGIC RECIPES</h6>
+                <h6 class="center-align"><i class="fas fa-question"></i> WELCOME TO YOGIC RECIPES</h6>
                 <p> Here you can view Positive Pranic food recipes, also known as the "Yogic" and "Sattvic" diet, 
                 which is a diet commonly adapted by yogis, sages and spirituals. The Yogic diet is split into 
                 the three food categories: <strong>Positive Pranic</strong> (Gives you energy), <strong>Zero Pranic</strong> (Makes you lethargic) 
