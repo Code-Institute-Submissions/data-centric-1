@@ -122,6 +122,10 @@ nav form {
     height: 270px !important;
 }
 
+.clear { 
+height: 48px !important;
+}
+
 /*-------------------------------------footer*/
 
 #footer-icons > li {
@@ -391,17 +395,20 @@ td {
 }
 
 .back-button {
-    margin-right: 105px;
     background: #a0ab31;
     font-weight: bold;
     line-height: 1;
 }
 
 .edit-button {
-    line-height: 1;
-    margin-left: 105px; 
+    line-height: 1; 
     background: green;
     font-weight: bold;
+    float: right;
+}
+
+.recipe-detail-buttons {
+    width: 600px;
 }
 
 /*-------------------------------------add_recipe.html */
