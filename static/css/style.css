@@ -66,7 +66,6 @@ nav ul a,
 }
 
 .fas.fa-search {
-    color: #3f602d;
     font-size: 20px;
 }
 
@@ -86,11 +85,12 @@ nav ul a,
     height: 50px !important;
 }
 
-.nav-wrapper .input-field input[type=search] {
+.nav-wrapper .input-field input[type=text] {
     height: 37px;
     background: #ffffffd4;
     border-radius: 4px;
     margin-top: 10px;
+    width: 300px;
 }
 
 .fas.fa-search {
@@ -122,8 +122,13 @@ nav form {
     height: 270px !important;
 }
 
-.clear { 
-height: 48px !important;
+form > button,
+form > a { 
+    margin-bottom: 7px;
+}
+
+.start-bg-color {
+    background-color: white !important;
 }
 
 /*-------------------------------------footer*/
@@ -202,8 +207,12 @@ footer {
 
 .nav-search {
     position: relative;
-    top: -30px;
+    top: -77px;
     height: 1px;
+}
+
+.search-start{
+    background: rgb(37 26 94 / 61%);
 }
 
 /*-------------------------------------hero-img & info-box from start.html */
@@ -243,14 +252,14 @@ footer {
     position: relative;
     z-index: 20;
     top: -227px;
-    width: 306px;
     color: white;
-    left: 15px;
+    left: 67px;
     padding-top: 1px;
     padding-bottom: 1px;
     text-shadow: 2px 2px 2px #a52a59;
     border-radius: 10px;
     font-weight: 700;
+    width: 300px;
 }
 
 /*-------------------------------------About section from start.html*/
@@ -262,7 +271,7 @@ section > p {
 }
 
 .fab.fa-whmcs, 
-.fas.fa-question-circle {
+.fas.fa-question {
     font-weight: 600;
     font-size: 27px;
     padding-right: 10px;
@@ -312,6 +321,14 @@ h6, h5 {
 .video > .col {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.about-heading {
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    color: #4f6069f2;
 }
 
 /*-------------------------------------recipe_detail.html */
@@ -593,22 +610,14 @@ font-size: 18px;
         display: none;
     }
 
-    .nav-wrapper .input-field input[type=search] {
+    .nav-wrapper .input-field input[type=text] {
         background: #ffffff9e;
     }
 
-     .nav-search .input-field input[type=search] {
+     .nav-search .input-field input[type=text] {
         margin-top: 35px;
         width: 200px;
         background: #ffffff9e;
-    }
-
-    .fas.fa-search {
-        margin-top: 44px;
-    }
-
-    #icon-search {
-        margin-top: 19px;
     }
 
     h5 {
