@@ -406,26 +406,28 @@ td {
     margin-bottom: 0;
 }
 
-.recipe-buttons {
+.col-recipe-buttons {
     margin-top: 60px;
     margin-bottom: 0;
+} 
+
+.col-recipe-buttons > a {
+    margin: 8px;
+    font-weight: bold;
+    height: 50px;
+    padding-top: 7px;
 }
 
-.back-button {
+.all-button {
+    background: #887c13;
+}
+
+.breakfast-button {
     background: #a0ab31;
-    font-weight: bold;
-    line-height: 1;
 }
 
 .edit-button {
-    line-height: 1; 
     background: green;
-    font-weight: bold;
-    float: right;
-}
-
-.recipe-detail-buttons {
-    width: 600px;
 }
 
 /*-------------------------------------add_recipe.html */
