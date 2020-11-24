@@ -81,8 +81,29 @@
                 <!-- Modal Structure -->
                 <div id="modal1" class="modal">
                     <div class="modal-content">
-                        <h4>Modal Header</h4>
-                        <p>A bunch of text</p>
+                         <!-- Contact Form -->
+                        <h5 class="center-align"><i class="fas fa-envelope"></i> danikrs8@gmail.com</h5>
+                        <form class="row">
+                            <div class="input-field col s12">
+                                <i class="fas fa-user-circle prefix"></i>
+                                <input placeholder="Name" id="first_name" type="text" pattern="^[a-zA-Z]+$" class="validate" required>
+                                <label for="first_name">First Name</label>
+                                <span class="helper-text" data-error="Please write your name" data-success="Name valid"></span>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="fas fa-envelope prefix"></i>
+                                <input placeholder="Email" id="email" type="email" class="validate" 
+                                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>  <!--pattern for email was taken from this post: https://stackoverflow.com/questions/5601647/html5-email-input-pattern-attribute-->
+                                <label for="email">Email</label>
+                                <span class="helper-text" data-error="Please write your email" data-success="Email valid"></span>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="fas fa-pencil-alt prefix"></i>
+                                <textarea id="textarea1" class="materialize-textarea" minlength="8" placeholder="Message" required></textarea>
+                                <label for="textarea1">Message</label>
+                                <span class="helper-text" data-error="Please write something more" data-success="Message valid"></span>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
