@@ -438,10 +438,11 @@ td {
 } 
 
 .col-recipe-buttons > a {
-    margin: 8px;
     font-weight: bold;
     height: 50px;
     padding-top: 7px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .all-button {
@@ -637,4 +638,12 @@ font-size: 18px;
         padding-left: 20px;
         padding-right: 20px;
     }
+}
+
+@media screen and (max-width: 710px) {
+  .col-recipe-buttons > a {
+        margin-left: 0;
+        margin-right: 0;
+        margin: 7px;
+}
 }
