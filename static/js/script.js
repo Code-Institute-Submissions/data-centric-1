@@ -3,6 +3,8 @@ $(document).ready(function(){
     $(".dropdown-trigger").dropdown({ hover: false });
     $('.modal').modal();
     $('select').formSelect();
+    $('#textarea1').val('New Text');
+    M.textareaAutoResize($('#textarea1'));
 
     // I copied the validateMaterializeSelect() function from Tims tutorial Task maneger videos
     // to make the validation work on the select from Materialize
