@@ -1,9 +1,10 @@
+/*-------Materialize jQuery------*/ 
 $(document).ready(function(){
     $('.sidenav').sidenav();
     $(".dropdown-trigger").dropdown({ hover: false });
     $('.modal').modal();
     $('select').formSelect();
-    $('#textarea1').val('New Text');
+    $('#textarea1').val('');
     M.textareaAutoResize($('#textarea1'));
 
     // I copied the validateMaterializeSelect() function from Tims tutorial Task maneger videos
@@ -37,6 +38,25 @@ $(document).ready(function(){
     }
 });
 
+/*-------Email JS------*/ 
+function sendEmail() {
+    $("#message-sent").addClass("loader");
+  emailjs
+    .send("gmail", "template_TKAjL7PE", {
+      name: document.querySelector("#first_name").value,
+      email: document.querySelector("#email").value,
+      message: document.querySelector("#textarea1").value,
+    })
+    .then(  //the, "then", "function(response/error), "return false" code was used from the Code Institute lesson JSEmail
+      function (response) {
+        $("#message-sent").removeClass("loader").html("Message Successfully sent!");
+      },
+      function (error) {
+        $("#message-sent").removeClass("loader").css("color", "#E91E63").html("Message failed to send");
+      }
+    );
+  return false; // To block from loading a new page
+}
 
 
 
