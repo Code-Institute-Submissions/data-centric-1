@@ -1,35 +1,46 @@
 {% extends "base.html" %}
 {% block code %}
 
-<div class="row">
-    <div class="col s12 center-align"> 
-        <h5 class="page-heading">
-            ALL RECIPES
-        </h5>
+    {% if all_recipes|length > 0 %} 
+    <div class="row">
+        <div class="col s12 center-align"> 
+            <h5 class="page-heading">
+                ALL RECIPES
+            </h5>
+        </div>
     </div>
-</div>
-
-{% for info in all_recipes %}
     <div class="row row-category">
-        <div class="col s12 m6 l4">
-            <div class="card">
-                <div class="card-image">
-                 <a href="{{ url_for('recipes', id_for_recipe=info._id) }}">
-                    <img src="{{ info.image }}">
-                  </a>
+        {% for info in all_recipes %}
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="{{ url_for('recipes', id_for_recipe=info._id) }}">
+                            <img src="{{ info.image }}">
+                        </a>
+                    </div>
+                    <div class="card-content center-align">
+                        <h5> <i class="fas fa-leaf"></i>
+                            {{ info.recipe_name }} 
+                        </h5>
+                    </div>
+                    <div class="card-action center-align">
+                        <p class="p-minutes"><i class="fas fa-clock"></i> 
+                            {{ info.time }}
+                        </p>
+                    </div>  
                 </div>
-                <div class="card-content center-align">
-                    <h5> <i class="fas fa-leaf"></i>
-                        {{ info.recipe_name }} 
-                    </h5>
-                </div>
-                <div class="card-action center-align">
-                    <p class="p-minutes"><i class="fas fa-clock"></i> 
-                        {{ info.time }}
-                    </p>
-                </div>  
+            </div><!--/col-->
+        {% endfor %}
+    </div><!--/row-->
+    {% else %}
+        <div class="row">
+            <div class="col s12 center-align"> 
+                <h5 class="page-heading no-results">
+                    NO RESULTS FOUND. <br>
+                    Try searching by Recipe Name or Time in minutes. 
+                </h5>
             </div>
-        </div><!--col-->
-{% endfor %}
+        </div>
+    {% endif %}
         
 {% endblock %}
