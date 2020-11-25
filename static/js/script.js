@@ -41,18 +41,17 @@ $(document).ready(function(){
 /*-------Email JS------*/ 
 function sendEmail() {
     $("#message-sent").addClass("loader");
-  emailjs
-    .send("gmail", "template_TKAjL7PE", {
-      name: document.querySelector("#first_name").value,
-      email: document.querySelector("#email").value,
-      message: document.querySelector("#textarea1").value,
+    emailjs.send("gmail", "template_TKAjL7PE", {
+        from_name: document.querySelector("#first_name").value,
+        from_email: document.querySelector("#email").value,
+        message_html: document.querySelector("#textarea1").value,
     })
     .then(  //the, "then", "function(response/error), "return false" code was used from the Code Institute lesson JSEmail
       function (response) {
-        $("#message-sent").removeClass("loader").html("Message Successfully sent!");
+        $("#message-sent").removeClass("loader").html('<i class="fas fa-check"></i> Your message was Successfully sent!');
       },
       function (error) {
-        $("#message-sent").removeClass("loader").css("color", "#E91E63").html("Message failed to send");
+        $("#message-sent").removeClass("loader").css("color", "#E91E63").html("Message Failed to send");
       }
     );
   return false; // To block from loading a new page
