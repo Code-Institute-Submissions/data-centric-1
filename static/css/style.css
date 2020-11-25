@@ -45,16 +45,11 @@ body  {
 max-height: none;
 }
 
-#sent-message {
-    color:#3d7e3f;
-    font-size: 25px;
-    font-weight: 500;
-}
-
 .contact-header {
     font-size: 20px;
 }
 
+#message-sent,
 .contact-header,
 .contact-buttons,
 .contact-buttons > button {
@@ -76,7 +71,7 @@ max-height: none;
   width: 35px;
   height: 35px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 26px;
   -webkit-animation: spin 1s linear infinite; /* Safari */
   animation: spin 1s linear infinite;
 }
