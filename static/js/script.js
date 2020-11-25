@@ -57,6 +57,18 @@ function sendEmail() {
   return false; // To block from loading a new page
 }
 
+//gets the close button
+var close = document.querySelector(".grey.darken-1");
+
+addEventListener("click", windowClick);
+
+//clears the form 
+function windowClick(e) {
+  if (e.target == close) {
+    $("#form")[0].reset();
+    $(".clear").empty();
+  }
+}
 
 
 
