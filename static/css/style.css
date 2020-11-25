@@ -38,6 +38,61 @@ body  {
   background: #3f5b69; 
 }
 
+
+/*------------------------------------------contact modal*/
+
+.modal {
+max-height: none;
+}
+
+#sent-message {
+    color:#3d7e3f;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contact-header {
+    font-size: 20px;
+}
+
+.contact-header,
+.contact-buttons,
+.contact-buttons > button {
+    font-weight: 600;
+}
+
+.contact-header > .fas {
+    color: #b551c7;
+}
+
+.contact-icon {
+    font-size: 25px !important;
+}
+
+.loader {
+  border: 5px solid rgb(228, 219, 219);
+  border-top: 5px solid rgb(117 155 162);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 30px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 /*-------------------------------------navbar from base.html*/
 
 .bg-color {
