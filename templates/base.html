@@ -88,9 +88,9 @@
                 <div id="modal1" class="modal">
                     <div class="modal-content">
                          <!-- Contact Form -->
-                        <h5 class="center-align contact-header"><i class="fas fa-envelope"></i> danikrs8@gmail.com</h5>
-                        <p class="center-align" id="message-sent"></p>
-                        <form class="row" onsubmit="return sendEmail(this);">
+                        <form class="row" id="form" onsubmit="return sendEmail(this);">
+                            <h5 class="center-align contact-header"><i class="fas fa-envelope"></i> danikrs8@gmail.com</h5>
+                            <p class="center-align clear" id="message-sent"></p>
                             <div class="input-field col s12">
                                 <i class="fas fa-user-circle prefix contact-icon"></i>
                                 <input placeholder="Name" id="first_name" type="text" pattern="^[a-zA-Z]+$" class="validate" required>
