@@ -1,64 +1,62 @@
 {% extends "base.html" %}
 {% block code %}
-
   
-<div class="row">
-    <div class="col s12 col-recipe-buttons center-align">
-        <a href="{{ url_for('all_recipes') }}" 
-                class="waves-effect waves-light btn all-button">
-            <i class="fas fa-chevron-left"></i> TO ALL RECIPES
-        </a>
-        <a href="{{ url_for(recipe.category.lower()) }}"
-                class="waves-effect waves-light btn breakfast-button">
-            <i class="fas fa-chevron-left"></i> To {{ recipe.category.upper() }} </a>
-        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" 
-                class="waves-effect waves-light btn edit-button">
-            <i class="far fa-edit"></i> Edit Recipe
-        </a>
+    <div class="row">
+        <div class="col s12 col-recipe-buttons center-align">
+            <a href="{{ url_for('all_recipes') }}" 
+                    class="waves-effect waves-light btn all-button">
+                <i class="fas fa-chevron-left"></i> TO ALL RECIPES
+            </a>
+            <a href="{{ url_for(recipe.category.lower()) }}"
+                    class="waves-effect waves-light btn breakfast-button">
+                <i class="fas fa-chevron-left"></i> To {{ recipe.category.upper() }} </a>
+            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" 
+                    class="waves-effect waves-light btn edit-button">
+                <i class="far fa-edit"></i> Edit Recipe
+            </a>
+        </div>
     </div>
-</div>
-
-<div class="row recipe-row">
-    <div class="col s12 center-recipe">
-        <div class="recipe-bg">
-            <div class="img-container">
-                <img  src="{{ recipe.image }}" alt="recipe-image">
-                <p class="recipe-header">
-                    {{ recipe.recipe_name }}
+    <div class="row recipe-row">
+        <div class="col s12 center-recipe">
+            <div class="recipe-bg">
+                <div class="img-container">
+                    <img  src="{{ recipe.image }}" alt="recipe-image">
+                    <p class="recipe-header">
+                        {{ recipe.recipe_name }}
+                    </p>
+                </div>
+                <table>
+                    <tr>
+                        <td>Portions:  
+                            <em> {{ recipe.portions }} </em>
+                        </td>
+                        <td>Time:
+                            <em> {{ recipe.time }} </em>
+                        </td>
+                    </tr>
+                </table>
+                <section>
+                    <h5>Ingredients</h5>
+                        {% for ingredient in recipe.ingredients %}
+                            <ul class="bullet">
+                                <li>{{ ingredient.capitalize() }} </li> 
+                            </ul>
+                        {% endfor %}
+                </section>
+                <section class="instructions">
+                    <h5>Instructions</h5>
+                        {% for instruction in recipe.instructions %}
+                            <ul class="circle">
+                                <li> {{ instruction.capitalize() }} </li>
+                            </ul>
+                        {% endfor %}
+                <p class="center-align"> 
+                    <strong>Added by:</strong> 
+                    <em>{{ recipe.added_by }}</em>
                 </p>
-            </div>
-            <table>
-                <tr>
-                    <td>Portions:  
-                        <em> {{ recipe.portions }} </em>
-                    </td>
-                    <td>Time:
-                        <em> {{ recipe.time }} </em>
-                    </td>
-                </tr>
-            </table>
-            <section>
-                <h5>Ingredients</h5>
-                    {% for ingredient in recipe.ingredients %}
-                        <ul class="bullet">
-                            <li>{{ ingredient.capitalize() }} </li> 
-                        </ul>
-                    {% endfor %}
-            </section>
-            <section class="instructions">
-                <h5>Instructions</h5>
-                    {% for instruction in recipe.instructions %}
-                        <ul class="circle">
-                            <li> {{ instruction.capitalize() }} </li>
-                        </ul>
-                    {% endfor %}
-            <p class="center-align"> 
-                <strong>Added by:</strong> 
-                <em>{{ recipe.added_by }}</em>
-            </p>
-            </section> 
-        </div><!--recipe-bg-->
-   </div>
-</div>
+                </section> 
+            </div><!--recipe-bg-->
+        </div>
+    </div>
 
 {% endblock %}
