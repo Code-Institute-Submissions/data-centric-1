@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
         integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script> 
+    <script>
+        (function(){
+            emailjs.init("user_AVWl7AxkQOq582h8jglh3");
+        })();
+    </script>
 </head>
 <body>
 
@@ -82,34 +88,35 @@
                 <div id="modal1" class="modal">
                     <div class="modal-content">
                          <!-- Contact Form -->
-                        <h5 class="center-align"><i class="fas fa-envelope"></i> danikrs8@gmail.com</h5>
+                        <h5 class="center-align contact-header"><i class="fas fa-envelope"></i> danikrs8@gmail.com</h5>
+                        <p class="center-align" id="message-sent"></p>
                         <form class="row">
                             <div class="input-field col s12">
-                                <i class="fas fa-user-circle prefix"></i>
+                                <i class="fas fa-user-circle prefix contact-icon"></i>
                                 <input placeholder="Name" id="first_name" type="text" pattern="^[a-zA-Z]+$" class="validate" required>
                                 <label for="first_name">First Name</label>
                                 <span class="helper-text" data-error="Please write your name" data-success="Name valid"></span>
                             </div>
                             <div class="input-field col s12">
-                                <i class="fas fa-envelope prefix"></i>
+                                <i class="fas fa-envelope prefix contact-icon"></i>
                                 <input placeholder="Email" id="email" type="email" class="validate" 
                                     pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>  <!--pattern for email was taken from this post: https://stackoverflow.com/questions/5601647/html5-email-input-pattern-attribute-->
                                 <label for="email">Email</label>
                                 <span class="helper-text" data-error="Please write your email" data-success="Email valid"></span>
                             </div>
                             <div class="input-field col s12">
-                                <i class="fas fa-pencil-alt prefix"></i>
+                                <i class="fas fa-pencil-alt prefix contact-icon"></i>
                                 <textarea id="textarea1" class="materialize-textarea" minlength="8" placeholder="Message" required></textarea>
                                 <label for="textarea1">Message</label>
-                                <span class="helper-text" data-error="Please write something more" data-success="Message valid"></span>
+                            </div>
+                            <div class="center-align contact-buttons">
+                                <button class="btn purple lighten-1" type="submit" onclick="sendEmail()">Send Message</button>
+                                <a href="#!" class="modal-close waves-effect waves-green btn grey darken-1">Close</a>
                             </div>
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-                    </div>
-                </div>
-            </div>
+                    </div><!--modal content-->
+                </div><!--/modal structure-->
+            </div><!--/col-->
             <div class="col s12 m4">
                 <ul id="footer-icons">
                     <li>
