@@ -420,7 +420,7 @@ h6, h5 {
 }
 
 .img-container {
-    height: 450px;
+    height: 500px;
     width: 100%;
 }
 
@@ -445,7 +445,7 @@ td {
 
 .recipe-header  {
     position: relative;
-    top: -120px;
+    top: -130px;
     padding: 10px;
     background: white;
     font-size: 25px;
@@ -476,6 +476,10 @@ td {
     padding-right: 20px;
 }
 
+.recipe-bg > section > h5 {
+    font-weight: 600;
+}
+
 .recipe-row {
     margin-bottom: 0;
 }
@@ -489,8 +493,8 @@ td {
     font-weight: bold;
     height: 50px;
     padding-top: 7px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 32px;
+    margin-right: 32px;
 }
 
 .all-button {
