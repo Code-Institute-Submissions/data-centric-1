@@ -558,7 +558,7 @@ font-size: 18px;
     margin-top: 50px;
 }
 
-/*-------------------------------------categories.html */
+/*-------------------------------------category.html */
 
 .card {
     margin-left: 40px;
@@ -594,7 +594,8 @@ font-size: 18px;
 
 .card-content > h5 {
     font-weight: 500;
-    text-shadow: 1px 1px #356035
+    text-shadow: 1px 1px #356035;
+    word-break: break-all;
 }
 
 
