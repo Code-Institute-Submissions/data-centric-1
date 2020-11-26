@@ -16,6 +16,15 @@ body  {
     font-size: 25px; 
 }
 
+.no-results > h5 {
+    font-weight: 700;
+    color: #d02727;
+}
+
+.no-results > p {
+    font-weight: 500;
+}
+
 ::-webkit-scrollbar {
   width: 17px;
 }
