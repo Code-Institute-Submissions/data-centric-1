@@ -103,7 +103,7 @@ def add_recipe():
         }
 
         mongo.db.recipes.insert_one(recipe)
-        flash("The Recipe was Successfully Added!")
+        flash("Recipe Successfully Added!")
         return redirect(url_for("all_recipes"))
 
     return render_template("add_recipe.html")
@@ -127,7 +127,7 @@ def edit_recipe(recipe_id):
         }
 
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, update_recipe)
-        flash("The Recipe was Successfully Updated!")
+        flash("Recipe Successfully Updated!")
         return redirect(url_for("all_recipes"))
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
@@ -138,7 +138,7 @@ def edit_recipe(recipe_id):
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
-    flash("The Recipe was Successfully Deleted!")
+    flash("Recipe Successfully Deleted!")
     return redirect(url_for("all_recipes"))
 
 
