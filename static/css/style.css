@@ -12,19 +12,6 @@ body  {
     font-size: 27px;
 }
 
-.flash {
-    font-size: 25px; 
-}
-
-.no-results > h5 {
-    font-weight: 700;
-    color: #d02727;
-}
-
-.no-results > p {
-    font-weight: 500;
-}
-
 ::-webkit-scrollbar {
   width: 17px;
 }
@@ -73,6 +60,7 @@ max-height: none;
     font-size: 25px !important;
 }
 
+/* took code for loder here and customized it https://www.w3schools.com/howto/howto_css_loader.asp*/
 .loader {
   border: 5px solid rgb(228, 219, 219);
   border-top: 5px solid rgb(117 155 162);
@@ -97,7 +85,7 @@ max-height: none;
 }
 
 
-/*-------------------------------------navbar from base.html*/
+/*-------------------------------------navbar on base.html*/
 
 .bg-color {
     background: linear-gradient(rgb(137 255 154), rgb(255 136 136)) no-repeat;
@@ -273,7 +261,7 @@ footer {
     background-color: #c46363;
 }
 
-/*-------------------------------------navbars from start.html*/
+/*-------------------------------------navbar on start.html*/
 
 .nav-search,
 .nav-border {
@@ -300,7 +288,7 @@ footer {
     background: rgb(37 26 94 / 61%);
 }
 
-/*-------------------------------------hero-img & info-box from start.html */
+/*-------------------------------------hero-img & info-box on start.html */
 
 /* I copied some code for the hero-imge from the Love Running project in the CI course*/
 .hero-container {
@@ -347,7 +335,7 @@ footer {
     width: 300px;
 }
 
-/*-------------------------------------About section from start.html*/
+/*-------------------------------------About section on start.html*/
 
 section > p {
     padding-left: 80px;
@@ -604,9 +592,19 @@ font-size: 18px;
 .card-content > h5 {
     font-weight: 500;
     text-shadow: 1px 1px #356035;
-    word-break: break-all;
+    word-break: break-word;
 }
 
+/*-------------------------------------all_recipes.html*/
+
+.flash {
+    font-size: 25px; 
+}
+
+.no-results > h5 {
+    font-weight: 700;
+    color: #d02727;
+}
 
 /*-------------------------------------media queries*/
 
