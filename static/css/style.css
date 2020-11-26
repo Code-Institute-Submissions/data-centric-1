@@ -454,6 +454,7 @@ td {
     border: 3px solid #0e610e;
     box-shadow: 0px 0px 8px rgb(44, 114, 17);
     text-transform: capitalize;
+    word-break: break-word;
 }
 
 .bullet > li {
@@ -593,6 +594,11 @@ font-size: 18px;
     font-weight: 500;
     text-shadow: 1px 1px #356035;
     word-break: break-word;
+}
+
+.card .card-image img {
+    object-fit: cover;
+    height: 340px;
 }
 
 /*-------------------------------------all_recipes.html*/
