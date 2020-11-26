@@ -7,6 +7,9 @@
             <h5 class="page-heading">
                 ALL RECIPES
             </h5>
+            {% for note in get_flashed_messages() %}
+			    <p class="flash">{{ note }} </p>
+            {% endfor %}
         </div>
     </div>
     <div class="row row-category">
