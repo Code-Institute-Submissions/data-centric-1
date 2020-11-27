@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% block code %}
-  
     <div class="row">
         <div class="col s12 col-recipe-buttons center-align">
             <a href="{{ url_for('all_recipes') }}" 
                     class="waves-effect waves-light btn all-button">
                 <i class="fas fa-chevron-left"></i> TO ALL RECIPES
             </a>
-            <a href="{{ url_for(recipe.category.lower()) }}"
+            <a href="{{ url_for('recipes_by_category', category_name=recipe.category.upper()) }}"
                     class="waves-effect waves-light btn breakfast-button">
-                <i class="fas fa-chevron-left"></i> To {{ recipe.category.upper() }} </a>
+                <i class="fas fa-chevron-left"></i> To {{ recipe.category.upper() }} 
+            </a>
             <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" 
                     class="waves-effect waves-light btn edit-button">
                 <i class="far fa-edit"></i> Edit Recipe
@@ -55,8 +55,7 @@
                     <em>{{ recipe.added_by }}</em>
                 </p>
                 </section> 
-            </div><!--recipe-bg-->
+            </div><!--/recipe-bg-->
         </div>
     </div>
-
 {% endblock %}
