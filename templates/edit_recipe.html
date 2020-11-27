@@ -20,18 +20,20 @@
     </div>
     <!-- Modal Structure -->
     <div id="modal2" class="modal">
-        <div class="modal-content">
-            <h5>Are you sure you want to Delete this Recipe?</h5>
+        <div class="modal-content center-align">
+            <h6>Are you sure you want to DELETE this recipe?</h6>
             <div>
-                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn red lighten-1">Yes Delete</a>
-                <a href="#!" class="modal-close waves-effect waves-green light-green darken-1 btn">No cancel</a>
+                <a href="#!" class="modal-close waves-effect waves-light btn teal">
+                    <i class="fas fa-times-circle"></i>
+                    No cancel
+                </a>
+                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn red lighten-1">
+                    <i class="fas fa-trash-alt"></i>
+                    Yes Delete
+                </a>
             </div>
         </div>
     </div>
-
-    
-
-
     <div class="row row-form"> 
         <form class="col s12 l6 m10 offset-m1 m10 offset-m1 l8 offset-l2 form-bg" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
             <div class="row">
@@ -42,7 +44,7 @@
                 </div>
                 <div class="col s12 input-field">
                 <i class="fas fa-utensils prefix"></i>
-                    <input id="recipe_name" value="{{ recipe.recipe_name }}" name="recipe_name" maxlength="70" type="text" class="validate" required>
+                    <input id="recipe_name" value="{{ recipe.recipe_name }}" name="recipe_name" maxlength="50" type="text" class="validate" required>
                     <label for="recipe_name">Recipe Name</label>
                 </div>
                 <div class="col s12 l6 m6 input-field">
@@ -277,7 +279,6 @@
             </div>
             <div class="row">
                 <div class="col s12 center-align">
-                
                     <button class="waves-effect waves-light btn-large add-button" type="submit" name="action">
                         Update Recipe <i class="far fa-edit"></i>
                     </button>
