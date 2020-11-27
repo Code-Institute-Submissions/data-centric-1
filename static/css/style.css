@@ -592,6 +592,15 @@ font-size: 18px;
     background: #f44336 !important;
 }
 
+.category-heading {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.category-heading:hover {
+    color:  #419441;
+}
+
 .p-minutes {
     margin: 0;
     padding: 0;
@@ -619,6 +628,10 @@ font-size: 18px;
 .card .card-image img {
     object-fit: cover;
     height: 340px;
+}
+
+div.card-image > a > img:hover {
+    filter: brightness(85%);
 }
 
 /*-------------------------------------all_recipes.html*/
