@@ -40,12 +40,12 @@
     <div class="bg-color">
         <nav class="nav-wrapper transparent" id="nav">
             <div class="row nav-row">
-                <form class="col s12 m6 l4 input-field" action="{{ url_for('search') }}" method="POST">
+                <form class="col s12 m8 input-field form-base" action="{{ url_for('search') }}" method="POST">
                     <button type="submit" class="btn green"><i class="fas fa-search"></i></button>
                     <input id="index_search" type="text" name="index_search" minlength="1" required>
                     <a href="{{ url_for('all_recipes') }}" class="btn green"><i class="fas fa-undo-alt"></i></a>
                 </form>
-                <div class="col s12 m6 l8 fruits">
+                <div class="col s12 m4 fruits">
                     <ul id="fruits">
                         <li><i class="fab fa-raspberry-pi"></i></li>
                         <li><i class="far fa-lemon"></i></li>
@@ -156,7 +156,3 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
-
-
-
- 
