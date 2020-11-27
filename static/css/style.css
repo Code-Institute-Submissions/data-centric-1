@@ -100,12 +100,26 @@ max-height: none;
 }
 
 nav ul a, 
-.sidenav, 
+.sidenav,
 .fas.fa-bars {
     color: #3f602d;
     font-weight: 700;
     font-size: 17px;
-    margin-top: 4px;
+    padding-top: 4px;
+}
+
+.dropdown-trigger {
+    height: 68px;
+}
+
+.dropdown-content li> a {
+    color: #3f602d;
+    font-weight: 500;
+}
+
+#dropdown2 {
+    width: 150px !important;
+    height: 250px !important;
 }
 
 .fas.fa-bars {
@@ -188,20 +202,6 @@ nav form {
     top: -1.5px;
 }
 
-.dropdown-content li> a {
-    color: #3f602d;
-    font-weight: 500;
-}
-
-.dropdown-trigger {
-    height: 65px;
-}
-
-#dropdown2 {
-    width: 150px !important;
-    height: 270px !important;
-}
-
 form > button,
 form > a { 
     margin-bottom: 7px;
@@ -209,6 +209,44 @@ form > a {
 
 .start-bg-color {
     background-color: white !important;
+}
+
+
+
+/*-------------------------------------navbar on start.html*/
+
+.nav-search,
+.nav-border {
+    height: 65px;
+}
+
+.nav-border {
+    background: white;
+}
+
+.nav-border,
+.nav-search { 
+     box-shadow: none;
+     border: none;
+}
+
+.nav-search {
+    position: relative;
+    top: -77px;
+    height: 1px;
+}
+
+.search-start{
+    background: rgb(37 26 94 / 61%);
+}
+
+.form-start {
+    position: relative;
+    top:10px;
+}
+
+.form-start > button, .form-start > a {
+    margin-bottom: 3px;
 }
 
 /*-------------------------------------footer*/
@@ -261,47 +299,6 @@ footer {
 
 .fa-inverse:hover {
 	color: #c46363;
-}
-
-.btn:hover, .btn-large:hover, .btn-small:hover {
-	color: white;
-    background-color: #c46363;
-}
-
-/*-------------------------------------navbar on start.html*/
-
-.nav-search,
-.nav-border {
-    height: 65px;
-}
-
-.nav-border {
-    background: white;
-}
-
-.nav-border,
-.nav-search { 
-     box-shadow: none;
-     border: none;
-}
-
-.nav-search {
-    position: relative;
-    top: -77px;
-    height: 1px;
-}
-
-.search-start{
-    background: rgb(37 26 94 / 61%);
-}
-
-.form-start {
-    position: relative;
-    top:10px;
-}
-
-.form-start > button, .form-start > a {
-    margin-bottom: 3px;
 }
 
 /*-------------------------------------hero-img & info-box on start.html */
@@ -655,11 +652,69 @@ div.card-image > a > img:hover {
 
 .flash {
     font-size: 25px; 
+    font-weight: 500;
 }
 
 .no-results > h5 {
     font-weight: 700;
     color: #d02727;
+}
+
+/*-------------------------------------footer*/
+
+#footer-icons > li {
+    display: inline;
+    font-size: 20px;
+}
+
+#footer-icons, 
+.copy,
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.copy > p {
+    color: white;
+    font-weight: 500;
+    position: relative;
+    top: 4px;
+    font-size: 18px;
+}
+
+.contact > a {
+    background: white;
+    color: #8b4444;
+    font-weight: 800;
+    position: relative;
+    top: 15px;
+}
+
+footer {
+    background: #2b3b43;
+    width: 100%;
+    position: absolute;
+}
+
+.row.row-form {
+    margin-bottom: 0;
+}
+
+.fa-inverse {
+	color: #8b4444;
+}
+
+.fa-stack-2x {
+    color: white;
+}
+
+.fa-inverse:hover {
+	color: #c46363;
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover {
+	color: white;
+    background-color: #c46363;
 }
 
 /*-------------------------------------media queries*/
