@@ -16,22 +16,20 @@
     </script>
 </head>
 <body>
-
     <!-- Dropdown 1 -->
     <ul id="dropdown1" class="dropdown-content">
-        <li><a href="{{ url_for('breakfast') }}">BREAKFAST</a></li>
-        <li><a href="{{ url_for('meals') }}">MEALS</a></li>
-        <li><a href="{{ url_for('desserts') }}">DESSERTS</a></li>
-        <li><a href="{{ url_for('smoothies') }}">SMOOTHIES</a></li>
+        <li><a href="{{ url_for('recipes_by_category', category_name='breakfast') }}">BREAKFAST</a></li>
+        <li><a href="{{ url_for('recipes_by_category', category_name='meals') }}">MEALS</a></li>
+        <li><a href="{{ url_for('recipes_by_category', category_name='desserts') }}">DESSERTS</a></li>
+        <li><a href="{{ url_for('recipes_by_category', category_name='smoothies') }}">SMOOTHIES</a></li>
         <li><a href="{{ url_for('all_recipes') }}">ALL RECIPES</a></li>
     </ul>
-
     <!-- Dropdown 2 -->
     <ul id="dropdown2" class="dropdown-content">
-        <li><a href="{{ url_for('breakfast') }}">BREAKFAST</a></li>
-        <li><a href="{{ url_for('meals') }}">MEALS</a></li>
-        <li><a href="{{ url_for('desserts') }}">DESSERT</a></li>
-        <li><a href="{{ url_for('smoothies') }}">SMOOTHIES</a></li>
+        <li><a href="{{ url_for('recipes_by_category', category_name='breakfast') }}">BREAKFAST</a></li>
+        <li><a href="{{ url_for('recipes_by_category', category_name='meals') }}">MEALS</a></li>
+        <li><a href="{{ url_for('recipes_by_category', category_name='desserts') }}">DESSERTS</a></li>
+        <li><a href="{{ url_for('recipes_by_category', category_name='smoothies') }}">SMOOTHIES</a></li>
         <li><a href="{{ url_for('all_recipes') }}">ALL RECIPES</a></li>
     </ul>
 
@@ -53,7 +51,6 @@
                     </ul>
                 </div>
             </div><!--/row-->
-           
             <a href="{{ url_for('start') }}" class="logo">
                 <i class="fas fa-seedling"></i> YOGIC RECIPES
             </a>
@@ -66,12 +63,12 @@
                 <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
             </ul>
         </nav>
-
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('start') }}">START</a></li>
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES <i class="fas fa-caret-down"></i></a></li>
             <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
         </ul>
+
     {% block code %}
     {% endblock %}
 
@@ -150,7 +147,6 @@
             </div>
         </div>
     </footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
