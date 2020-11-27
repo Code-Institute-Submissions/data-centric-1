@@ -1,37 +1,34 @@
 {% extends "base.html" %}
 {% block code %}
-
-<div class="row">
-    <div class="col s12 center-align"> 
-        <h5 class="page-heading">
-            {{ category_name }}
-        </h5>
+    <div class="row">
+        <div class="col s12 center-align"> 
+            <h5 class="page-heading">
+                {{ category_name }}
+            </h5>
+        </div>
     </div>
-</div>
-
-{% for info in categories %}
-    <div class="row row-category">
-        <div class="col s12 m6 l4">
-            <div class="card">
-                <div class="card-image">
-                 <a href="{{ url_for('recipes', id_for_recipe=info._id) }}">
-                    <img src="{{ info.image }}">
-                  </a>
+    {% for info in categories %}
+        <div class="row row-category">
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                    <a href="{{ url_for('recipes', id_for_recipe=info._id) }}">
+                        <img src="{{ info.image }}">
+                    </a>
+                    </div>
+                    <div class="card-content center-align">
+                        <h5 class="category-heading"> <i class="fas fa-leaf"></i>
+                            <a href="{{ url_for('recipes', id_for_recipe=info._id) }}" class="category-heading"> 
+                                {{ info.recipe_name }} 
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="card-action center-align">
+                        <p class="p-minutes"><i class="fas fa-clock"></i> 
+                            {{ info.time }}
+                        </p>
+                    </div>  
                 </div>
-                <div class="card-content center-align">
-                    <h5 class="category-heading"> <i class="fas fa-leaf"></i>
-                       <a href="{{ url_for('recipes', id_for_recipe=info._id) }}" class="category-heading"> 
-                            {{ info.recipe_name }} 
-                       </a>
-                    </h5>
-                </div>
-                <div class="card-action center-align">
-                    <p class="p-minutes"><i class="fas fa-clock"></i> 
-                        {{ info.time }}
-                    </p>
-                </div>  
-            </div>
-        </div><!--col-->
-{% endfor %}
-        
+            </div><!--col-->
+    {% endfor %}
 {% endblock %}

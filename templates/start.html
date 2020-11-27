@@ -13,14 +13,12 @@
             <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
         </ul>
     </nav>
-
     <!--for mobile menu-->
     <ul class="sidenav" id="mobile-demo">
         <li><a href="{{ url_for('start') }}">START</a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES <i class="fas fa-caret-down"></i></a></li>
         <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
     </ul> 
-
     <div class="hero-container">
         <!--hero img-->
         <div class="hero-img"></div>
@@ -28,7 +26,6 @@
             <p>EXPLORE POSITIVE PRANIC RECIPES</p>
         </div>
     </div>
-
     <!--search input-->
     <div class="row nav-row nav-search nav-wrapper">
         <form class="col s12 input-field form-start" action="{{ url_for('search') }}" method="POST">
@@ -37,7 +34,6 @@
             <a href="{{ url_for('all_recipes') }}" class="btn search-start"><i class="fas fa-undo-alt"></i></a>
         </form>
     </div>
-
     <!--About section-->
     <div class="row">
         <div class="col s12 center-align">
@@ -65,7 +61,6 @@
             </section>
         </div>
     </div>
-
     <!--Food list-->
     <div class="row food-list">
         <div class="col s12 m4 center-align">
@@ -95,7 +90,6 @@
             <p>Nervous Stimulants</p>
         </div>
     </div>
-
     <!--videos-->
     <div class="row video">
         <div class="col s12 m6">
@@ -111,5 +105,4 @@
             <p>In this channel you can watch Positive Pranic Food recipes in video.</p>
         </div>
     </div>
-
 {% endblock %}

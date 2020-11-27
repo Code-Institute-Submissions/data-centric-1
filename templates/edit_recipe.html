@@ -1,11 +1,10 @@
 {% extends "base.html" %}
 {% block code %}
-   <div class="row">
+    <div class="row">
         <div class="col s12 center-align">
             <h5 class="page-heading">EDIT RECIPE</h5> 
         </div>
     </div>
-
     <div class="row">
         <div class="col s12 center-align cancel-delete-col">
             <a href="{{ url_for('all_recipes') }}"
@@ -37,13 +36,13 @@
     <div class="row row-form"> 
         <form class="col s12 l6 m10 offset-m1 m10 offset-m1 l8 offset-l2 form-bg" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
             <div class="row">
-            <div class="col s12 input-field">
+                <div class="col s12 input-field">
                     <i class="fas fa-image prefix"></i>
                     <input id="image" value="{{ recipe.image }}" name="image" type="text" class="validate" minlength="8">
                     <label for="image">URL link address for image</label>
                 </div>
                 <div class="col s12 input-field">
-                <i class="fas fa-utensils prefix"></i>
+                    <i class="fas fa-utensils prefix"></i>
                     <input id="recipe_name" value="{{ recipe.recipe_name }}" name="recipe_name" maxlength="50" type="text" class="validate" required>
                     <label for="recipe_name">Recipe Name</label>
                 </div>
@@ -55,13 +54,13 @@
                 <div class="col s12 l6 m6 input-field">
                     <i class="far fa-clock prefix"></i>
                     <input id="time" value="{{ recipe.time[:2] }}" name="time" type="text" class="validate" required minlength="1" 
-                    maxlength="3" pattern="^\s*[0-9]+*$">
-                <label for="time">Time in minutes</label>
-            </div>
+                        maxlength="3" pattern="^\s*[0-9]+*$">
+                    <label for="time">Time in minutes</label>
+                </div>
                 <!--category-->
                 <div class="input-field col s12 l6 m6">
-                <i class="fas fa-folder-open prefix"></i>
-                <select id="category" name="category" class="validate" required>
+                    <i class="fas fa-folder-open prefix"></i>
+                    <select id="category" name="category" class="validate" required>
                         <option value="" disabled selected>Choose Category</option>
                         {% if recipe.category %}
                                 <option value="{{ recipe.category }}" selected>{{ recipe.category }}</option>
@@ -74,8 +73,8 @@
                 </div>
                 <!--portions-->
                 <div class="input-field col s12 l6 m6">
-                <i class="fas fa-mortar-pestle prefix"></i>
-                <select id="portions" name="portions" class="validate" required>
+                    <i class="fas fa-mortar-pestle prefix"></i>
+                    <select id="portions" name="portions" class="validate" required>
                         <option value="" disabled selected>Choose Portions</option>
                             {% if recipe.portions %}
                                 <option value="{{ recipe.portions }}" selected>{{ recipe.portions }}</option>
