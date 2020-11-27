@@ -49,40 +49,13 @@ def recipes(id_for_recipe):
     return render_template("recipe_detail.html", recipe=recipe)
 
 
-# In the menu, BREAKFAST
-@app.route("/breakfast")
-def breakfast():
-    categories = list(mongo.db.recipes.find({"category": "BREAKFAST"}))
-    category_name = "BREAKFAST"
+@app.route("/<category_name>")
+def recipes_by_category(category_name):
+    categories = list(mongo.db.recipes.find({
+        "category": category_name.upper()}))
     return render_template(
-        "category.html", categories=categories, category_name=category_name)
-
-
-# In the menu, MEALS
-@app.route("/meals")
-def meals():
-    categories = list(mongo.db.recipes.find({"category": "MEALS"}))
-    category_name = "MEALS"
-    return render_template(
-        "category.html", categories=categories, category_name=category_name)
-
-
-# In the menu, DESSERTS
-@app.route("/desserts")
-def desserts():
-    categories = list(mongo.db.recipes.find({"category": "DESSERTS"}))
-    category_name = "DESSERTS"
-    return render_template(
-        "category.html", categories=categories, category_name=category_name)
-
-
-# In the menu, SMOOTHIES
-@app.route("/smoothies")
-def smoothies():
-    categories = list(mongo.db.recipes.find({"category": "SMOOTHIES"}))
-    category_name = "SMOOTHIES"
-    return render_template(
-        "category.html", categories=categories, category_name=category_name)
+        "category.html", categories=categories,
+        category_name=category_name.upper())
 
 
 # For Adding a new Recipe
