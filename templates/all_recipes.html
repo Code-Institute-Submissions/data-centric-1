@@ -21,9 +21,11 @@
                             <img src="{{ info.image }}">
                         </a>
                     </div>
-                    <div class="card-content center-align">
+                     <div class="card-content center-align">
                         <h5 class="category-heading"> <i class="fas fa-leaf"></i>
-                            {{ info.recipe_name }} 
+                            <a href="{{ url_for('recipes', id_for_recipe=info._id) }}" class="category-heading"> 
+                                {{ info.recipe_name }} 
+                            </a>
                         </h5>
                     </div>
                     <div class="card-action center-align">
