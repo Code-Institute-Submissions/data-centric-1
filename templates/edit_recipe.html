@@ -5,13 +5,34 @@
             <h5 class="page-heading">EDIT RECIPE</h5> 
         </div>
     </div>
+
     <div class="row">
-        <div class="col s12 l6 m10 offset-m1 l8 offset-l2">
+        <div class="col s12 center-align cancel-delete-col">
             <a href="{{ url_for('all_recipes') }}"
-            class="waves-effect waves-light btn-large back-button teal"><i class="fas fa-times-circle"></i> Cancel</a>
+                class="waves-effect waves-light btn teal">
+                <i class="fas fa-times-circle"></i> Cancel
+            </a>
+            <a href="#modal2"
+                class="waves-effect waves-light btn modal-trigger red lighten-1">  <!--Modal Trigger-->
+                <i class="fas fa-trash-alt"></i> Delete Recipe
+            </a>
         </div>
     </div>
-    <div class="row row-form">
+    <!-- Modal Structure -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h5>Are you sure you want to Delete this Recipe?</h5>
+            <div>
+                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn red lighten-1">Yes Delete</a>
+                <a href="#!" class="modal-close waves-effect waves-green light-green darken-1 btn">No cancel</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div class="row row-form"> 
         <form class="col s12 l6 m10 offset-m1 m10 offset-m1 l8 offset-l2 form-bg" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
             <div class="row">
             <div class="col s12 input-field">
@@ -21,7 +42,7 @@
                 </div>
                 <div class="col s12 input-field">
                 <i class="fas fa-utensils prefix"></i>
-                    <input id="recipe_name" value="{{ recipe.recipe_name }}" name="recipe_name" type="text" class="validate" required>
+                    <input id="recipe_name" value="{{ recipe.recipe_name }}" name="recipe_name" maxlength="70" type="text" class="validate" required>
                     <label for="recipe_name">Recipe Name</label>
                 </div>
                 <div class="col s12 l6 m6 input-field">
@@ -256,19 +277,8 @@
             </div>
             <div class="row">
                 <div class="col s12 center-align">
-                <!-- Modal Trigger -->
-                    <a class="waves-effect waves-light btn modal-trigger red lighten-1" href="#modal2"><i class="fas fa-trash-alt"></i> Delete Recipe</a>
-                    <!-- Modal Structure -->
-                    <div id="modal2" class="modal">
-                        <div class="modal-content">
-                            <h5>Are you sure you want to Delete this Recipe?</h5>
-                            <div>
-                            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn red lighten-1">Yes Delete</a>
-                                <a href="#!" class="modal-close waves-effect waves-green light-green darken-1 btn">No cancel</a>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="waves-effect waves-light btn light-green darken-1" type="submit" name="action">
+                
+                    <button class="waves-effect waves-light btn-large add-button" type="submit" name="action">
                         Update Recipe <i class="far fa-edit"></i>
                     </button>
                 </div>
@@ -276,3 +286,4 @@
         </form>
     </div>
 {% endblock %}
+

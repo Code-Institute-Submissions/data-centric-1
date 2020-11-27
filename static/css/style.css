@@ -505,7 +505,8 @@ td {
     margin-bottom: 0;
 } 
 
-.col-recipe-buttons > a {
+.col-recipe-buttons > a,
+.cancel-delete-col > a {
     font-weight: bold;
     height: 50px;
     padding-top: 7px;
@@ -574,6 +575,11 @@ font-size: 18px;
 .row-instructions,
 .row-ingredients {
     margin-top: 50px;
+}
+
+.cancel-delete-col {
+    display: flex;
+    justify-content: space-around;
 }
 
 /*-------------------------------------category.html */
