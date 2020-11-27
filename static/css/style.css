@@ -97,7 +97,6 @@ max-height: none;
     font-weight: 800;
     font-size: 25px;
     padding: 10px;
-    line-height: 75px;
 }
 
 nav ul a, 
@@ -130,12 +129,12 @@ nav ul a,
 .logo > i {
     color: #53aa41;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 #fruits > li > i {
     padding-right: 25px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .fas.fa-search {
@@ -158,17 +157,25 @@ nav ul a,
     height: 50px !important;
 }
 
+.form-base {
+    position: relative;
+    top: -7px;
+}
+
 .nav-wrapper .input-field input[type=text] {
     height: 37px;
     background: #ffffffd4;
     border-radius: 4px;
-    margin-top: 10px;
     width: 300px;
 }
 
 .fas.fa-search {
     position: relative;
     padding-bottom: 5px;
+}
+
+div.row.nav-row form.col.search-col {
+    padding-left: 7px;
 }
 
 nav form {
@@ -286,6 +293,15 @@ footer {
 
 .search-start{
     background: rgb(37 26 94 / 61%);
+}
+
+.form-start {
+    position: relative;
+    top:10px;
+}
+
+.form-start > button, .form-start > a {
+    margin-bottom: 3px;
 }
 
 /*-------------------------------------hero-img & info-box on start.html */
@@ -618,6 +634,13 @@ font-size: 18px;
 
 /*-------------------------------------media queries*/
 
+@media screen and (max-width: 1284px) { 
+    .card {
+    margin-left: 10px;
+    margin-right: 10px; 
+    }
+}
+
 @media screen and (max-width: 993px) {
     .fas.fa-caret-down {
         position: relative;
@@ -657,11 +680,17 @@ font-size: 18px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 668px) {
     .fruits {
         display: none;
     }
 
+    .nav-wrapper .input-field input[type=text] {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .contact {
         margin-top: 15px;
         margin-bottom: 40px;
@@ -713,5 +742,6 @@ font-size: 18px;
         margin-left: 0;
         margin-right: 0;
         margin: 7px;
+    }
 }
-}
+
