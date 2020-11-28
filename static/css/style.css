@@ -50,6 +50,11 @@ max-height: none;
     font-weight: 600;
 }
 
+.purple.lighten-1,
+.grey.darken-1 {
+    margin-top: 20px;
+}
+
 .contact-header > .fas {
     color: #b551c7;
 }
@@ -93,7 +98,7 @@ max-height: none;
 .logo {
     color: #3f602d;
     font-weight: 800;
-    font-size: 25px;
+    font-size: 27px;
     padding: 10px;
 }
 
@@ -667,10 +672,49 @@ footer {
 
 /*-------------------------------------media queries*/
 
+@media screen and (min-width: 540px) {
+    #search {
+    width: 250px;
+    }
+
+    .logo > img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    h6 {
+        font-size: 1.30rem;
+    }
+
+    section > p {
+        font-size: 18px;
+    }
+}
+
+
 @media screen and (max-width: 1284px) { 
     .card {
     margin-left: 10px;
     margin-right: 10px; 
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    section > p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+  .col-recipe-buttons > a {
+        margin-left: 0;
+        margin-right: 0;
+        margin: 7px;
     }
 }
 
@@ -683,43 +727,9 @@ footer {
     }
 }
 
-@media screen and (min-width: 540px) {
-    #search {
-    width: 250px;
-    }
-
-    .logo > img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .logo {
-        font-size: 30px;
-    }
-
-    h6 {
-        font-size: 1.30rem;
-    }
-
-    section > p {
-        font-size: 18px;
-    }
-}
-
-/*for keeping same size on search*/
-@media screen and (min-width: 500px) {
-     #search {
-    width: 250px;
-    }
-}
-
 @media screen and (max-width: 668px) {
     .fruits {
         display: none;
-    }
-
-    .nav-wrapper .input-field input[type=text] {
-        width: 70%;
     }
 }
 
@@ -735,6 +745,24 @@ footer {
 
     .nav-border { 
         margin-top: 15px;
+    }
+
+    .form-base,
+    .form-start {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-box {
+        display: flex;
+        left: 0;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 500px) {
+     #search {
+    width: 250px;
     }
 }
 
@@ -753,27 +781,43 @@ footer {
     }
 
      .nav-search .input-field input[type=text] {
-        margin-top: 35px;
-        width: 200px;
+        margin-top: 0;
+        width: 100%;
         background: #ffffff9e;
     }
 
     h5 {
         font-size: 1.40rem;
     }
-}
 
-@media screen and (max-width: 1280px) {
-    section > p {
-        padding-left: 20px;
-        padding-right: 20px;
+    .form-base {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .col-about {
+        margin-top: 0;
+    }
+
+    .modal.open {
+        width: 90%;
+    }
+
+    .nav-search {
+    top: -50px;
     }
 }
 
-@media screen and (max-width: 710px) {
-  .col-recipe-buttons > a {
-        margin-left: 0;
-        margin-right: 0;
-        margin: 7px;
+@media screen and (max-width: 359px) {
+    .logo {
+    font-size: 25px;
     }
 }
+
+/*for galaxy fold*/
+@media screen and (min-width: 280px) {
+    .logo {
+    font-size: 21px;
+    }
+}
+
