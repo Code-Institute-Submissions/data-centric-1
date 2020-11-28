@@ -48,10 +48,12 @@ function sendEmail() {
     })
     .then(  //the, "then", "function(response/error), "return false" code was used from the Code Institute lesson JSEmail
       function (response) {
-        $("#message-sent").removeClass("loader").html('<i class="fas fa-check"></i> Your message was sent Successfully!');
+        $("#message-sent").removeClass("loader").html(
+            '<i class="fas fa-check"></i> Your message was sent Successfully!');
       },
       function (error) {
-        $("#message-sent").removeClass("loader").css("color", "#E91E63").html("Message Failed to send");
+        $("#message-sent").removeClass("loader").css(
+            "color", "#E91E63").html("Message Failed to send");
       }
     );
   return false; // To block from loading a new page
@@ -62,14 +64,10 @@ var close = document.querySelector(".grey.darken-1");
 
 addEventListener("click", windowClick);
 
-//clears the form 
+//clears the form when clicking the close button
 function windowClick(e) {
     if (e.target == close) {
     $("#form")[0].reset();
     $(".clear").empty();
   }
 }
-
-
-
-
