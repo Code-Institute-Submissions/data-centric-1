@@ -8,16 +8,32 @@
             <i class="fas fa-bars"></i>
         </a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="{{ url_for('start') }}">START</a></li>
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">RECIPES <i class="fas fa-caret-down"></i></a></li>
-            <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
+            <li>
+                <a href="{{ url_for('start') }}">START</a>
+            </li>
+            <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown2">RECIPES 
+                    <i class="fas fa-caret-down"></i>
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('add_recipe') }}">ADD RECIPE</a>
+            </li>
         </ul>
     </nav>
     <!--for mobile menu-->
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="{{ url_for('start') }}">START</a></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES <i class="fas fa-caret-down"></i></a></li>
-        <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
+        <li>
+            <a href="{{ url_for('start') }}">START</a>
+        </li>
+        <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES 
+                <i class="fas fa-caret-down"></i>
+            </a>
+        </li>
+        <li>
+            <a href="{{ url_for('add_recipe') }}">ADD RECIPE</a>
+        </li>
     </ul> 
     <div class="hero-container">
         <!--hero img-->
@@ -30,11 +46,11 @@
     <!--search input-->
     <div class="row nav-row nav-search nav-wrapper">
         <form class="col s12 input-field form-start" action="{{ url_for('search') }}" method="POST">
-            <button type="submit" class="btn indigo darken-4">
+            <button type="submit" class="btn deep-purple darken-1">
                 <i class="fas fa-search"></i>
             </button>
             <input id="index_search" class="search-input-start" type="text" name="index_search" minlength="1" required>
-            <a href="{{ url_for('all_recipes') }}" class="btn indigo darken-4">
+            <a href="{{ url_for('all_recipes') }}" class="btn deep-purple darken-1">
                 <i class="fas fa-undo-alt"></i>
             </a>
         </form>
@@ -50,19 +66,26 @@
             <section>
                 <h6 class="center-align"><i class="fas fa-question"></i> WELCOME TO YOGIC RECIPES</h6>
                 <p> Here you can find Positive Pranic food recipes, also known as "Yogic" and "Sattvic" food, 
-                which is a diet commonly followed by yogis, sages and spirituals. The Yogic diet is split into 
-                the three food categories: <strong>Positive Pranic</strong> (Gives you energy), <strong>Zero Pranic</strong> (Makes you lethargic) 
-                and <strong>Negative Pranic</strong>(Takes your energy). The food is vegan with the exeption of honey which is 
-                regarded as highly benefical in the Yogic world. </p>
+                    which is a diet commonly followed by yogis, sages and spirituals. The Yogic diet is split into 
+                    the three food categories: <strong>Positive Pranic</strong> (Gives you energy), 
+                    <strong>Zero Pranic</strong> (Makes you lethargic) 
+                    and <strong>Negative Pranic</strong>(Takes your energy). 
+                    The food is vegan with the exeption of honey which is 
+                    regarded as highly benefical in the Yogic world. 
+                </p>
             </section>
         </div>
         <div class="col s12 m6 l6">
             <section>
                 <h6 class="center-align"><i class="fab fa-whmcs"></i> ADD & EDIT YOUR RECIPES</h6>
                     <p>Here you can upload your own yogic recipes, but be sure to only upload recipes with 
-                    Positive Pranic foods as listed, smoothies and fruit bowls are usually Positive Pranic approved, without chocolate. 
-                    To read more about Positive Pranic foods in depth and see yogic recipes view this 
-                    <a id="site-link" href="https://positivepranic.com/category/sattvic-food-recipes-positive-pranic-food/" target="_blank">Positive Pranic site.</a></p>
+                        Positive Pranic foods as listed, smoothies and fruit bowls are usually Positive 
+                        Pranic approved, without chocolate. 
+                        To read more about Positive Pranic foods in depth and see yogic recipes view this 
+                        <a id="site-link" href="https://positivepranic.com/category/sattvic-food-recipes-positive-pranic-food/" target="_blank">
+                            Positive Pranic site.
+                        </a>
+                    </p>
             </section>
         </div>
     </div>
