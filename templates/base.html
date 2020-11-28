@@ -19,19 +19,39 @@
 <body>
     <!-- Dropdown 1 -->
     <ul id="dropdown1" class="dropdown-content">
-        <li><a href="{{ url_for('recipes_by_category', category_name='breakfast') }}">BREAKFAST</a></li>
-        <li><a href="{{ url_for('recipes_by_category', category_name='meals') }}">MEALS</a></li>
-        <li><a href="{{ url_for('recipes_by_category', category_name='desserts') }}">DESSERTS</a></li>
-        <li><a href="{{ url_for('recipes_by_category', category_name='smoothies') }}">SMOOTHIES</a></li>
-        <li><a href="{{ url_for('all_recipes') }}">ALL RECIPES</a></li>
+        <li>
+            <a href="{{ url_for('recipes_by_category', category_name='breakfast') }}">BREAKFAST</a>
+        </li>
+        <li>
+            <a href="{{ url_for('recipes_by_category', category_name='meals') }}">MEALS</a>
+        </li>
+        <li>
+            <a href="{{ url_for('recipes_by_category', category_name='desserts') }}">DESSERTS</a>
+        </li>
+        <li>
+            <a href="{{ url_for('recipes_by_category', category_name='smoothies') }}">SMOOTHIES</a>
+        </li>
+        <li>
+            <a href="{{ url_for('all_recipes') }}">ALL RECIPES</a>
+        </li>
     </ul>
     <!-- Dropdown 2 -->
     <ul id="dropdown2" class="dropdown-content">
-        <li><a href="{{ url_for('recipes_by_category', category_name='breakfast') }}">BREAKFAST</a></li>
-        <li><a href="{{ url_for('recipes_by_category', category_name='meals') }}">MEALS</a></li>
-        <li><a href="{{ url_for('recipes_by_category', category_name='desserts') }}">DESSERTS</a></li>
-        <li><a href="{{ url_for('recipes_by_category', category_name='smoothies') }}">SMOOTHIES</a></li>
-        <li><a href="{{ url_for('all_recipes') }}">ALL RECIPES</a></li>
+        <li>
+            <a href="{{ url_for('recipes_by_category', category_name='breakfast') }}">BREAKFAST</a>
+        </li>
+        <li>
+            <a href="{{ url_for('recipes_by_category', category_name='meals') }}">MEALS</a>
+        </li>
+        <li>
+            <a href="{{ url_for('recipes_by_category', category_name='desserts') }}">DESSERTS</a>
+        </li>
+        <li>
+            <a href="{{ url_for('recipes_by_category', category_name='smoothies') }}">SMOOTHIES</a>
+        </li>
+        <li>
+            <a href="{{ url_for('all_recipes') }}">ALL RECIPES</a>
+        </li>
     </ul>
 
     {% block start %}
@@ -39,12 +59,16 @@
     <div class="bg-color">
         <nav class="nav-wrapper transparent" id="nav">
             <div class="row nav-row">
-                <form class="col s12 m8 input-field form-base" action="{{ url_for('search') }}" method="POST">
-                    <button type="submit" class="btn green"><i class="fas fa-search"></i></button>
+                <form class="col s12 m9 input-field form-base" action="{{ url_for('search') }}" method="POST">
+                    <button type="submit" class="btn green">
+                        <i class="fas fa-search"></i>
+                    </button>
                     <input id="index_search" type="text" name="index_search" minlength="1" required>
-                    <a href="{{ url_for('all_recipes') }}" class="btn green"><i class="fas fa-undo-alt"></i></a>
+                    <a href="{{ url_for('all_recipes') }}" class="btn green">
+                        <i class="fas fa-undo-alt"></i>
+                    </a>
                 </form>
-                <div class="col s12 m4 fruits">
+                <div class="col s12 m3 fruits">
                     <ul id="fruits">
                         <li><i class="fab fa-raspberry-pi"></i></li>
                         <li><i class="far fa-lemon"></i></li>
@@ -59,15 +83,29 @@
                 <i class="fas fa-bars"></i>
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="{{ url_for('start') }}">START</a></li>
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">RECIPES <i class="fas fa-caret-down"></i></a></li>
-                <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
+                <li>
+                    <a href="{{ url_for('start') }}">START</a>
+                </li>
+                <li>
+                    <a class="dropdown-trigger" href="#!" data-target="dropdown2">
+                    RECIPES <i class="fas fa-caret-down"></i></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('add_recipe') }}">ADD RECIPE</a>
+                </li>
             </ul>
         </nav>
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="{{ url_for('start') }}">START</a></li>
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES <i class="fas fa-caret-down"></i></a></li>
-            <li><a href="{{ url_for('add_recipe') }}">ADD RECIPE</a></li>
+            <li>
+                <a href="{{ url_for('start') }}">START</a>
+            </li>
+            <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown1">RECIPES 
+                <i class="fas fa-caret-down"></i></a>
+            </li>
+            <li>
+                <a href="{{ url_for('add_recipe') }}">ADD RECIPE</a>
+            </li>
         </ul>
 
     {% block code %}
@@ -87,7 +125,9 @@
                     <div class="modal-content">
                          <!-- Contact Form -->
                         <form class="row" id="form" onsubmit="return sendEmail(this);">
-                            <h5 class="center-align contact-header"><i class="fas fa-envelope"></i> danikrs8@gmail.com</h5>
+                            <h5 class="center-align contact-header">
+                                <i class="fas fa-envelope"></i> danikrs8@gmail.com
+                            </h5>
                             <p class="center-align clear" id="message-sent"></p>
                             <div class="input-field col s12">
                                 <i class="fas fa-user-circle prefix contact-icon"></i>
