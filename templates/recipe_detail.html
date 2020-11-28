@@ -3,15 +3,15 @@
     <div class="row">
         <div class="col s12 col-recipe-buttons center-align">
             <a href="{{ url_for('all_recipes') }}" 
-                    class="waves-effect waves-light btn all-button">
+                    class="waves-effect waves-light btn all-button lime darken-4">
                 <i class="fas fa-chevron-left"></i> TO ALL RECIPES
             </a>
             <a href="{{ url_for('recipes_by_category', category_name=recipe.category.upper()) }}"
-                    class="waves-effect waves-light btn breakfast-button">
+                    class="waves-effect waves-light btn breakfast-button lime darken-3">
                 <i class="fas fa-chevron-left"></i> To {{ recipe.category.upper() }} 
             </a>
             <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" 
-                    class="waves-effect waves-light btn edit-button">
+                    class="waves-effect waves-light btn edit-button green darken-3">
                 <i class="far fa-edit"></i> Edit Recipe
             </a>
         </div>
