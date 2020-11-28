@@ -92,9 +92,9 @@ def add_recipe():
         }
 
         """
-        For inserting an added recipe in the Mongo
-        DB after the user has submitted the form on the
-        Add Recipe page.
+        For inserting an added recipe on the page and
+        in Mongo DB after the user has submitted the 
+        form on the Add Recipe page.
         """
         mongo.db.recipes.insert_one(recipe)
         flash("Recipe was Successfully Added!")
@@ -120,7 +120,7 @@ def edit_recipe(recipe_id):
         }
 
         """
-        For inserting the Updated recipe in the Mongo
+        For inserting the Updated recipe in the page and Mongo
         DB after the user has updated the recipe and submitted
         the form on the Edit Recipe page.
         The recipe is then extracted for showing the recipe
@@ -151,4 +151,4 @@ def delete_recipe(recipe_id):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)
