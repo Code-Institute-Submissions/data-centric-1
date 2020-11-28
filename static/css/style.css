@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 body  {
     font-size: 18px;
     color: #3f602d !important;
@@ -212,6 +209,7 @@ form > a {
     background-color: white !important;
 }
 
+
 /*-------------------------------------navbar on start.html*/
 
 .nav-search,
@@ -247,6 +245,7 @@ form > a {
 .form-start > button, .form-start > a {
     margin-bottom: 3px;
 }
+
 
 /*-------------------------------------hero-img & info-box on start.html */
 
@@ -293,6 +292,7 @@ form > a {
     font-weight: 700;
     width: 300px;
 }
+
 
 /*-------------------------------------About section on start.html*/
 
@@ -367,6 +367,7 @@ h6, h5 {
     text-decoration: underline;
     color: rgb(97, 29, 97);
 }
+
 
 /*-------------------------------------recipe_detail.html */
 
@@ -462,6 +463,7 @@ td {
     margin-right: 32px;
 }
 
+
 /*-------------------------------------add_recipe.html */
 
 .form-bg {
@@ -525,8 +527,9 @@ font-size: 18px;
 .modal-close,
 .btn.red.lighten-1  {
 	margin-right: 15px;
-    font-weight: 500;
+    font-weight: bold;
 }
+
 
 /*-------------------------------------category.html */
 
@@ -591,6 +594,7 @@ div.card-image > a > img:hover {
     filter: brightness(85%);
 }
 
+
 /*-------------------------------------all_recipes.html*/
 
 .flash {
@@ -602,6 +606,7 @@ div.card-image > a > img:hover {
     font-weight: 700;
     color: #d02727;
 }
+
 
 /*-------------------------------------footer*/
 
@@ -658,6 +663,7 @@ footer {
 .contact > #contact:hover {
     color: #c46363;
 }
+
 
 /*-------------------------------------media queries*/
 
@@ -771,4 +777,3 @@ footer {
         margin: 7px;
     }
 }
-
