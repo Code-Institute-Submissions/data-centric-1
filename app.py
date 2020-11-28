@@ -26,31 +26,48 @@ def start():
     return render_template("start.html")
 
 
-# To display all recipes in All Recipes page
 @app.route("/all_recipes")
 def all_recipes():
+    # For showing all recipes in the All Recipes page
     all_recipes = list(mongo.db.recipes.find())
     return render_template("all_recipes.html", all_recipes=all_recipes)
 
 
-# To get search results in All Recipes page
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """
+    This code was used from Tim's Task Manager videos
+    for making the search input work for getting
+    search results in All Recipes page
+    """
     index_search = request.form.get("index_search")
     all_recipes = list(mongo.db.recipes.find({
         "$text": {"$search": index_search}}))
     return render_template("all_recipes.html", all_recipes=all_recipes)
 
 
-# To view the full recipe information
 @app.route("/recipes/<id_for_recipe>")
 def recipes(id_for_recipe):
+    """
+    This is to view the full recipe information for
+    a specific recipe when clicking on its belonging
+    recipe image or recipe name.
+    """
     recipe = mongo.db.recipes.find_one({"_id":  ObjectId(id_for_recipe)})
     return render_template("recipe_detail.html", recipe=recipe)
 
 
 @app.route("/<category_name>")
 def recipes_by_category(category_name):
+    """
+    My mentor helped me to create and improve the route for
+    categories for avoiding the code to be repetitive
+    with several routes for each category that I created
+    before.
+    This is for making the recipes display
+    in a category grouped by a common category name when
+    clicking on a link in the category menu in the navbar.
+    """
     categories = list(mongo.db.recipes.find({
         "category": category_name.upper()}))
     return render_template(
@@ -58,7 +75,6 @@ def recipes_by_category(category_name):
         category_name=category_name.upper())
 
 
-# For Adding a new Recipe
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
@@ -75,10 +91,14 @@ def add_recipe():
             "added_by": request.form.get("added_by")
         }
 
+        """
+        For inserting an added recipe in the Mongo
+        DB after the user has submitted the form on the
+        Add Recipe page.
+        """
         mongo.db.recipes.insert_one(recipe)
         flash("Recipe was Successfully Added!")
         return redirect(url_for("all_recipes"))
-
     return render_template("add_recipe.html")
 
 
@@ -99,10 +119,17 @@ def edit_recipe(recipe_id):
             "added_by": request.form.get("added_by")
         }
 
+        """
+        For inserting the Updated recipe in the Mongo
+        DB after the user has updated the recipe and submitted
+        the form on the Edit Recipe page.
+        The recipe is then extracted for showing the recipe
+        information in the form inputs when the user wants to
+        update and change the recipe information.
+        """
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, update_recipe)
         flash("Recipe was Successfully Updated!")
         return redirect(url_for("all_recipes"))
-
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("edit_recipe.html", recipe=recipe)
 
@@ -110,6 +137,12 @@ def edit_recipe(recipe_id):
 # For Deleting a Reicpe
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
+    """
+    This code is for deleting the recipe
+    when clicking the Delete Recipe button on
+    the Edit Recipe page and then redirecting
+    to the All Recipes page.
+    """
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe was Successfully Deleted!")
     return redirect(url_for("all_recipes"))
