@@ -200,7 +200,7 @@ nav form {
 .fas.fa-caret-down {
     font-size: 16px;
     position: relative;
-    top: -1.5px;
+    top: -3px;
 }
 
 form > button,
@@ -211,8 +211,6 @@ form > a {
 .start-bg-color {
     background-color: white !important;
 }
-
-
 
 /*-------------------------------------navbar on start.html*/
 
@@ -365,6 +363,11 @@ h6, h5 {
     color: #4f6069f2;
 }
 
+#site-link {
+    text-decoration: underline;
+    color: rgb(97, 29, 97);
+}
+
 /*-------------------------------------recipe_detail.html */
 
 .center-recipe, 
@@ -459,18 +462,6 @@ td {
     margin-right: 32px;
 }
 
-.all-button {
-    background: #887c13;
-}
-
-.breakfast-button {
-    background: #a0ab31;
-}
-
-.edit-button {
-    background: green;
-}
-
 /*-------------------------------------add_recipe.html */
 
 .form-bg {
@@ -513,8 +504,7 @@ font-size: 18px;
 .add-button {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 20px;
-    background: #d73d77;
+    font-size: 18px;
 }
 
 .row-instructions,
@@ -635,7 +625,7 @@ div.card-image > a > img:hover {
     font-size: 18px;
 }
 
-.contact > a {
+.contact > #contact {
     background: white;
     color: #8b4444;
     font-weight: 800;
@@ -665,9 +655,8 @@ footer {
 	color: #c46363;
 }
 
-.btn:hover, .btn-large:hover, .btn-small:hover {
-	color: white;
-    background-color: #c46363;
+.contact > #contact:hover {
+    color: #c46363;
 }
 
 /*-------------------------------------media queries*/
