@@ -30,9 +30,13 @@
     <!--search input-->
     <div class="row nav-row nav-search nav-wrapper">
         <form class="col s12 input-field form-start" action="{{ url_for('search') }}" method="POST">
-            <button type="submit" class="btn search-start"><i class="fas fa-search"></i></button>
+            <button type="submit" class="btn indigo darken-4">
+                <i class="fas fa-search"></i>
+            </button>
             <input id="index_search" class="search-input-start" type="text" name="index_search" minlength="1" required>
-            <a href="{{ url_for('all_recipes') }}" class="btn search-start"><i class="fas fa-undo-alt"></i></a>
+            <a href="{{ url_for('all_recipes') }}" class="btn indigo darken-4">
+                <i class="fas fa-undo-alt"></i>
+            </a>
         </form>
     </div>
     <!--About section-->
