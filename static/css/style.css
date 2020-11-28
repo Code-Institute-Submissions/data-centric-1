@@ -372,6 +372,12 @@ h6, h5 {
     color: rgb(97, 29, 97);
 }
 
+iframe {
+    width: 560px; 
+    height: 315px;
+    border: 0px;
+}
+
 
 /*-------------------------------------recipe_detail.html */
 
@@ -605,7 +611,7 @@ font-size: 18px;
 .card-content > h5 {
     font-weight: 500;
     text-shadow: 1px 1px #356035;
-    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .card .card-image img {
