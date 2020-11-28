@@ -44,10 +44,13 @@ max-height: none;
 }
 
 #message-sent,
-.contact-header,
+.contact-header {
+    font-weight: 600;
+}
+
 .contact-buttons,
 .contact-buttons > button {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .purple.lighten-1,
@@ -236,10 +239,6 @@ form > a {
     position: relative;
     top: -77px;
     height: 1px;
-}
-
-.search-start{
-    background: rgb(37 26 94 / 61%);
 }
 
 .form-start {
