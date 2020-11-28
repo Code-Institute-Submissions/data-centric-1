@@ -282,7 +282,7 @@ form > a {
 }
 
 .info-box {
-    background: rgb(37 26 94 / 61%);
+    background: #311b60ab;
     font-size: 27px;
     padding-left: 15px;
     position: relative;
@@ -458,8 +458,7 @@ td {
     margin-bottom: 0;
 } 
 
-.col-recipe-buttons > a,
-.cancel-delete-col > a {
+.col-recipe-buttons > a {
     font-weight: bold;
     height: 50px;
     padding-top: 7px;
@@ -467,6 +466,9 @@ td {
     margin-right: 32px;
 }
 
+.added-by {
+    margin-top: 40px;
+}
 
 /*-------------------------------------add_recipe.html */
 
@@ -505,6 +507,8 @@ font-size: 18px;
 
 .row-form {
     margin-bottom: 0;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .add-button {
@@ -523,17 +527,32 @@ font-size: 18px;
     justify-content: space-around;
 }
 
-.modal-content > h6 {
-	margin-bottom: 25px;
-	font-weight: 600;
-}
-
 .modal-close,
 .btn.red.lighten-1  {
 	margin-right: 15px;
     font-weight: bold;
 }
 
+.red.lighten-1,
+.teal {
+    margin-top: 15px;
+}
+
+#delete-heading {
+    font-weight: 600;
+}
+
+.cancel-delete-col > a,
+.red.lighten-1, 
+.teal {
+    font-weight: bold;
+    height: 50px;
+    padding-top: 7px;
+}
+
+.dropdown-content li > span {
+    color: rgb(20, 32, 20);
+}
 
 /*-------------------------------------category.html */
 
@@ -611,7 +630,6 @@ div.card-image > a > img:hover {
     color: #d02727;
 }
 
-
 /*-------------------------------------footer*/
 
 #footer-icons > li {
@@ -636,7 +654,7 @@ div.card-image > a > img:hover {
 
 .contact > #contact {
     background: white;
-    color: #8b4444;
+    color: #73448b;
     font-weight: 800;
     position: relative;
     top: 19px;
@@ -645,7 +663,6 @@ div.card-image > a > img:hover {
 footer {
     background: #2b3b43;
     width: 100%;
-    position: absolute;
 }
 
 .row.row-form {
@@ -653,7 +670,7 @@ footer {
 }
 
 .fa-inverse {
-	color: #8b4444;
+	color: #73448b;
 }
 
 .fa-stack-2x {
@@ -661,15 +678,21 @@ footer {
 }
 
 .fa-inverse:hover {
-	color: #c46363;
+	color: #9d58c0;
 }
 
 .contact > #contact:hover {
-    color: #c46363;
+    color: #9d58c0;
 }
 
 
 /*-------------------------------------media queries*/
+
+@media screen and (min-width: 500px) {
+     #search {
+    width: 250px;
+    }
+}
 
 @media screen and (min-width: 540px) {
     #search {
@@ -694,7 +717,6 @@ footer {
     }
 }
 
-
 @media screen and (max-width: 1284px) { 
     .card {
     margin-left: 10px;
@@ -709,14 +731,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 710px) {
-  .col-recipe-buttons > a {
-        margin-left: 0;
-        margin-right: 0;
-        margin: 7px;
-    }
-}
-
 @media screen and (max-width: 993px) {
     .fas.fa-caret-down {
         position: relative;
@@ -726,9 +740,23 @@ footer {
     }
 }
 
-@media screen and (max-width: 668px) {
-    .fruits {
+@media screen and (max-width: 775px) {
+    #fruits > li > i, .logo > i {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .fruits  { 
         display: none;
+    }
+}
+
+@media screen and (max-width: 710px) {
+  .col-recipe-buttons > a {
+        margin-left: 0;
+        margin-right: 0;
+        margin: 7px;
     }
 }
 
@@ -750,6 +778,7 @@ footer {
     .form-start {
         display: flex;
         justify-content: center;
+        top: 5px;
     }
 
     .info-box {
@@ -757,11 +786,9 @@ footer {
         left: 0;
         margin: 0 auto;
     }
-}
 
-@media screen and (min-width: 500px) {
-     #search {
-    width: 250px;
+    .nav-wrapper .input-field input[type=text] {
+        background: #ffffff9e;
     }
 }
 
@@ -775,18 +802,10 @@ footer {
         display: none;
     }
 
-    .nav-wrapper .input-field input[type=text] {
-        background: #ffffff9e;
-    }
-
      .nav-search .input-field input[type=text] {
         margin-top: 0;
         width: 100%;
         background: #ffffff9e;
-    }
-
-    h5 {
-        font-size: 1.40rem;
     }
 
     .form-base {
@@ -804,6 +823,15 @@ footer {
 
     .nav-search {
     top: -50px;
+    }
+
+    body,
+    table, td {
+        font-size: 16px;
+    }
+
+    .recipe-header {
+        font-size: 20px;
     }
 }
 
