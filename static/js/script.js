@@ -46,8 +46,8 @@ function sendEmail() {
         from_email: document.querySelector("#email").value,
         message_html: document.querySelector("#textarea1").value,
     })
-    .then(  //the, "then", "function(response/error), "return false" code was used from the Code Institute lesson JSEmail
-      function (response) {
+    .then(  
+      function (response) { // "the .then, function(response/false) return false" code was used from the Resume project on the CI course.
         $("#message-sent").removeClass("loader").html(
             '<i class="fas fa-check"></i> Your message was sent Successfully!');
       },
@@ -56,7 +56,7 @@ function sendEmail() {
             "color", "#E91E63").html("Message Failed to send");
       }
     );
-  return false; // To block from loading a new page
+  return false; // To prevent the page from loading. 
 }
 
 //gets the close button
