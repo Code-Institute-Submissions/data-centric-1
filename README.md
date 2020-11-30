@@ -86,6 +86,8 @@ Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, 
 
 7.  [MongoDB](https://www.mongodb.com/cloud/atlas): – was used as database for storing and extracting data.
 
+8. [Toptal](https://www.toptal.com/designers/colorfilter/): - Colorblind Web Page Filter, was used for checking the website how it looks for a colorblind person by using it's filter. 
+
 ## Testing
 ### Testing User stories from UX section:
 1.   **As a First time Visitor, I want the purpose of the website to be clear, the information easy to digest and locate, and the navigation easy to use. I would like to quickly locate the list of Positive Pranic foods and info where I can learn more about what type of food to eat that is Positive Pranic approved.**
@@ -165,11 +167,33 @@ Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, 
 
 ### Known bugs 
 
-Not really a bug, but I am aware that the colors red and green that are used a lot on the website, are not seen by colorblind people. I have checked the website through a filter for colorblindness, and everything looks good and pretty anyway. Everything on the page, despite this, is clear and well lined out. 
+Not really a bug, but I am aware of that the colors red and green that are used a lot on the website, are not seen by colorblind people. I have checked the website through a filter for colorblindness, and everything looks good and pretty anyway. Everything on the page, despite this, is clear and well lined out. 
 
 ## Deployment
 
 ### The project was deployed to Heroku by executing these steps:  
+
+1. Log in to Heroku and go to the dashboard.
+2. Click the "New" button on the top right corner and select in the dropdown "Create a new app"
+3. Under the "App name" label, write the name that you want the app to have in the input. 
+4. Then choose a region closest to you on the select option.
+5. Click the purple "Create app" button. 
+6. Around the middle of the page, look for the section where the "Deployment method" is and choose to connect to GitHub.
+7. On the select option that comes up, make sure your GitHub profile is displayed in the select option that comes up after selecting GitHub deployment.
+9. Then add your repository name and click on the purple "Search" button next to the input.
+10. Once it finds your repository click on the white "Connect" button.
+11. Click on the "Settings" tab and then click on the "Reveal Config Vars" button.
+12. On the Config Vars section, write the IP in the first input and 0.0.0.0 on the input next to it then click on the purple "Add" button.
+13. On the next two inputs, write PORT and 5000 and then click "Add"
+14. On the next two inputs, write "SECRET_KEY and paste in your key from your env file and click "Add" 
+15. On the next two inputs, write MONGO_URI and paste in your Mongo URI and click "Add"
+16. On the last two next inputs, write MONGO_DBNAME and yogic_recipes and click "Add"
+17. Go back to the Deploy tab.
+17. Go to your terminal and push the Procfile and requirements.txt files to your Github repository.
+18. Go back to the Heroku page to the Deploy tab and click the grey button that says "Enable Automatic Deploys".
+19. Then click on the grey button that says "Deploy Branch". 
+20. After the Heroku has finished building the app, you will see a message saying "Your app was successfully deployed" and a "View" button.
+21. Finally click on the "View" button. 
 
 ### How to clone this project to run locally: 
 1.  First log in to GitHub, then go into the project’s repository by clicking this link [GitHub Repository](https://github.com/danikrs/data-centric)
