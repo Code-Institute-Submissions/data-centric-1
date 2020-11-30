@@ -157,14 +157,14 @@ Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, 
 - The website was tested on various devices such as Desktop, laptop, Samsung and, iPhone mobiles.  
 - The code was run through the W3C Markup Validation Service and the results show only error for the Flask code,
     the HTML and CSS code on all pages are without error. The results can be viewed here: 
-    - **start.html** -  <a href="" target="_blank">Result</a>
-    - **base.html** - <a href="" target="_blank">Result</a>
-    - **category.html** - <a href="" target="_blank">Result</a>
-    - **recipe_detail.html** - <a href="" target="_blank">Result</a>
-    - **add_recipe.html** - <a href="" target="_blank">Result</a>
-    - **edit_recipe.css** - <a href="" target="_blank">Result</a>
-    - **all_recipes.html** - <a href="" target="_blank">Result</a>
-     - **style.css** - <a href="" target="_blank">Result</a>
+    - **start.html** -  <a href="https://drive.google.com/file/d/1KjpjMdjs8wWmoEMScLUf2p-noDc2mgcv/view?usp=sharing" target="_blank">Result</a>
+    - **base.html** - <a href="https://drive.google.com/file/d/1fXUZxRlbyCex_xexjtozSqnan6TuKXYS/view?usp=sharing" target="_blank">Result</a>
+    - **category.html** - <a href="https://drive.google.com/file/d/1BtvxuGyaNuVcTDzGliOr-mkZHeYt9iiv/view?usp=sharing" target="_blank">Result</a>
+    - **recipe_detail.html** - <a href="https://drive.google.com/file/d/1P1R1SpK5hOXbj8o-hpFrNiczNpt6oyht/view?usp=sharing" target="_blank">Result</a>
+    - **add_recipe.html** - <a href="https://drive.google.com/file/d/1glilztnTL3N3J35YluiVHyKVPQ7PO0Y8/view?usp=sharing" target="_blank">Result</a>
+    - **edit_recipe.css** - <a href="https://drive.google.com/file/d/1dGdNU2ca4LQ9H9E1WDE3_zoGkjt0TfnH/view?usp=sharing" target="_blank">Result</a>
+    - **all_recipes.html** - <a href="https://drive.google.com/file/d/1_SQH4ssslckpwMY8K819rbSOPAxkmpG2/view?usp=sharing" target="_blank">Result</a>
+     - **style.css** - <a href="https://drive.google.com/file/d/1tjpDermEv60T0ZJ7O1aOk6_KOqd_2crY/view?usp=sharing" target="_blank">Result</a>
 
 ### Known bugs 
 
