@@ -61,8 +61,8 @@ Responsive on all device sizes.
 - **Footer Contact button**. Clicking the button pops up a contact form modal.
 
 ### Features Left to Implement
--
--
+- Functionality that makes it possible to upvote recipes. 
+- Adding user authentication for being able to save recipes and control who gets to edit a recipe on the page. 
 
 ## Technologies Used
 
@@ -165,6 +165,8 @@ Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, 
 
 ### Known bugs 
 
+Not really a bug, but I am aware that the colors red and green that are used a lot on the website, are not seen by colorblind people. I have checked the website through a filter for colorblindness, and everything looks good and pretty anyway. Everything on the page, despite this, is clear and well lined out. 
+
 ## Deployment
 
 ### The project was deployed to Heroku by executing these steps:  
@@ -192,7 +194,12 @@ For more information about how to clone a repository click [here](https://docs.g
 
 ### Content
 
+The text on the start page is written by me. The text for the recipes are taken from here [Positive Pranic](https://positivepranic.com/) 
+and here [10 Vegan Smoothies](https://mindfulavocado.com/vegan-smoothie-recipes/) 
+
 ### Media
+
+The hero-image was found using the the Ecosia search engine. The recipe images were found on the two sites mentioned above. The videos are from YouTube. 
 
 ### Acknowledgements
 - Tim's Task Manager tutorial videos from the course. 
