@@ -46,10 +46,10 @@ The main text is divided into two short parts to make the reading easier, only t
 Right below there is a clear and clean table of lists with Positive Pranic foods. Headings, buttons, and forms are decorated with icons for enhancing the UX and making the page look more beautiful. 
 
 ### Wireframes 
-- **Start** - <a href="" target="_blank">View</a>
-- **Breakfast** - <a href="" target="_blank">View</a>
-- **Add Recipe** - <a href="" target="_blank">View</a>
-- **Recipe Detail** - <a href="" target="_blank">View</a>
+- **Start** - <a href="https://drive.google.com/file/d/1Npzgm6jlZFWJvPWkKJcHlw5pqTOh8vut/view?usp=sharing" target="_blank">View</a>
+- **Breakfast** - <a href="https://drive.google.com/file/d/1tPavcZVrpiXqrD5hRNUleNQsyYwj5n8G/view?usp=sharing" target="_blank">View</a>
+- **Add Recipe** - <a href="https://drive.google.com/file/d/1kjWMr63B92IGIvW6rsgqgNLP2olJE5hG/view?usp=sharing" target="_blank">View</a>
+- **Recipe Detail** - <a href="https://drive.google.com/file/d/1pv9gCkMi22abtW6bGUlj8eZgJbNK9F5n/view?usp=sharing" target="_blank">View</a>
 
 ## Features
 Responsive on all device sizes.
