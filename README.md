@@ -30,7 +30,7 @@ The design for this website was made to be beautiful, simple, intuitive, and cle
 #### Color Scheme
 The website is quite colorful and consistency is kept with the colors with suiting color combinations. The main colors are green and orange/red. 
 - The colors on the start page are chosen to match the colors in the hero-image, especially in the food list headings where there are three different background colors after each other like the three main colors on the recipe food hero-image. 
-- On the rest of the pages, there is a green and red linear-gradient background-color, where there are green icons, a green SVG tree image, buttons in various shades that are shown in the navbar. The coloring in the recipe cards is similar to different shades of green on the icon and orange/red background color in the footer of the cards. The text throughout the website is dark green. 
+- On the other pages, there is a green and red linear-gradient background-color, where there are green icons, a green SVG tree image, buttons in various shades of green placed in the navbar. The colors in the recipe cards are similar and contain icons with different shades of green and orange/red background color on the footer of the cards. The text throughout the website is dark green.
 - The colors on the buttons are different from each other for clear distinction with good contrasting and bright colors to make them stand out more. 
 
 #### Typography
