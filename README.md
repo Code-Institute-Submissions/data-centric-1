@@ -154,7 +154,7 @@ Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, 
 - The website was tested on multiple browsers such as Google Chrome, Microsoft Edge, Firefox, and Opera. 
 - Much time was given to test all the C.R.U.D functionalities and links on the page. 
 - My mentor viewed the website to see that all is looking good and working well. 
-- The website was tested on various devices such as Desktop, Ipad, Samsung and, iPhone mobiles.  
+- The website was tested on various devices such as Desktop, laptop, Samsung and, iPhone mobiles.  
 - The code was run through the W3C Markup Validation Service and the results show only error for the Flask code,
     the HTML and CSS code on all pages are without error. The results can be viewed here: 
     - **start.html** -  <a href="" target="_blank">Result</a>
@@ -164,6 +164,7 @@ Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, 
     - **add_recipe.html** - <a href="" target="_blank">Result</a>
     - **edit_recipe.css** - <a href="" target="_blank">Result</a>
     - **all_recipes.html** - <a href="" target="_blank">Result</a>
+     - **style.css** - <a href="" target="_blank">Result</a>
 
 ### Known bugs 
 
@@ -216,6 +217,15 @@ For more information about how to clone a repository click [here](https://docs.g
 
 ### Code
 
+- Tim's Task Manager tutorial videos were used much as a reference for making my project, like setting up the Flask in my app.py file, 
+    creating the env file, creating the search input code and C.R.U.D functionalities which I customized for my own project. 
+- The code for the hero-image zooming in was taken from the Love Running project in the CI course. 
+- The pattern for the email validation was taken from this [Stackoverflow post](https://stackoverflow.com/questions/5601647/html5-email-input-pattern-attribute)
+- For styling the scrollbar this [w3schools tutorial](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) was used and edited for my own needs.
+- The code for making the loader was used from this [w3schools tutorial](https://www.w3schools.com/howto/howto_css_loader.asp*/) and customized for my own needs. 
+- I copied the validateMaterializeSelect() function from Tim's tutorial Task manager videos to make the validation work on the select options from Materialize.
+- The ".then, function(response), return false" in the sendEmail() function was used from the Resume project on the CI course for getting a response when sending an email
+and to prevent a new page from loading. 
 ### Content
 
 The text on the start page is written by me. The text for the recipes are taken from here [Positive Pranic](https://positivepranic.com/) 
@@ -226,6 +236,6 @@ and here [10 Vegan Smoothies](https://mindfulavocado.com/vegan-smoothie-recipes/
 The hero-image was found using the Ecosia search engine. The recipe images were found on the two sites mentioned above. The videos are from YouTube. 
 
 ### Acknowledgements
-- Tim's Task Manager tutorial videos from the course. 
+- Tim's Task Manager tutorial videos from the CI course. 
 - My mentor at Code Institute for his guidance and feedback.
 - The tutor support at Code Institute for tutoring.
