@@ -25,21 +25,25 @@ the third milestone project that I have created for Code Institute with my newly
 
 ### Design
 
-#### Color Scheme
+The design for this website was made to be beautiful, simple, intuitive, and clear. Nice color and artistic recipe images are chosen to enhance the aesthetics of the page and bring up an appetite. The text on the page is made clear with only the most essential, desired, and straightforward info for the user.
 
-- 
--
--
+#### Color Scheme
+The website is quite colorful and consistency is kept with the colors with suiting color combinations. The main colors are green and orange/red. 
+- The colors on the start page are chosen to match the colors in the hero-image, especially in the food list headings where there are three different background colors after each other like the three main colors on the recipe food hero-image. 
+- On the rest of the pages, there is a green and red linear-gradient background-color, where there are green icons, a green SVG tree image, buttons in various shades that are shown in the navbar. The coloring in the recipe cards is similar to different shades of green on the icon and orange/red background color in the footer of the cards. The text throughout the website is dark green. 
+- The colors on the buttons are different from each other for clear distinction with good contrasting and bright colors to make them stand out more. 
 
 #### Typography
+The default Materialize font is chosen for the whole page because I think it’s an elegant and clean font. It makes nice headings with its thick font weights which helps the page look more stylish and at the same time easy to read. 
 
 #### Images 
-- 
--
+- The hero image on the Start page was chosen after much thought for beautifying the page and taking the attention of the user by zooming in the image smoothly with an animation. The image, that contains a dish with food, has strong and bright colors that lift up the page and makes the food look more delicious and fresher.
+- The SVG image of a green tree that is displayed on the rest of the pages in the navbar is chosen for it’s a beautiful and simple look that just makes you feel good looking at it, and it lifts up the green background of the pages and makes a good compliment to the other green icons of fruits and leaves. 
+- The recipe images are beautiful and appetizing, nicely contrasting with the other colors on the page. 
 
 #### Text   
-
-*not overload the reader with too much text*. 
+The main text is divided into two short parts to make the reading easier, only the most important text is displayed to *not overload the reader with too much text*. 
+Right below there is a clear and clean table of lists with Positive Pranic foods. Headings, buttons, and forms are decorated with icons for enhancing the UX and making the page look more beautiful. 
 
 ### Wireframes 
 - **Start** - <a href="" target="_blank">View</a>
