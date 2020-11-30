@@ -264,7 +264,7 @@ form > a {
 
 .hero-img {
   height: 590px;
-  background: url( https://www.chocolateandcheeseplease.com/wp-content/uploads/2017/10/IMG_3857.jpg) center center no-repeat;
+  background: url("../images/fruit-hero.jpg") center center no-repeat;
   background-size: cover;
   animation-name: hero-zoom;  /* I copied the code for zooming in the hero image in the Love Running project in the CI course*/
   animation-duration: 5s;
@@ -282,7 +282,7 @@ form > a {
 }
 
 .info-box {
-    background: #311b60ab;
+    background: #283593b8;
     font-size: 27px;
     padding-left: 15px;
     position: relative;
