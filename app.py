@@ -1,4 +1,4 @@
-""" I have used Tim's Task Manager videos a lot as
+""" I have used Tim's Task Manager videos much as
 a reference throughout my whole project
 and for making the code in this 'app.py' file """
 
@@ -93,7 +93,7 @@ def add_recipe():
 
         """
         For inserting an added recipe on the page and
-        in Mongo DB after the user has submitted the 
+        in Mongo DB after the user has submitted the
         form on the Add Recipe page.
         """
         mongo.db.recipes.insert_one(recipe)
@@ -102,7 +102,6 @@ def add_recipe():
     return render_template("add_recipe.html")
 
 
-# For Updating a Recipe
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
     if request.method == "POST":
