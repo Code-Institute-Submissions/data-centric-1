@@ -125,27 +125,27 @@ Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, 
 
 6.	**As a Returning Visitor, As a Returning Visitor, I want to, without looking too long, find out how to Delete a recipe with clear steps and be asked two times before the recipe gets deleted.  I want to also find where I can cancel from doing any changes to the recipe.**
 
-        - **a.** When I am on the Edit Recipe page where I can edit and update the recipe, I see a large red button with clear text with the name “Delete Recipe”. When I click on it, a modal pop up with the heading “Are you sure you want to DELETE this recipe? With two buttons with different colors and icons saying, “No Cancel” and “Yes Delete”.
+    - **a.** When I am on the Edit Recipe page where I can edit and update the recipe, I see a large red button with clear text with the name “Delete Recipe”. When I click on it, a modal pop up with the heading “Are you sure you want to DELETE this recipe? With two buttons with different colors and icons saying, “No Cancel” and “Yes Delete”.
     
-        - **b.**  When I click on the No Cancel button in the modal, the modal closes. When I click on the Delete Recipe button I am taken to the All Recipes page where a flash message is showing “Recipe was deleted Successfully”, I scroll down and I cant see the recipe I deleted anymore. 
+    - **b.**  When I click on the No Cancel button in the modal, the modal closes. When I click on the Delete Recipe button I am taken to the All Recipes page where a flash message is showing “Recipe was deleted Successfully”, I scroll down and I cant see the recipe I deleted anymore. 
     
-        - **c.**  On the Edit Recipe page there is a large blue button with the name “Cancel” and an x icon. When I click on it, I am taken to the All Recipes page.  
+    - **c.**  On the Edit Recipe page there is a large blue button with the name “Cancel” and an x icon. When I click on it, I am taken to the All Recipes page.  
 
 7.	**As a Returning Visitor, As a Returning Visitor, I want to quickly be able to find a recipe by using the search input. I want to also be able to contact the owner of the website for any questions that I might have.**
 
-        - **a.** On the Start page, I see a search button clearly lined out with two buttons on the side of the hero-image with an infobox above with the large text “Explore Positive Pranic Foods”. On all other pages, there is a search input always visible at the top in the navbar. 
+    - **a.** On the Start page, I see a search button clearly lined out with two buttons on the side of the hero-image with an infobox above with the large text “Explore Positive Pranic Foods”. On all other pages, there is a search input always visible at the top in the navbar. 
     
-        - **b.** Upon writing something in the search input that I know will not give any results when clicking on the search button or pressing enter, I  am taken to the All Recipes page where a red text is displaying “No Results Found. When I click on the Reset button next to the search input, all recipes show up in the All Recipes page. 
+    - **b.** Upon writing something in the search input that I know will not give any results when clicking on the search button or pressing enter, I  am taken to the All Recipes page where a red text is displaying “No Results Found. When I click on the Reset button next to the search input, all recipes show up in the All Recipes page. 
     
-        - **c.** When typing in the search input looking for either the recipe name or the recipe in minutes, all the recipes show up that has the same word in it that I searched with. The same happens when searching by number, all the recipes with the same time shows up. 
+    - **c.** When typing in the search input looking for either the recipe name or the recipe in minutes, all the recipes show up that has the same word in it that I searched with. The same happens when searching by number, all the recipes with the same time shows up. 
 
 8.	**As a Returning Visitor, As a Returning Visitor, I want to be able to contact the owner of the website for any questions that I might have.  I would also like to see if there are any social links for following on social media.**
 
-        - **a.** At the bottom of each page, there is a clear footer with a Contact button, three social media icons, and copyright. When clicking on any of the social media icons I am taken to each respective social media page. 
+    - **a.** At the bottom of each page, there is a clear footer with a Contact button, three social media icons, and copyright. When clicking on any of the social media icons I am taken to each respective social media page. 
     
-        - **b.** On clicking the Contact button, a modal comes up displaying a simple form with Name input, Email, and Message area. When trying to submit the form with an incorrect name or email, a red text shows up under the inputs saying the inputs are not valid. When the inputs are valid, a green text shows up saying it's valid.  
+    - **b.** On clicking the Contact button, a modal comes up displaying a simple form with Name input, Email, and Message area. When trying to submit the form with an incorrect name or email, a red text shows up under the inputs saying the inputs are not valid. When the inputs are valid, a green text shows up saying it's valid.  
     
-        - **c.** When clicking the Send Message button, a loader comes up, and then shortly after a message is displayed saying “Your message was Successfully sent”. When clicking the close button in the modal, the modal disappears and when opening the modal again the form is reset. 
+    - **c.** When clicking the Send Message button, a loader comes up, and then shortly after a message is displayed saying “Your message was Successfully sent”. When clicking the close button in the modal, the modal disappears and when opening the modal again the form is reset. 
 
 
 ### Additional Testing 
