@@ -133,7 +133,6 @@ def edit_recipe(recipe_id):
     return render_template("edit_recipe.html", recipe=recipe)
 
 
-# For Deleting a Reicpe
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     """
