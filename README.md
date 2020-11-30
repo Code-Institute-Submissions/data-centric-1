@@ -88,12 +88,64 @@ Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, 
 
 ## Testing
 ### Testing User stories from UX section:
-1.   **As a First time Visitor,**
-        - **a.**
+1.   **As a First time Visitor, As a First time Visitor, I want the purpose of the website to be clear, the information easy to digest and locate, and the navigation easy to use. I would like to quickly locate the list of Positive Pranic foods and info where I can learn more about what type of food to eat that is Positive Pranic approved.**
+        - **a.**  Upon visiting the website the I see a large, bright colorful, and elegant hero-image of a fruity dish that is zooming gently in. On top of the hero-image, there is a box with text showing “Explore Positive Pranic Recipes” with a search input below. Above the image, there is a conventional simple navbar with the logo “Yogic Recipes” and the menu clearly visible. 
     
-        - **b.** 
+        - **b.**  The About section that comes right after the hero-image tells without a doubt what the page is about and what I can do on the page. There is also a link to another page with more info, when I click on it I am taken to that page. Scrolling down just a little bit the I see lists of Positive Pranic food, making it easy to understand quickly what foods are included in the Yogic diet. 
     
-        - **c.** 
+        - **c.** Scrolling down a little more, I see two videos with a short explanatory text below each video. One video is about why it is beneficial to eat Positive Pranic food, explained by a popular yogic named Sadhguru. The other video shows Positive Pranic Recipes that are in video so you that I can choose to watch or read the recipes for more clarity. 
+
+2.   **As a First time Visitor, As a First time Visitor, I would like to see that I can choose a category of recipes and only see the recipes for that specific category, which are clearly displayed. Then I want to be able to click on each recipe to read the full recipe information without having to look through a jungle of other stuff in the way, the recipes should be clearly lined out.  **
+        - **a.**  Upon entering the page, I see the navbar which is clear and has a dropdown to the right with the name “Recipes” where all the categories are displayed when clicking on it. 
+    
+        - **b.** When clicking on any of the category names in the dropdown in the navbar, I am taken to that category with its belonging recipes. The recipes are displayed in cards with a clean recipe image, recipe name, and recipe time. When hovering over the recipe image I see the image darkening indicating that it is a link and the same with the recipe name which is underlined changes color when hovering over it.  
+    
+        - **c.**  On clicking either the recipe image or recipe name, I am taken to see the full recipe information. If I wish to go back to the previous category there is a colourful large button above that takes me back to the recipe category when clicking on it. Next to the category button, there is also an All Recipes button which takes me to see all recipes in card format when clicking on it. 
+
+3.   **As a First time Visitor, As a First time Visitor, I want to be able to locate the full recipe easily and only see the recipe information which is sufficient with clear text and not much else that is unnecessary and distracting.**
+        - **a.** By clicking the dropdown in the navbar I can click on any of the links that take me to see the recipes in card format where all recipes have a clickable recipe image and recipe name. I can also search for a recipe in the search input that is clearly visible on all pages to get the recipes in the card format by searching for the recipe name or recipe time. 
+    
+        - **b.** By clicking on the recipe name or recipe image in the recipe cards I am taken to see the full recipe information for only that single recipe. 
+    
+        - **c.** Upon entering the Recipe Detail page where the full recipe is shown, I see a simple and clear recipe with easy readability, and pleasant for the eyes with subtle stylish coloring. I see the same recipe image first and the same recipe name of the card I clicked, below is more information like portions, time, ingredients, and instructions put in a structured and tidy way. 
+
+4.   **As a First time Visitor, As a First time Visitor, I want to figure out how to add a recipe and do it without complication, the form should be straightforward and intuitive. There should be validation, selection, and character limits to know what type of input is okay.**
+        - **a.** In the navbar, I see a link always visible with the name “Add Recipe”. When I click on the link, I am taken to the Add Recipe page where there is a form with labels and colorful icons explaining what information I should add in the inputs and select options. Scrolling down to the bottom of the form I see a large pink button with the name Add Recipe and a plus icon. 
+    
+        - **b.** When I click on the Add Recipe button without writing anything on the form, I see a text that specifies that the inputs and select options must be filled out to submit the form. When I write the wrong input and select an invalid option, I see a red border color below, when I write the correct input and select a valid option then I see a green border below. Once submitting the form after everything is valid I see a flash message saying “Recipe was Successfully Added” on the All Recipes page where I am taken, I scroll down and I see that the new recipe I added is there. 
+    
+        - **c.** For seeing if there is any character limit on the Recipe Name and Time in minutes, I press down a letter on the keyboard and I see that after a short while the characters are stopped in the inputs and I am prevented to add more characters. 
+
+5.   **As a First time Visitor, As a Returning Visitor, I want to be able to find out without effort how to Edit and Update a recipe in a similar manner like I Added a recipe, with all the current recipe information displayed in the form.**
+        - **a.**  When I am on the Recipe Detail page where the full recipe is shown, I see a large colorful button on the top right with the name “Edit Recipe” with an edit icon. When I click on it, I am taken to the “Edit Recipe” page and I see a heading with the name “Update Recipe”. 
+    
+        - **b.** The form and its content look the same as the form for the “Add Recipe”, with the current recipe information displayed in the inputs and select options. 
+    
+        - **c.** After I change the inputs and selections, I click on the Update Recipe button and I am taken to the All Recipes page where a flash message is displaying “Recipe was Successfully Updated” I scroll down and see that the recipe that I updated has a different recipe name, I click on the recipe name to see the full recipe and I see there that all the text I changed in the recipe is showing.
+
+6.	**As a Returning Visitor, As a Returning Visitor, I want to, without looking too long, find out how to Delete a recipe with clear steps and be asked two times before the recipe gets deleted.  I want to also find where I can cancel from doing any changes to the recipe.**
+
+        - **a.** When I am on the Edit Recipe page where I can edit and update the recipe, I see a large red button with clear text with the name “Delete Recipe”. When I click on it, a modal pop up with the heading “Are you sure you want to DELETE this recipe? With two buttons with different colors and icons saying, “No Cancel” and “Yes Delete”.
+    
+        - **b.**  When I click on the No Cancel button in the modal, the modal closes. When I click on the Delete Recipe button I am taken to the All Recipes page where a flash message is showing “Recipe was deleted Successfully”, I scroll down and I cant see the recipe I deleted anymore. 
+    
+        - **c.**  On the Edit Recipe page there is a large blue button with the name “Cancel” and an x icon. When I click on it, I am taken to the All Recipes page.  
+
+7.	**As a Returning Visitor, As a Returning Visitor, I want to quickly be able to find a recipe by using the search input. I want to also be able to contact the owner of the website for any questions that I might have.**
+
+        - **a.** On the Start page, I see a search button clearly lined out with two buttons on the side of the hero-image with an infobox above with the large text “Explore Positive Pranic Foods”. On all other pages, there is a search input always visible at the top in the navbar. 
+    
+        - **b.** Upon writing something in the search input that I know will not give any results when clicking on the search button or pressing enter, I  am taken to the All Recipes page where a red text is displaying “No Results Found. When I click on the Reset button next to the search input, all recipes show up in the All Recipes page. 
+    
+        - **c.** When typing in the search input looking for either the recipe name or the recipe in minutes, all the recipes show up that has the same word in it that I searched with. The same happens when searching by number, all the recipes with the same time shows up. 
+
+8.	**As a Returning Visitor, As a Returning Visitor, I want to be able to contact the owner of the website for any questions that I might have.  I would also like to see if there are any social links for following on social media.**
+
+        - **a.** At the bottom of each page, there is a clear footer with a Contact button, three social media icons, and copyright. When clicking on any of the social media icons I am taken to each respective social media page. 
+    
+        - **b.** On clicking the Contact button, a modal comes up displaying a simple form with Name input, Email, and Message area. When trying to submit the form with an incorrect name or email, a red text shows up under the inputs saying the inputs are not valid. When the inputs are valid, a green text shows up saying it's valid.  
+    
+        - **c.** When clicking the Send Message button, a loader comes up, and then shortly after a message is displayed saying “Your message was Successfully sent”. When clicking the close button in the modal, the modal disappears and when opening the modal again the form is reset. 
 
 
 ### Additional Testing 
