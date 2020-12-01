@@ -298,6 +298,10 @@ form > a {
     width: 300px;
 }
 
+.deep-purple.darken-1 {
+    background-color: #434e8b !important;
+}
+
 
 /*-------------------------------------About section on start.html*/
 
