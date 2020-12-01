@@ -803,6 +803,18 @@ footer {
     }
 }
 
+@media screen and (max-width: 540px) {
+    .logo {
+        position: relative;
+        top: 10px;
+    }
+
+    .fas.fa-bars {
+        position: relative;
+        top: 7px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .hero-img,
     .hero-container {
