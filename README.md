@@ -55,15 +55,26 @@ Right below there is a clear and clean table of lists with Positive Pranic foods
 Responsive on all device sizes.
 
 ### Existing Features
-- **.**. 
-- **.**.   
+- **Logo**. Takes you to the Start page when clicking on it. 
+- **Dropdown menu**. When clicking the links in the menu, you are taken to see the recipe categories.
+- **Hero-image**.  For making the page look nice and more interesting. 
+- **Search input**.  Makes it possible to find a recipe by searching with a keyword.
+- **About section**. Explains the purpose of the website. 
+- **Recipe cards**. Shows the recipe in card format, with the possibility to click on either recipe image or recipe name for seeing the full info about that recipe. 
+- **Recipe detail div**. For displaying the full recipe.
+- **Add/edit recipe form**. For creating and editing a recipe on the page. 
+- **Add & Update button**. When clicking on either one it adds or updates a recipe. 
+- **Delete button**. Pops up a modal for asking if you want to delete a recipe. 
+- **Cancel button**. Cancels any changes being made upon editing a recipe.
+- **Contact modal form**. Once the form is filled out correctly, you can send a message. 
+- **Send message button**. Clicking on it can send a message.  
+- **Footer social icons**. For showing where you can follow on social media. 
 - **Footer Copyright**. To protect copyright.
 - **Footer Contact button**. Clicking the button pops up a contact form modal.
 
 ### Features Left to Implement
 - Functionality that makes it possible to upvote recipes. 
-- Adding user authentication for being able to save recipes and control who gets to edit a recipe on the page. 
-
+- Adding user authentication for being able to save recipes and control who gets to edit a recipe on the page.
 ## Technologies Used
 
 Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, **Flask** + **MongoDB**. 
