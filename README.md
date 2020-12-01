@@ -231,6 +231,7 @@ For more information about how to clone a repository click [here](https://docs.g
 
 - Tim's Task Manager tutorial videos were used much as a reference for making my project, like setting up the Flask in my app.py file, 
     creating the env file, creating the search input code and C.R.U.D functionalities which I customized for my own project. 
+- My mentor helped me improve the code I made for the categories on line 60 in the app.py file to avoid repetitive code.
 - The code for the hero-image zooming in was taken from the Love Running project in the CI course. 
 - The pattern for the email validation was taken from this [Stackoverflow post](https://stackoverflow.com/questions/5601647/html5-email-input-pattern-attribute)
 - For styling the scrollbar this [w3schools tutorial](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) was used and edited for my own needs.
