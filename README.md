@@ -67,7 +67,8 @@ Responsive on all device sizes.
 - **Delete button**. Pops up a modal for asking if you want to delete a recipe. 
 - **Cancel button**. Cancels any changes being made upon editing a recipe.
 - **Contact modal form**. Once the form is filled out correctly, you can send a message. 
-- **Send message button**. Clicking on it can send a message.  
+- **Send message button**. Clicking on it can send a message.
+- **Close button**. Clicking on it closes the contact modal and resets the form.     
 - **Footer social icons**. For showing where you can follow on social media. 
 - **Footer Copyright**. To protect copyright.
 - **Footer Contact button**. Clicking the button pops up a contact form modal.
