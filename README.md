@@ -180,8 +180,7 @@ Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, 
 - Much time was given to test all the C.R.U.D functionalities and links on the page. 
 - My mentor viewed the website to see that all is looking good and working well. 
 - The website was tested on various devices such as Desktop, laptop, Samsung and, iPhone mobiles.  
-- The code was run through the W3C Markup Validation Service and the results show only error for the Flask code,
-    the HTML and CSS code on all pages are without error. The results can be viewed here: 
+- The code was run through the W3C Markup Validation Service and no error was found. The results can be viewed here: 
     - **start.html** -  <a href="https://drive.google.com/file/d/1WkG2vvCNuTu9ivzsFLB-NEnR04BDjTBJ/view?usp=sharing" target="_blank">Result</a>
     - **category.html** - <a href="https://drive.google.com/file/d/1my2PN8YmcsZtroDm7AD1MNrwXDaRXEYe/view?usp=sharing" target="_blank">Result</a>
     - **recipe_detail.html** - <a href="https://drive.google.com/file/d/18YqDbdWgSTRXyUJNmCxbTwKP_cZYXYgD/view?usp=sharing" target="_blank">Result</a>
