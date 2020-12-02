@@ -50,6 +50,10 @@ Right below there is a clear and clean table of lists with Positive Pranic foods
 - **Breakfast** - <a href="https://drive.google.com/file/d/1tPavcZVrpiXqrD5hRNUleNQsyYwj5n8G/view?usp=sharing" target="_blank">View</a>
 - **Add Recipe** - <a href="https://drive.google.com/file/d/1kjWMr63B92IGIvW6rsgqgNLP2olJE5hG/view?usp=sharing" target="_blank">View</a>
 - **Recipe Detail** - <a href="https://drive.google.com/file/d/1pv9gCkMi22abtW6bGUlj8eZgJbNK9F5n/view?usp=sharing" target="_blank">View</a>
+- **Start mobile** - <a href="https://drive.google.com/file/d/1kdbXrVd5FD6gYV4kMastgJNLRhYv86Qg/view?usp=sharing" target="_blank">View</a>
+- **Breakfast mobile** - <a href="https://drive.google.com/file/d/1tPavcZVrpiXqrD5hRNUleNQsyYwj5n8G/view?usp=sharing" target="_blank">View</a>
+- **Add Recipe mobile** - <a href="https://drive.google.com/file/d/1E9ay4eBHTH_LhAzmTnZb5D0IlNrjDH41/view?usp=sharing" target="_blank">View</a>
+- **Recipe Detail mobile** - <a href="https://drive.google.com/file/d/16DrnTgWA3OAhHQzPRV7T9Cd4JZP3mZHP/view?usp=sharing" target="_blank">View</a>
 
 ## Features
 Responsive on all device sizes.
@@ -74,8 +78,10 @@ Responsive on all device sizes.
 - **Footer Contact button**. Clicking the button pops up a contact form modal.
 
 ### Features Left to Implement
+
 - Functionality that makes it possible to upvote recipes. 
 - Adding user authentication for being able to save recipes and control who gets to edit a recipe on the page.
+
 ## Technologies Used
 
 Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, **Flask** + **MongoDB**. 
@@ -102,6 +108,7 @@ Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, 
 
 ## Testing
 ### Testing User stories from UX section:
+
 1.   **As a First time Visitor, I want the purpose of the website to be clear, the information easy to digest and locate, and the navigation easy to use. I would like to quickly locate the list of Positive Pranic foods and info where I can learn more about what type of food to eat that is Positive Pranic approved.**
         - **a.**  Upon visiting the website the I see a large, bright colorful, and elegant hero-image of a fruity dish that is zooming gently in. On top of the hero-image, there is a box with text showing “Explore Positive Pranic Recipes” with a search input below. Above the image, there is a conventional simple navbar with the logo “Yogic Recipes” and the menu clearly visible. 
     
@@ -168,6 +175,7 @@ Languages Used for this project: **HTML**, **CSS**, **Javascript**, **Python**, 
 
 
 ### Additional Testing 
+
 - The website was tested on multiple browsers such as Google Chrome, Microsoft Edge, Firefox, and Opera. 
 - Much time was given to test all the C.R.U.D functionalities and links on the page. 
 - My mentor viewed the website to see that all is looking good and working well. 
@@ -213,6 +221,7 @@ Not really a bug, but I am aware of that the colors red and green that are used 
 21. Finally click on the "View" button. 
 
 ### How to clone this project to run locally: 
+
 1.  First log in to GitHub, then go into the project’s repository by clicking this link [GitHub Repository](https://github.com/danikrs/data-centric)
 2.  Under the repository name, click the green "Code" button.
 3.  Then choose "Clone with HTTPS" and copy the link.
@@ -243,6 +252,7 @@ For more information about how to clone a repository click [here](https://docs.g
 - I copied the validateMaterializeSelect() function from Tim's tutorial Task manager videos to make the validation work on the select options from Materialize.
 - The ".then, function(response), return false" in the sendEmail() function was used from the Resume project on the CI course for getting a response when sending an email
 and to prevent a new page from loading. 
+
 ### Content
 
 The text on the start page is written by me. The text for the recipes are taken from here [Positive Pranic](https://positivepranic.com/) 
@@ -253,6 +263,7 @@ and here [10 Vegan Smoothies](https://mindfulavocado.com/vegan-smoothie-recipes/
 The hero-image was found using the Ecosia search engine. The recipe images were found on the two sites mentioned above. The videos are from YouTube. 
 
 ### Acknowledgements
+
 - Tim's Task Manager tutorial videos from the CI course. 
 - My mentor at Code Institute for his guidance and feedback.
 - The tutor support at Code Institute for tutoring.
